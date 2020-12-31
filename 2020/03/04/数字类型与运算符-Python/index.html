@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="life，学习，硬件，大学，孤独前行"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John1175"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="数字类型与运算符-Python"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="life，学习，硬件，大学，孤独前行"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="涵尘"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://john1175.cnhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://john1175.cnhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>数字类型与运算符-Python - 涵尘</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="涵尘" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                about
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>数字类型与运算符-Python</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-03-04
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/Python/">#Python</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/笔记/">笔记</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 id="整数类型："><a href="#整数类型：" class="headerlink" title="整数类型："></a>整数类型：</h1><p>数制：</p>
+<p>​    十进制</p>
+<p>​    二进制：以0b或0B开头</p>
+<p>​    八进制：以0o或0O开头</p>
+<p>​    十六进制：以0x或0X开头</p>
+<h1 id="浮点类型："><a href="#浮点类型：" class="headerlink" title="浮点类型："></a>浮点类型：</h1><p>带小数点，范围-10^308^~10^308^，精度数量级10^-16^</p>
+<p>​    不确定尾数:</p>
+<p>​    浮点数运算存在不确定尾数，非BUG，一般发生在10^-16^附近</p>
+<p>​    计算机以二进制表示小数，可无限接近，但可能不相同</p>
+<p>​    科学计数法：/<a/>e/<b/>表示a*10^b^</p>
+<h1 id="计算函数"><a href="#计算函数" class="headerlink" title="计算函数"></a>计算函数</h1><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pow(x,y[,z])</td>
+<td>计算x^y%z 幂余 […]表示可省略</td>
+</tr>
+<tr>
+<td>abs(x)</td>
+<td>计算x的绝对值</td>
+</tr>
+<tr>
+<td>divmod(x,y)</td>
+<td>计算x//y x%y 商余 输出商与余</td>
+</tr>
+<tr>
+<td>round(x,d)</td>
+<td>对x进行四舍五入，d是小数截取位</td>
+</tr>
+<tr>
+<td>max(a,b,c…)</td>
+<td></td>
+</tr>
+<tr>
+<td>min(a,b,c…)</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="计算符号"><a href="#计算符号" class="headerlink" title="计算符号"></a>计算符号</h1><ul>
+<li><p>**（乘方）</p>
+</li>
+<li><ul>
+<li>x**y  返回x的y次方(x^y)</li>
+</ul>
+</li>
+<li><p>//（整除）</p>
+</li>
+<li><ul>
+<li>x//y  x除以y并对结果向下取整数至最接近的整数</li>
+</ul>
+</li>
+<li><p>&amp; （按位与）</p>
+</li>
+<li><ul>
+<li>对数字进行按位与操作。5 &amp; 3 输出 1 。</li>
+</ul>
+</li>
+<li><p>| （按位或）</p>
+</li>
+<li><ul>
+<li>对数字进行按位或操作。5 | 3 输出 7 。</li>
+</ul>
+</li>
+<li><p>^ （按位异或）</p>
+</li>
+<li><ul>
+<li>对数字进行按位异或操作。5 ^ 3 输出 6 。</li>
+</ul>
+</li>
+<li><p>~ （按位取反）</p>
+</li>
+<li><ul>
+<li>x 的按位取反结果为 -(x+1)。~5 输出 -6 。</li>
+</ul>
+</li>
+<li><p>not （布尔“非”）</p>
+</li>
+<li><ul>
+<li>如果 x 是 True ，则返回 False 。如果 x 是      False ，则返回 True 。x = True; not x 返回 False 。</li>
+</ul>
+</li>
+<li><p>and （布尔“与”）</p>
+</li>
+<li><ul>
+<li>如果 x 是 False ，则 x and y 返回 False      ，否则返回 y 的计算值。当 x 是 False 时， x = False; y = True; x and y 将返回 False      。在这一情境中，Python 将不会计算 y，因为它已经了解 and 表达式的左侧是 False ，这意味着整个表达式都将是 False      而不会是别的值。这种情况被称作短路计算（Short-circuitEvaluation）。</li>
+</ul>
+</li>
+<li><p>or （布尔“或”）</p>
+</li>
+<li><ul>
+<li>如果 x 是 True ，则返回 True ，否则它将返回 y      的计算值。x = Ture; y = False; x or y 将返回 Ture 。在这里短路计算同样适用。</li>
+</ul>
+</li>
+</ul>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2020 John1175<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>

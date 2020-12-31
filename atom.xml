@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>涵尘</title>
+  
+  <subtitle>一个人的思索与生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://john1175.cn/"/>
+  <updated>2020-02-28T08:57:33.320Z</updated>
+  <id>https://john1175.cn/</id>
+  
+  <author>
+    <name>John1175</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://john1175.cn/2020/12/31/hello-world/"/>
+    <id>https://john1175.cn/2020/12/31/hello-world/</id>
+    <published>2020-12-31T11:30:29.529Z</published>
+    <updated>2020-02-28T08:57:33.320Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>电赛书籍小计</title>
+    <link href="https://john1175.cn/2020/10/27/%E7%94%B5%E8%B5%9B%E4%B9%A6%E7%B1%8D%E5%B0%8F%E8%AE%A1/"/>
+    <id>https://john1175.cn/2020/10/27/%E7%94%B5%E8%B5%9B%E4%B9%A6%E7%B1%8D%E5%B0%8F%E8%AE%A1/</id>
+    <published>2020-10-27T11:17:40.000Z</published>
+    <updated>2020-10-27T12:18:02.627Z</updated>
+    
+    <content type="html"><![CDATA[<p>20.10.27</p><p>下午偷看了两节课的电赛技能培训有所感：</p><p>电赛不愧是硬件的奖杯，我自诩入门结果依然是收获良多</p><ol><li>电路接口加瞬变电压抑制二极管</li><li>电路接口加接地电阻0.2-1MR</li><li>注意过电阻的电流，及设计时注意电阻的瓦数</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;20.10.27&lt;/p&gt;
+&lt;p&gt;下午偷看了两节课的电赛技能培训有所感：&lt;/p&gt;
+&lt;p&gt;电赛不愧是硬件的奖杯，我自诩入门结果依然是收获良多&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;电路接口加瞬变电压抑制二极管&lt;/li&gt;
+&lt;li&gt;电路接口加接地电阻0.2-1MR&lt;/li&gt;
+&lt;li&gt;注意过电阻
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fail--The record for WatchX-Pro v1.0</title>
+    <link href="https://john1175.cn/2020/10/23/Fail--The%20record%20for%20WatchX-Pro%20v1.0/"/>
+    <id>https://john1175.cn/2020/10/23/Fail--The%20record%20for%20WatchX-Pro%20v1.0/</id>
+    <published>2020-10-23T11:55:05.000Z</published>
+    <updated>2020-10-23T12:27:32.561Z</updated>
+    
+    <content type="html"><![CDATA[<p>本次进行的WatchX的制作宣告失败。</p><p>钢网很贵而且效不一定好，过细的空隙对于廉价的钢网太不友好，易形成连焊，最后还是需要脱焊一下。</p><p>后面还是用热风枪来焊接吧。</p><p>上图：</p><p><img src="%E9%92%A2%E7%BD%91.jpg" alt="钢网"></p><p><img src="%E5%8A%A0%E7%84%8A%E9%94%A1%E8%86%8F%E7%9A%84%E7%BB%93%E6%9E%9C.jpg" alt="加焊锡膏的结果"></p><p><img src="WztchX_Pro%E6%AD%A3%E9%9D%A2.jpg" alt="WztchX_Pro正面"></p><p><img src="WztchX_Pro%E6%AD%A3%E9%9D%A22.jpg" alt="WztchX_Pro正面2"></p><p><img src="WztchX_Pro%E8%83%8C%E9%9D%A2.jpg" alt="WztchX_Pro背面"></p><p>本次电源芯片无法工作，外引电源后程序无法下载。</p><p>看吧，忙了一个下午，不想忙了，后面再去弄吧。</p><p>另，达尔闻，作业暂时没完成，等一下。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;本次进行的WatchX的制作宣告失败。&lt;/p&gt;
+&lt;p&gt;钢网很贵而且效不一定好，过细的空隙对于廉价的钢网太不友好，易形成连焊，最后还是需要脱焊一下。&lt;/p&gt;
+&lt;p&gt;后面还是用热风枪来焊接吧。&lt;/p&gt;
+&lt;p&gt;上图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;%E9%92%A2%E7%B
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>硬件心得</title>
+    <link href="https://john1175.cn/2020/09/30/%E7%A1%AC%E4%BB%B6%E5%BF%83%E5%BE%97/"/>
+    <id>https://john1175.cn/2020/09/30/%E7%A1%AC%E4%BB%B6%E5%BF%83%E5%BE%97/</id>
+    <published>2020-09-30T02:36:35.000Z</published>
+    <updated>2020-09-30T03:23:13.913Z</updated>
+    
+    <content type="html"><![CDATA[<p>要学好英语，限于如今的现实不说最新的资料与文档，datasheet就是全英文，国产的东西甚至中文资料比英文资料都差，至于翻译过来的资料，注定是过时的而且还不能放心。</p><p>看书要看你看不下去的，要逼着自己看的才是有用的，你能津津有味的看下去的多是复习或者扩宽视野。</p><p>看资料的时候手头一定要有电子资料和草稿纸，硬件到了最后就是计算与检测，看不懂的词汇要查，数据要算。</p><p>注意VPN，至少百度的专业搜索还是比谷歌要差上不少。且国外的开源硬件是要远好于国内的，虽说今日墙已经开了一些，但是那速度还是有点。。。。。是在不行还是蹭校园网吧。</p><p>如果有余力，ARM、DSP、Linux、这些还是要学学的。</p><p>硬件一开始就是电路，数电，模电，自动控制原理，电力电子。后面可以选择方向深入比如说FPGA、电源、电机驱动、高速电路、射频……</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;要学好英语，限于如今的现实不说最新的资料与文档，datasheet就是全英文，国产的东西甚至中文资料比英文资料都差，至于翻译过来的资料，注定是过时的而且还不能放心。&lt;/p&gt;
+&lt;p&gt;看书要看你看不下去的，要逼着自己看的才是有用的，你能津津有味的看下去的多是复习或者扩宽视野。&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="团队" scheme="https://john1175.cn/categories/%E5%9B%A2%E9%98%9F/"/>
+    
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Cadence_PCB初试</title>
+    <link href="https://john1175.cn/2020/09/28/Cadence-PCB%E5%88%9D%E8%AF%95/"/>
+    <id>https://john1175.cn/2020/09/28/Cadence-PCB%E5%88%9D%E8%AF%95/</id>
+    <published>2020-09-28T03:16:00.000Z</published>
+    <updated>2020-12-31T11:40:09.120Z</updated>
+    
+    <content type="html"><![CDATA[<p>重启Cadence学习</p><p>还是那句话：不愧是高速电路。</p><p>其要求的太过于多了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;重启Cadence学习&lt;/p&gt;
+&lt;p&gt;还是那句话：不愧是高速电路。&lt;/p&gt;
+&lt;p&gt;其要求的太过于多了。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第一次SMT小计</title>
+    <link href="https://john1175.cn/2020/09/24/%E7%AC%AC%E4%B8%80%E6%AC%A1SMT%E5%B0%8F%E8%AE%A1/"/>
+    <id>https://john1175.cn/2020/09/24/%E7%AC%AC%E4%B8%80%E6%AC%A1SMT%E5%B0%8F%E8%AE%A1/</id>
+    <published>2020-09-24T11:14:52.000Z</published>
+    <updated>2020-09-25T09:20:33.179Z</updated>
+    
+    <content type="html"><![CDATA[<p>终于进校了</p><p>本次是为学弟们准备的，22人，6辆车，准备10份电路。</p><p>10份驱动，10份主控。</p><p>主控这一次我尝试了嘉立创的SMT，由嘉立创帮忙进行电阻、电容、LED、二极管的焊接</p><p>为了增加电感应的路数，本次的贴片元件都尽量使用了0603封装，且为了减小电路板的大小，我使用了机器焊接的布局–挤，是的所有封装我都挤压在一起。而这导致了我如果进行焊接就是一场噩梦。</p><p>是的，一场噩梦。因为封装的拥挤与0603的焊接难度，我无法将它放心的交给学弟，而仅有的可以相信的助手也只有一人，两人，10份，代表了至少5个晚上的松香缭绕。会累死人的。</p><p>巨大的工作量与难度，加上这是学弟们的掏钱（笑），我选择了SMT，但不得不说，电路板这小批量就是贵，10块板子，加上一些及其便宜的元件，收了我218元，贵，怪不得都说要冲量。</p><p>驱动我测试了开窗操作，倒也不是为了大电流，而是为了使得标记不再如丝印般脆弱，但是效果的确不错。正反两面都对于标记进行复铜，并对标记进行开窗。此外我在整版复铜下对那一块保留了一块，周围的不复铜使得标记更加显目。</p><p><img src="%E4%B8%9D%E5%8D%B0%E5%8A%A0%E5%BC%BA%E7%89%880.jpg" alt="丝印加强版0"></p><p><img src="%E4%B8%9D%E5%8D%B0%E5%8A%A0%E5%BC%BA%E7%89%881.jpg" alt="丝印加强版1"></p><p>SMT虽然贵，但是其效果那是没的说的，比我手焊要好上几个档次，下次若确定SMT就要试试0402，不然还是有点心疼，亏了的感觉。。。。毕竟这一板子的电阻电容还是太少了点。</p><p><img src="SMT.jpg" alt="SMT"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;终于进校了&lt;/p&gt;
+&lt;p&gt;本次是为学弟们准备的，22人，6辆车，准备10份电路。&lt;/p&gt;
+&lt;p&gt;10份驱动，10份主控。&lt;/p&gt;
+&lt;p&gt;主控这一次我尝试了嘉立创的SMT，由嘉立创帮忙进行电阻、电容、LED、二极管的焊接&lt;/p&gt;
+&lt;p&gt;为了增加电感应的路数，本次的贴片元件都尽
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+      <category term="智能车" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
+    
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RC遥控车电路板小计</title>
+    <link href="https://john1175.cn/2020/08/23/RC%E9%81%A5%E6%8E%A7%E8%BD%A6%E7%94%B5%E8%B7%AF%E6%9D%BF%E5%B0%8F%E8%AE%A1/"/>
+    <id>https://john1175.cn/2020/08/23/RC%E9%81%A5%E6%8E%A7%E8%BD%A6%E7%94%B5%E8%B7%AF%E6%9D%BF%E5%B0%8F%E8%AE%A1/</id>
+    <published>2020-08-23T11:57:12.000Z</published>
+    <updated>2020-08-30T07:37:37.390Z</updated>
+    
+    <content type="html"><![CDATA[<p>电路板做出来了，焊接完成，点灯，电机驱动也测试成功，做一个小结。</p><h2 id="器件选择"><a href="#器件选择" class="headerlink" title="器件选择"></a>器件选择</h2><p>这次目的是对于我整个暑假对于STM32与各种器件的学习整合，加上是自娱自乐的学习板，所以本次我使用了不少新东西。</p><h3 id="传感器件"><a href="#传感器件" class="headerlink" title="传感器件"></a>传感器件</h3><p>摄像头，我选择了OV2640摄像头，这是我买STM32F407探索者时配的摄像头，使用DCMI接口。</p><p>超声波传感器，这个市面上有一堆，我选了HC-SR04。</p><p>陀螺仪，我用了之前弄到的ICM20602，选择了硬件SPI连接方式。我的车精度不行，必定走弧线，就要靠陀螺仪进行微调了，但愿舵机够用。另：希望借此测测车速，虽然注定快不起来。。。</p><h3 id="控制与传输器件"><a href="#控制与传输器件" class="headerlink" title="控制与传输器件"></a>控制与传输器件</h3><p>OLED显示屏，0.96寸OLED显示屏模块，选择了SOI连接</p><p>蓝牙串口，我选了HC-06的初学者版本，带一个连接USB的底座。之前买HC-08的第一次优惠已经给组员用了。</p><p>JTAG接口，这没有什么好说的，就是这接口要单独买一下。</p><p>舵机，无名的舵机，但至少之前测试的能用。</p><p>电压表表头，因为我的电池一言难尽，就弄了个集成的电压表表头，至少能够告知我改充电了。</p><h3 id="驱动器件"><a href="#驱动器件" class="headerlink" title="驱动器件"></a>驱动器件</h3><p>首先，一大创新我在电机驱动上有了挺不错的创新。</p><p>我是在TI官网上进行选择的，它的中文官网是我认为电子厂里做的最好的：</p><p><img src="TI%E4%B8%AD%E6%96%87%E5%AE%98%E7%BD%91.jpg" alt="TI中文官网"></p><p>我本意是在产品导航中看看MOSFET与配套的驱动全桥控制件。但我在产品导航中看到了电机驱动器，然后根据要求一步一步选择，很快就发现了“新大陆”——集成化的电机驱动器，内部集成了大量功能，占地小，除了电流看起来小了点，就近乎完美。</p><p>我选择了DRV8872,这是PDF的第一页：</p><p><img src="DRV8872PDF%E7%AC%AC%E4%B8%80%E9%A1%B5.png" alt="DRV8872PDF第一页"></p><p>颇为魔幻不是吗，中文PDF？然而这共26页也就这页总介绍后面极少数的一些部分，其他，都是英文。除了第一页和最后一页都挺标准的。</p><p>电机我测试了无负载7.2V空转的时候电流只有0.6A左右，所以这个最高3.6A是可以说绰绰有余了。且其小负载与其集成的保护功能对于我来说就是福音。</p><p>使用这款器件我可以将主控板与驱动板结合在一起节省制版费以及设计的功夫，而且所省下的MOSFET也是比不小的材料钱。</p><h3 id="控制器件"><a href="#控制器件" class="headerlink" title="控制器件"></a>控制器件</h3><p>STM32F446</p><p>说实话这个选型真的难，我想的是STM32的芯片，然而ST的官网。。。。不给机会，接口，精度，数模这都不是我要找的。因为摄像头的DCMI接口，所以我要找一个有DCMI的片，但在ST的筛选中没有，然而另外的SPI、IIC…这些本就是标配。无奈换了另一个方式——上得捷电子。查STM32，在筛选项里找到了DCMI接口，选了几种，然后在立创商城上搜索，毕竟这是我所知能保证质量有相对便宜的。最后选择了446。</p><p>在立创上只有VET6,RET6缺货，ZCT6停售。虽说RET6缺货停售但能订货且较便宜，但看看所要的引脚数，还是100的吧。</p><h2 id="电路图绘制"><a href="#电路图绘制" class="headerlink" title="电路图绘制"></a>电路图绘制</h2><p>这次的电路图绘制尝试了Cadence，一言难尽，只能说不愧是高速啊。对于走线的设定是巨详细。</p><p>但是他的UI实在是与Keil相似。它和AD的差别就像Keil与VSCode的差别，但不管如何练下手也不错。</p><p>在这要推荐一下“</p><p>”,在找元件的时候帮了我大忙。毕竟我没有Cadence的库，用过这些EDA的都知道官方库是有多坑。</p><h2 id="PCB设计与打样"><a href="#PCB设计与打样" class="headerlink" title="PCB设计与打样"></a>PCB设计与打样</h2><p>PCB是老朋友立创了，这次的质量有了一定的回升。</p><p><img src="PCB%E6%AD%A3%E9%9D%A2.jpg" alt="PCB正面"></p><p><img src="PCB%E5%8F%8D%E9%9D%A2.jpg" alt="PCB反面"></p><h2 id="焊接"><a href="#焊接" class="headerlink" title="焊接"></a>焊接</h2><p>这不用多说，主芯片就是刀头+大量的焊锡膏。到是封装搞错了几个，选大了还好，选小了就无语了。比如我的晶震小了整整两号，我是上锡然后有热风枪吹上去的，由于封装太小，焊接的时候我还无法测试是不是焊接成功，还好这是一个外部振荡器，可以不使用，而且就算焊接失败也不会出现问题。所幸在测试的时候成功了</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>最后我的PCB绘制还是有些心急，出了些小错，万幸测试成功。反正是自娱自乐能用就行。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;电路板做出来了，焊接完成，点灯，电机驱动也测试成功，做一个小结。&lt;/p&gt;
+&lt;h2 id=&quot;器件选择&quot;&gt;&lt;a href=&quot;#器件选择&quot; class=&quot;headerlink&quot; title=&quot;器件选择&quot;&gt;&lt;/a&gt;器件选择&lt;/h2&gt;&lt;p&gt;这次目的是对于我整个暑假对于STM32与各种
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+      <category term="智能车" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
+    
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>南墙——Cadence</title>
+    <link href="https://john1175.cn/2020/08/16/%E5%8D%97%E5%A2%99%E2%80%94%E2%80%94Cadence/"/>
+    <id>https://john1175.cn/2020/08/16/%E5%8D%97%E5%A2%99%E2%80%94%E2%80%94Cadence/</id>
+    <published>2020-08-16T08:34:01.000Z</published>
+    <updated>2020-08-16T09:00:35.594Z</updated>
+    
+    <content type="html"><![CDATA[<p>因为各种原因我的设计需要改变</p><p>经过一周的PCB绘制尝试，我宣布使用Cadence绘制两成板的设想失败，所需要的是在是太高了，且我只剩下两周的时间。故转回去使用AD吧。至少这个我只要两个晚上就可以保证弄出来了。</p><h2 id="Cadence——我所高估的自己"><a href="#Cadence——我所高估的自己" class="headerlink" title="Cadence——我所高估的自己"></a>Cadence——我所高估的自己</h2><p>我终于明白了那个Cadence书名里头的高速电路板设计与仿真的高速是哪里来的了。专业高速——低速不予考虑！难怪市场上两层板大部分用的是AD/Prote，有用KiCad的，甚至有人用的是立创EDA。但是Cadence我所耳闻的只有多层与高速。</p><p>Cadence至少对于我这个只会两层板的人来说是在是太过于难入门了，其中的设计对于高速的便利对于我却显得有些臃肿，大量的对于线路的微调是在是用不到，加上因为是学习初期所遇见的库的绘制…..使得这一设想成了吃力不讨好的事情。为了“工期”我选择了使用AD重来一次。</p><p>至少我短期要多多考虑所谓的高速了。我的模电与FPGA…..</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;因为各种原因我的设计需要改变&lt;/p&gt;
+&lt;p&gt;经过一周的PCB绘制尝试，我宣布使用Cadence绘制两成板的设想失败，所需要的是在是太高了，且我只剩下两周的时间。故转回去使用AD吧。至少这个我只要两个晚上就可以保证弄出来了。&lt;/p&gt;
+&lt;h2 id=&quot;Cadence——我所高估
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+      <category term="智能车" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
+    
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-08-10周小结</title>
+    <link href="https://john1175.cn/2020/08/14/2020-08-10%E5%91%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://john1175.cn/2020/08/14/2020-08-10%E5%91%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-08-14T09:22:40.000Z</published>
+    <updated>2020-08-14T09:24:12.658Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第七次周小结"><a href="#第七次周小结" class="headerlink" title="第七次周小结"></a>第七次周小结</h1><p>本周，咸鱼</p><h4 id="杜浪"><a href="#杜浪" class="headerlink" title="杜浪"></a>杜浪</h4><p>暑假就是这样，一周一周地过得老快了，一天天到处晃悠，心思没放在学习上，练车考驾照，天又热，各种理由都能使我浪费太多时间，每周都想好好整，又不晓得从哪下手，所以我想好了，下周要搞就搞一个方面的东西，编程就好好学编程，再也不能一心多用了，搞C语言就专心搞，不得再去碰python了，每次都是C语言视频看两节就不耐烦就，就去搞其他的去了，虽然学的东西还有很多，但真的，也只能一步一步学，戒浮戒躁；</p><p>暑假就是这样，一周一周地过得老快了，一天天到处晃悠，心思没放在学习上，练车考驾照，天又热，各种理由都能使我浪费太多时间，每周都想好好整，又不晓得从哪下手，所以我想好了，下周要搞就搞一个方面的东西，编程就好好学编程，再也不能一心多用了，搞C语言就专心搞，不得再去碰python了，每次都是C语言视频看两节就不耐烦就，就去搞其他的去了，虽然学的东西还有很多，但真的，也只能一步一步学，戒浮戒躁；</p><p>fighting！</p><h4 id="彭世航"><a href="#彭世航" class="headerlink" title="彭世航"></a>彭世航</h4><p>无</p><h4 id="杨强"><a href="#杨强" class="headerlink" title="杨强"></a>杨强</h4><p>这周感觉干的事情也不多呀，基本上干正事的没有。唉</p><h4 id="张楠欣"><a href="#张楠欣" class="headerlink" title="张楠欣"></a>张楠欣</h4><p>无</p><h4 id="张师涵"><a href="#张师涵" class="headerlink" title="张师涵"></a>张师涵</h4><p>本周基本完成了电路图，再进行微调后就可以进行PCB的设计了</p><p>练车算是科目二与科目三一起了，但是看看时间。。。。科目三有点悬</p><p>而且因为练车我的时间有点不足，一天至少要6个小时，一回通勤2个小时，时间都飞走了</p><p>本周在练车的时候摔了两个茶杯，伤心欲绝。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第七次周小结&quot;&gt;&lt;a href=&quot;#第七次周小结&quot; class=&quot;headerlink&quot; title=&quot;第七次周小结&quot;&gt;&lt;/a&gt;第七次周小结&lt;/h1&gt;&lt;p&gt;本周，咸鱼&lt;/p&gt;
+&lt;h4 id=&quot;杜浪&quot;&gt;&lt;a href=&quot;#杜浪&quot; class=&quot;headerlink&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="团队" scheme="https://john1175.cn/categories/%E5%9B%A2%E9%98%9F/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-08-03周小结</title>
+    <link href="https://john1175.cn/2020/08/03/2020-08-03%E5%91%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://john1175.cn/2020/08/03/2020-08-03%E5%91%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-08-03T15:07:09.000Z</published>
+    <updated>2020-08-03T15:11:30.360Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第七次周小结"><a href="#第七次周小结" class="headerlink" title="第七次周小结"></a>第七次周小结</h1><p>项目==不断地试错</p><p>梦想是美好的，触手可得的–只要多睡会。</p><h4 id="杜浪"><a href="#杜浪" class="headerlink" title="杜浪"></a>杜浪</h4><p>是学指针那部分，python是在B站跟小甲鱼学的（发现派森真的比c语言好学多了），英语每天斗在记单词，没咋做题，语法的东西好多都忘了，想去买本四级真题来做，想想还是算了（脑壳不能用再发热了），最近学校开了数学建模的课，大概听了两次，真的觉得高数线代是真的重要（学校老师教的真的是精简版）学习使我快乐🙂🙂🙂🙂</p><p>C语言、python初学，英语四级啥时候才能过，高等代数</p><p>C语言还是在听翁凯的慕课视频，重点也还是学指针那部分，python是在B站跟小甲鱼学的（发现派森真的比c语言好学多了），英语每天斗在记单词，没咋做题，语法的东西好多都忘了，想去买本四级真题来做，想想还是算了（脑壳不能用再发热了），最近学校开了数学建模的课，大概听了两次，真的觉得高数线代是真的重要（学校老师教的真的是精简版）学习使我快乐🙂🙂🙂🙂</p><h4 id="彭世航"><a href="#彭世航" class="headerlink" title="彭世航"></a>彭世航</h4><p>无</p><h4 id="杨强"><a href="#杨强" class="headerlink" title="杨强"></a>杨强</h4><p>本周没干什么正事，但是也挺累的，我都不敢说结束了，不然又有什么事情冒出来了。希望下周可以干正事吧。</p><h4 id="张楠欣"><a href="#张楠欣" class="headerlink" title="张楠欣"></a>张楠欣</h4><p>无</p><h4 id="张师涵"><a href="#张师涵" class="headerlink" title="张师涵"></a>张师涵</h4><p>本周开始了硬件设计，这是一次巨大的锻炼。。。</p><p>I2C、USART、HCMI一堆接口，还好我选择了HAL，有着不错的移植性。</p><p>我在STM32中寻找了不少，然而HCMI这一个限制了必须使用STM32F4系列，我选择了STM32F446.之后就是迷惑操作了：在立创商城上STM32F446系列的芯片中LQFP-100的只比LQFP-64的贵0.11元。甚至在批量的时候还要便宜一点。。。。。估计真的是利薄多销吧。</p><p>另Candance真的难，以及开心找到了一个不错的库网站。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第七次周小结&quot;&gt;&lt;a href=&quot;#第七次周小结&quot; class=&quot;headerlink&quot; title=&quot;第七次周小结&quot;&gt;&lt;/a&gt;第七次周小结&lt;/h1&gt;&lt;p&gt;项目==不断地试错&lt;/p&gt;
+&lt;p&gt;梦想是美好的，触手可得的–只要多睡会。&lt;/p&gt;
+&lt;h4 id=&quot;杜浪&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="团队" scheme="https://john1175.cn/categories/%E5%9B%A2%E9%98%9F/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-07-27周小结</title>
+    <link href="https://john1175.cn/2020/07/27/2020-07-27%E5%91%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://john1175.cn/2020/07/27/2020-07-27%E5%91%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-07-27T06:50:34.000Z</published>
+    <updated>2020-07-27T06:56:58.955Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第六次周小结–咸鱼"><a href="#第六次周小结–咸鱼" class="headerlink" title="第六次周小结–咸鱼"></a>第六次周小结–咸鱼</h1><p>本周又将加入一人——杜浪，可喜可贺，可喜可贺！</p><p>然而日小结也渐渐“平淡”,我与杨强的尬聊，失败与无奈。</p><h4 id="彭世航"><a href="#彭世航" class="headerlink" title="彭世航"></a>彭世航</h4><p>无</p><h4 id="杨强"><a href="#杨强" class="headerlink" title="杨强"></a>杨强</h4><p>这周感觉做了很多无用功，又累收获还不高，不过好歹算结束了。</p><h4 id="张楠欣"><a href="#张楠欣" class="headerlink" title="张楠欣"></a>张楠欣</h4><p>无</p><h4 id="张师涵"><a href="#张师涵" class="headerlink" title="张师涵"></a>张师涵</h4><p>本周咸鱼，7月就要结束了，然而我的项目进度一言难尽。我果然选择硬件是一个正确的选择，软件太难了。目前在看平时ps2手柄，马上还有蓝牙，陀螺仪，LOD显示屏，当都能用了就要开始弄硬件了，自己设计板子，自己焊接。</p><p>看着大佬的视屏，看着他们的手工“回流焊”还有3D打印机，直流口水，但以我现在的水平。。。告辞告辞。</p><p>学校那些无奈的创业大赛终于告一段落，但愿这些东西以后少一点，我不适合创业，至少目前是，我的目标是社畜，至少是高级的，但如果我现在不努力，我可能连社畜也干不了。。。。。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第六次周小结–咸鱼&quot;&gt;&lt;a href=&quot;#第六次周小结–咸鱼&quot; class=&quot;headerlink&quot; title=&quot;第六次周小结–咸鱼&quot;&gt;&lt;/a&gt;第六次周小结–咸鱼&lt;/h1&gt;&lt;p&gt;本周又将加入一人——杜浪，可喜可贺，可喜可贺！&lt;/p&gt;
+&lt;p&gt;然而日小结也渐渐“平淡
+      
+    
+    </summary>
+    
+    
+      <category term="团队" scheme="https://john1175.cn/categories/%E5%9B%A2%E9%98%9F/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-07-20周小结</title>
+    <link href="https://john1175.cn/2020/07/20/2020-07-20%E5%91%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://john1175.cn/2020/07/20/2020-07-20%E5%91%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-07-20T07:23:00.000Z</published>
+    <updated>2020-07-20T07:34:07.440Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第六次周小结–摸鱼"><a href="#第六次周小结–摸鱼" class="headerlink" title="第六次周小结–摸鱼"></a>第六次周小结–摸鱼</h1><p>在此庆贺张楠欣同志的回归，可喜可贺可喜可贺！</p><p>不幸的是本周彭世航没有交周小结，可能是要进行适应吧。</p><p>不管如何，我的战友们都不再被比赛所限制了，万幸。</p><h4 id="彭世航"><a href="#彭世航" class="headerlink" title="彭世航"></a>彭世航</h4><p>无</p><h4 id="杨强"><a href="#杨强" class="headerlink" title="杨强"></a>杨强</h4><p>这周摸鱼比较多，有点遇到瓶颈的感觉，摸鱼虽然爽，但也只是一时，还是要把目光放长远点，下周加油，奥里给！冲！冲！</p><h4 id="张楠欣"><a href="#张楠欣" class="headerlink" title="张楠欣"></a>张楠欣</h4><p>终于要离职了，很激动。马上可以回去了，脱离蛮久了，这一个月都没怎么冒泡。进度也远远跟不上，回去要好好补，一(da)定(gai)|ω･)و ̑̑༉</p><h4 id="张师涵"><a href="#张师涵" class="headerlink" title="张师涵"></a>张师涵</h4><p>又是一周了</p><p>本周购买了达尔闻和白纪龙老师的运放课程，我的硬件之火未曾扑灭，因模电还未学完到是要冷落一下它们了。</p><p>STM32学习不算太顺利，HAL库是真的有普适性，只要在STM32CubeMX中设置好引脚，直接复制。真的是无比好用。</p><p>本周还难得的小聚一次，赏南京美景，观景，听雨，无比惬意。雨中玄武湖，无法言喻。</p><p>还有幸饮了一瓶精酿，干杯，吾友。</p><p><img src="%E7%B2%BE%E9%85%BF.jpg" alt="精酿"></p><p>﻿</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第六次周小结–摸鱼&quot;&gt;&lt;a href=&quot;#第六次周小结–摸鱼&quot; class=&quot;headerlink&quot; title=&quot;第六次周小结–摸鱼&quot;&gt;&lt;/a&gt;第六次周小结–摸鱼&lt;/h1&gt;&lt;p&gt;在此庆贺张楠欣同志的回归，可喜可贺可喜可贺！&lt;/p&gt;
+&lt;p&gt;不幸的是本周彭世航没有交
+      
+    
+    </summary>
+    
+    
+      <category term="团队" scheme="https://john1175.cn/categories/%E5%9B%A2%E9%98%9F/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-7-13周小结</title>
+    <link href="https://john1175.cn/2020/07/13/2020-7-13%E5%91%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://john1175.cn/2020/07/13/2020-7-13%E5%91%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-07-13T02:43:57.000Z</published>
+    <updated>2020-07-13T02:49:35.179Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第五次周小结–渐渐凋零？"><a href="#第五次周小结–渐渐凋零？" class="headerlink" title="第五次周小结–渐渐凋零？"></a>第五次周小结–渐渐凋零？</h1><p>很不幸张楠欣同志渐渐远离了我们，一周七天的日小结只有一次。。。。</p><p>然而还是有个好消息的彭世航加入了我们，这是一次重大的突破！！！！可喜可贺！！！！终于又来了一个硬件，但是关于硬件还是聊不了太多。硬件之路茫茫。</p><h4 id="杨强"><a href="#杨强" class="headerlink" title="杨强"></a>杨强</h4><p>小灯成长历程</p><p>单纯点亮小灯</p><p>控制小灯流水灯</p><p>用按键控制小灯</p><p>用时钟控制小灯闪烁</p><p>通过串口控制小灯，实现亮什么灯</p><h4 id="张楠欣"><a href="#张楠欣" class="headerlink" title="张楠欣"></a>张楠欣</h4><p>无</p><h4 id="张师涵"><a href="#张师涵" class="headerlink" title="张师涵"></a>张师涵</h4><p>本周生活平淡，下面是本周的成果：</p><p>STM32我从库函数转到的HAL库，同时没有采用正点原子的HAL库基础，而是使用STM32CubeMX来生成最基础的东西，但不得不说正点原子的位代操作实在是没给初学者多少帮助，然而却是一些的基础程序的基础，感觉有些难以接受。</p><p>硬件方面，PCB暂停了要不断来弄我的软件了。驱动盯上了一款集成了一个H桥，4个PMOS的小封装的驱动。很符合我的要求，除了电流最大2A，就无比完美了。但是我的车型是跑不快的，所以这是足够的而且非常便宜。另一方面我看完了TI的电子电路基础，目前在看ADI和西安交大的新概念模拟电路以及麻省理工学院的电路与电子学。特别是麻省理工学院的电路给我感觉是与之前我所学的两种思路，特别有意思。</p><p>﻿</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第五次周小结–渐渐凋零？&quot;&gt;&lt;a href=&quot;#第五次周小结–渐渐凋零？&quot; class=&quot;headerlink&quot; title=&quot;第五次周小结–渐渐凋零？&quot;&gt;&lt;/a&gt;第五次周小结–渐渐凋零？&lt;/h1&gt;&lt;p&gt;很不幸张楠欣同志渐渐远离了我们，一周七天的日小结只有一次。。
+      
+    
+    </summary>
+    
+    
+      <category term="团队" scheme="https://john1175.cn/categories/%E5%9B%A2%E9%98%9F/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RC遥控车调试小计</title>
+    <link href="https://john1175.cn/2020/07/06/RC%E9%81%A5%E6%8E%A7%E8%BD%A6%E8%B0%83%E8%AF%95%E5%B0%8F%E8%AE%A1/"/>
+    <id>https://john1175.cn/2020/07/06/RC%E9%81%A5%E6%8E%A7%E8%BD%A6%E8%B0%83%E8%AF%95%E5%B0%8F%E8%AE%A1/</id>
+    <published>2020-07-06T08:52:21.000Z</published>
+    <updated>2020-08-24T09:36:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>自制智能车的环节已经完成了第一步</p><p>我购买了顽皮龙RC遥控车作为基底，选择了KIT版本，是一辆RC遥控车去除了电调与电池，需要自己组装的版本。</p><p>这是目前的结果,我完全放弃了车模的外壳与涂装，以方便自己的改装。</p><p><img src="%E8%BD%A6%E8%BE%86%E6%A1%86%E6%9E%B6.jpg" alt="车辆框架"></p><h1 id="车架"><a href="#车架" class="headerlink" title="车架"></a>车架</h1><p>车架有两条钢梁作为主要框架，后在此基础上装上塑料配件。整体来说还是足够安全的。加上他的细节不错，四个独立弹簧作为减震。有些美中不足的是它的轮胎 ，显得有些不足，但是可以在后期添加填充物来修改。</p><p><img src="%E8%BD%A6%E8%BD%AE%E9%85%8D%E4%BB%B6.jpg" alt="车轮配件"></p><p><img src="%E8%BD%A6%E8%BD%AE.jpg" alt="车轮"></p><p>车架总体不错，也对得起它的价格。当然这个价格不高，加上是越野车车模与自己组装其车辆的精度不高，这需要我后期在控制方法上进行补偿。比如使用陀螺仪，从而得知车辆的目标偏移，控制舵机进行补偿。</p><h1 id="电池"><a href="#电池" class="headerlink" title="电池"></a>电池</h1><p>电池我配了一个聚合物电池，可适配7.4V~8V电池。采用8.4V的充电器。</p><p><img src="%E7%94%B5%E6%B1%A0.jpg" alt="电池"></p><p>在进行测试时电池电压显示为7.8V。</p><p><img src="%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8B.jpg" alt="电池电压"></p><h1 id="电机"><a href="#电机" class="headerlink" title="电机"></a>电机</h1><p>这个车模自带了一个180波箱电机。但是180指的只是规格，而具体参数商家没有说，也没有在网上查到。仅可以确定是有刷直流电机，可以使用电池直接供电。</p><p><img src="180%E6%B3%A2%E7%AE%B1%E9%A9%AC%E8%BE%BE.jpg" alt="180波箱马达"></p><p>后来，我经过了解，发现其黄色的部分是一个变速箱，虽然直接了当的限制了车速但也将电机堵转的可能性降到了最低。</p><h1 id="舵机"><a href="#舵机" class="headerlink" title="舵机"></a>舵机</h1><p>舵机使用的是车模自带的17克舵机，和电机一样没有具体参数。而通过客服得知可以在电池直接供电下工作，与我之前所知的舵机不同，电池直接供电可能会使得舵机无法工作在最佳状态下。</p><p><img src="17%E5%85%8B%E8%88%B5%E6%9C%BA.jpg" alt="17克舵机"></p><p>舵机的排线与一般的排线不同。舵机的排线为3根，分别为橙色信号线、红色正极线、棕褐色负极线。</p><p>据网上资料可知舵机一般工作电压为4.8V或6V。控制信号一般为50Hz的PWM波，其占空比一般在5%到10%之间。</p><h3 id="接下来就是实际测试了"><a href="#接下来就是实际测试了" class="headerlink" title="接下来就是实际测试了"></a>接下来就是实际测试了</h3><p>我一开始使用STM32开发板输出PWM波，然而不论如何都无法控制舵机。因为在家手头没有测试期间，所以得知出现问题的是PWM波还是舵机。</p><p>因为开始做项目，我下单了ADI的ADALM2000高级主动学习模块，也就是M2K口袋实验室。我的家中实验室开始了。</p><p><img src="M2K%E4%BB%AA%E5%99%A8.jpg" alt="M2K仪器"></p><p>M2K十分适合我这种因为疫情困在家的人。要么搞软件，提升基础，要么就自己搭建一个环境。M2K有多种功能，虽然说有着精度不高等问题，但是目前也足够了。</p><table><thead><tr><th>M2K功能</th></tr></thead><tbody><tr><td>双通道USB数字示波器</td></tr><tr><td>双通道任意函数发生器</td></tr><tr><td>16通道数字逻辑分析仪（兼容3.3V CMOS和1.8V或5V，100MS/s）</td></tr><tr><td>16通道模式发生器（3.3V CMOS，100MS/s）</td></tr><tr><td>16通道虚拟数字I/O</td></tr><tr><td>用于链接多个仪器的两个输入/输出数字触发信号(3.3V CMOS)</td></tr><tr><td>单通道电压表（AC、DC、±20V）</td></tr><tr><td>网络分析仪 – 电路波特、奈奎斯特、尼克尔斯传输图。范围：1Hz至10MHz</td></tr><tr><td>频谱分析仪 – 功率频谱和频谱测量（噪底、SFDR、SNR、THD等）</td></tr><tr><td>数字总线分析仪（SPI、I²C、UART、并行）</td></tr><tr><td>两个可编程电源（0…+5V、0…-5V）</td></tr></tbody></table><p>M2K由Scopy作为上位机软件控制其功能。</p><p><img src="Scopy.jpg" alt="Scopy"></p><p>使用M2K测试STM32的PWM波，没有问题。有可能是舵机出了问题。</p><p>后来干脆使用M2K来输出PWM波不断测试，当我将PWM的峰值输送到5V时成功的控制了舵机，终于成功了。以后要更多的注意数字1的电压了</p><p><img src="Scopy-%E4%BB%BB%E6%84%8F%E5%87%BD%E6%95%B0%E5%8F%91%E7%94%9F%E5%99%A8-%E6%96%B9%E6%B3%A2.jpg" alt="Scopy-任意函数发生器-方波"></p><p>接下来是正常的舵机调试：</p><p>7.5%占空比</p><p><img src="%E5%8D%A0%E7%A9%BA%E6%AF%947.5.jpg" alt="占空比7.5"></p><p>5%占空比</p><p><img src="%E5%8D%A0%E7%A9%BA%E6%AF%945.jpg" alt="占空比5"></p><p>10%占空比</p><p><img src="%E5%8D%A0%E7%A9%BA%E6%AF%9410.jpg" alt="占空比10"></p><p>有一次测试，发现无法控制舵机，经检查M2K未与电池共地，这一点要注意。</p><p>要将M2K的地与电源的电相连接。</p><p><img src="%E5%85%B1%E5%9C%B0.jpg" alt="共地"></p><h3 id="接下来是舵机的上个车测试"><a href="#接下来是舵机的上个车测试" class="headerlink" title="接下来是舵机的上个车测试"></a>接下来是舵机的上个车测试</h3><p><img src="%E8%88%B5%E6%9C%BA%E8%BF%9E%E6%8E%A51.jpg" alt="舵机连接1"></p><p><img src="%E8%88%B5%E6%9C%BA%E8%BF%9E%E6%8E%A52.jpg" alt="舵机连接2"></p><p>然而上了车模其舵机受到了限制。</p><p>我在这里依旧使用7.5%占空比为中间值。</p><p><img src="%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%947.5.jpg" alt="测试-占空比7.5"></p><p>10%占空比也测试成功。</p><p><img src="%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%9410.jpg" alt="测试-占空比10"></p><p>然而在5%占空比测试的时候失败了，受到了模型的控制，舵机卡死。然后6%占空比测试成功。</p><p><img src="%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%946.jpg" alt="测试-占空比6"></p><p>接着我又测试了11%的占空比。</p><p><img src="%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%9411.jpg" alt="测试-占空比11"></p><p>因此，经过测试，舵机的PWM波控制范围在6%~11%之间。</p><h1 id="遗憾"><a href="#遗憾" class="headerlink" title="遗憾"></a>遗憾</h1><p>这辆车在选择中有一点是颇为遗憾的，就是没有编码器，然而其车体又不适合进行编码器的安装，看来我将难以进行车速的控制。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;自制智能车的环节已经完成了第一步&lt;/p&gt;
+&lt;p&gt;我购买了顽皮龙RC遥控车作为基底，选择了KIT版本，是一辆RC遥控车去除了电调与电池，需要自己组装的版本。&lt;/p&gt;
+&lt;p&gt;这是目前的结果,我完全放弃了车模的外壳与涂装，以方便自己的改装。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;%E
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+      <category term="智能车" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
+    
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-7-6周小结</title>
+    <link href="https://john1175.cn/2020/07/06/2020-7-6%E5%91%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://john1175.cn/2020/07/06/2020-7-6%E5%91%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-07-06T08:24:07.000Z</published>
+    <updated>2020-07-06T08:25:50.203Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第四次周小结–我的独自前行"><a href="#第四次周小结–我的独自前行" class="headerlink" title="第四次周小结–我的独自前行"></a>第四次周小结–我的独自前行</h1><h4 id="杨强"><a href="#杨强" class="headerlink" title="杨强"></a>杨强</h4><p>这周stm32基本没有怎么看，好在英语还是持续不断的努力，AB杯也在奋进中，下周开始看能不能挤一点时间继续看stm32，毕这个才是我的重点呀，暑假一定要把stm32的4篇全部看完，任重而道远，为以后逃出囚笼而努力，加油，靓仔！</p><h4 id="张楠欣"><a href="#张楠欣" class="headerlink" title="张楠欣"></a>张楠欣</h4><p>上班….上班….上班…..摸鱼…..嘤嘤嘤嘤嘤😭</p><h4 id="张师涵"><a href="#张师涵" class="headerlink" title="张师涵"></a>张师涵</h4><p>本周开展了两个项目，也学了一些。</p><p>小车：我以顽皮龙的RC遥控车为框架搭建自己的车子。目前车子的框架已安装并调试完毕。以后要注意关于数字控制里头1的电压。我STM32输出的PWM无法控制舵机，后来使用M2K作为函数发生器测试，3.3.V的方波失败，后来不断提高到5V才成功控制，至于电池电压能否直接控制，因为M2K输出的最高值为5V所以未能测试。</p><p>器件的选型可以更多的利用大厂的系统，要多注意其推荐时附赠的参考资料。如TI在我进行驱动选择的时候自动推荐了相关资料使我受益良多。</p><p>使用光耦隔离时注意速度，常用光耦在高速下会失真。所10K~20KHz的控制PWM波的隔离时要注意使用高速光耦。</p><p>虽然在学习Cadence，但是不得不说这还是太偏向于高速了，界面不如AD友好，库还没找到合适的。且其全是英文对于初学者太不友好。另尝试了KiCad，光是其开源的性质与各种各样的官方库就值得一试了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第四次周小结–我的独自前行&quot;&gt;&lt;a href=&quot;#第四次周小结–我的独自前行&quot; class=&quot;headerlink&quot; title=&quot;第四次周小结–我的独自前行&quot;&gt;&lt;/a&gt;第四次周小结–我的独自前行&lt;/h1&gt;&lt;h4 id=&quot;杨强&quot;&gt;&lt;a href=&quot;#杨强&quot; cla
+      
+    
+    </summary>
+    
+    
+      <category term="团队" scheme="https://john1175.cn/categories/%E5%9B%A2%E9%98%9F/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字典dict-Python</title>
+    <link href="https://john1175.cn/2020/06/29/%E5%AD%97%E5%85%B8dict-Python/"/>
+    <id>https://john1175.cn/2020/06/29/%E5%AD%97%E5%85%B8dict-Python/</id>
+    <published>2020-06-29T08:26:35.000Z</published>
+    <updated>2020-06-29T08:29:03.977Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h1><p>映射是一种键(索引)和值(数据)的对应</p><p>由用户确定，非默认</p><p>字典类型是“映射”的体现</p><p>键值对：键是数据索引的扩展</p><p>字典是键值对的集合，键值对之间无序</p><p>采用大括号{}和dict()创建，键值对用冒号: 表示</p><p>空字典 {}</p><p>查找时字典效率高</p><p>dict</p><p>使用dict从映射或键-值对创建字典</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>items = [(<span class="string">'name'</span>, <span class="string">'Gumby'</span>), (<span class="string">'age'</span>, <span class="number">42</span>)]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = dict(items)</span><br><span class="line">&gt;&gt;&gt;d</span><br><span class="line">&#123;<span class="string">'age'</span>:<span class="number">42</span>, <span class="string">'name'</span>:<span class="string">'Gumby'</span>&#125;</span><br><span class="line"> &gt;&gt;&gt; d = dict(name = <span class="string">'Gumby'</span>, age = <span class="number">42</span>))</span><br><span class="line"> &gt;&gt;&gt; d</span><br><span class="line"> &#123;<span class="string">'age'</span>:<span class="number">42</span>, <span class="string">'name'</span>:<span class="string">'Gumby'</span>&#125;</span><br></pre></td></tr></table></figure><table><thead><tr><th>函数或方法</th><th>描述</th></tr></thead><tbody><tr><td>del d[k]</td><td>删除字典d中键k对应的数据值</td></tr><tr><td>len(d)</td><td>返回字典d中元素的个数</td></tr><tr><td>d[k]</td><td>返回k所对应的值</td></tr><tr><td>d[k] =  v</td><td>将值v关联到k</td></tr><tr><td>k in d</td><td>判断键k是否在字典d中，如果在返回True，否则False</td></tr><tr><td>d.keys()</td><td>返回字典d中所有的键信息</td></tr><tr><td>d.values()</td><td>返回字典d中所有的值信息</td></tr><tr><td>d.items()</td><td>返回字典d中所有的键-值对信息</td></tr><tr><td>d.update(c)</td><td>将c字典的键-值对添加到d中，若相同键有不同值，就用c的替换d的</td></tr><tr><td>d.get(k,  <default>)</td><td>键k存在，则返回相应值，不在则返回<default>值，默认是None</td></tr><tr><td>d.setdefault(k,  <default>)</td><td>键k存在，则返回相应值，不在则在d中加入此键-值对</td></tr><tr><td>d.pop(k,  <default>)</td><td>键k存在，则取出相应值，并将该键-值对删除，不在则返回<default>值</td></tr><tr><td>d.popitem()</td><td>随机从字典d中取出一个键值对，以元组形式返回，并将该键-值对删除</td></tr><tr><td>d.clear()</td><td>删除所有的键值对</td></tr><tr><td>d.copy</td><td>返回一个新的字典，浅复制，副本与原件的值的指向相同。当替换副本中的值，正常。当修改副本中的值原件中的值也会改变。</td></tr><tr><td>d.fromkeys([],  None)</td><td>创建字典，包含指定的键。值默认是None，也可以是特定的。</td></tr></tbody></table><p>字典快速使用，通过format_map来快速的映射</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"abab is &#123;C&#125;"</span>.format_map(dict)</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;映射&quot;&gt;&lt;a href=&quot;#映射&quot; class=&quot;headerlink&quot; title=&quot;映射&quot;&gt;&lt;/a&gt;映射&lt;/h1&gt;&lt;p&gt;映射是一种键(索引)和值(数据)的对应&lt;/p&gt;
+&lt;p&gt;由用户确定，非默认&lt;/p&gt;
+&lt;p&gt;字典类型是“映射”的体现&lt;/p&gt;
+&lt;p&gt;键值对：键是
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="https://john1175.cn/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Python" scheme="https://john1175.cn/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-6-29周小结</title>
+    <link href="https://john1175.cn/2020/06/29/2020-6-29%E5%91%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://john1175.cn/2020/06/29/2020-6-29%E5%91%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-06-29T06:28:00.000Z</published>
+    <updated>2020-06-29T06:30:11.117Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="第三次周小结–平淡与无奈"><a href="#第三次周小结–平淡与无奈" class="headerlink" title="第三次周小结–平淡与无奈"></a>第三次周小结–平淡与无奈</h1><h4 id="杨强"><a href="#杨强" class="headerlink" title="杨强"></a>杨强</h4><p>这周让我深刻理解英语的重要性，以后还要加强英语的学习。现在随着慢慢深入，发现目前只能通过注释来了解函数的作用并调用，还无法做到完全看懂底层函数，现阶段是了解更多的函数，到后期在啃底层函数。</p><h4 id="张楠欣"><a href="#张楠欣" class="headerlink" title="张楠欣"></a>张楠欣</h4><p>一心二用还是不行的，时间就那么多，要上班要休息要学习，基本上都搁置了，所以还是决定赚一点就不干了。</p><p>开始期待结束兼职认真学习😂</p><p>钱虽好，不如学习快乐😂</p><h4 id="张师涵"><a href="#张师涵" class="headerlink" title="张师涵"></a>张师涵</h4><p>这一周哭笑不得。</p><p>智能车完了，愿意现在赶回武汉的本小组只有我一个硬件愿意去，又能如何？无奈，一年的准备就这样了。</p><p>下面就是这个暑假的事了，目标不少，但是这个暑假我一定要弄出我的项目，不只是学，还要练。下一周我要确定下要弄的项目，以及学习目标。玩一玩吧，张师涵。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;第三次周小结–平淡与无奈&quot;&gt;&lt;a href=&quot;#第三次周小结–平淡与无奈&quot; class=&quot;headerlink&quot; title=&quot;第三次周小结–平淡与无奈&quot;&gt;&lt;/a&gt;第三次周小结–平淡与无奈&lt;/h1&gt;&lt;h4 id=&quot;杨强&quot;&gt;&lt;a href=&quot;#杨强&quot; class=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="团队" scheme="https://john1175.cn/categories/%E5%9B%A2%E9%98%9F/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自制K60主控板--一次吃亏的记录</title>
+    <link href="https://john1175.cn/2020/06/27/%E8%87%AA%E5%88%B6K60%E4%B8%BB%E6%8E%A7%E6%9D%BF--%E4%B8%80%E6%AC%A1%E5%90%83%E4%BA%8F%E7%9A%84%E8%AE%B0%E5%BD%95/"/>
+    <id>https://john1175.cn/2020/06/27/%E8%87%AA%E5%88%B6K60%E4%B8%BB%E6%8E%A7%E6%9D%BF--%E4%B8%80%E6%AC%A1%E5%90%83%E4%BA%8F%E7%9A%84%E8%AE%B0%E5%BD%95/</id>
+    <published>2020-06-27T09:19:22.000Z</published>
+    <updated>2020-06-27T12:27:28.172Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>为锻炼个人技术，我自费准备了K60的板子，打算作为小组的替换用品。</p><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>我画并制作了MK60直接焊接在PCB板上的智能车主控板。并准备了3份物料。</p><h3 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h3><p>本次特意加强了芯片的散热，在芯片下使用散热铜皮并增加散热孔。</p><p>本次使用了新的6V电源模块，利用SPX29302直接输出6V电压，而不是像以往使用LM2941S，利用电位器调节出6V电压。</p><p>本次参考逐飞的K60核心板，并较之前增加更多的保险措施。如K60及其外围基本电路的单独供电与单独地，以及在专供芯片的3.3V电源模块后还使用了新的防反接/限流电路。保险丝确保电流不会过大，而肖特二极管也确保了电压不会超过芯片的上限。</p><p><img src="%E9%98%B2%E5%8F%8D%E6%8E%A5-%E9%99%90%E6%B5%81%E7%94%B5%E8%B7%AF.png" alt="防反接/限流电路"></p><p>这次为了防止舵机的卡死导致电流过大也在舵机的接口处设计了一个保险丝。</p><h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3><p>本次使用了逐飞的JTAG接口，出现了设计失误，未能看明白逐飞原理图，将接口设计成了反向。</p><p>本次没有考虑到手工焊接，未标明阻值、容值，另，元件过密难以焊接。</p><p>第一次焊接贴片晶振，所选焊盘相较手焊的较小。</p><h1 id="失败"><a href="#失败" class="headerlink" title="失败"></a>失败</h1><p>4月第一块直接焊接，电源没有问题，当第一次LQFQ144脚一次成功，接电测试，成功。因为手头没有下载器直接寄给了我的组员，经过组员测试，JTAG连接失败。</p><p>在期末之前我开始了第二块，只搭建了芯片的基础外围，电源测试成功，芯片焊接成功，测试，短路，芯片内部短路，测试电流1A，当短接保险丝时电流甚至高达2A。</p><p>昨日，我焊接了最后一片，一样是最基础的外围，电源测试成功，芯片焊接成功，上电。电流完成了以此跳跃，芯片电源一闪而灭，电流在开启后跳到1A，然后很快降到0.1A并维持了下来。</p><p>3片K60，至少有两片在焊接前就坏了，亏死。焊接时我是在标准的焊接台上，防静电措施完整，且湿度皆高于40%，加上K60本身就是汽车电子的芯片，本身就加强了防静电能力，所以芯片因为静电损坏的可能性较小。</p><p>想一下，我拿到的芯片放在塑料盒子中，虽然垫有防静电的泡沫，但是不是在编带中。我怀疑我买了假货。</p><p><img src="%E5%A1%91%E6%96%99%E7%9B%92.jpg" alt="塑料盒"></p><p><img src="%E5%A1%91%E6%96%99%E7%9B%92-%E5%86%85%E9%83%A8.jpg" alt="塑料盒-内部"></p><p>但是，天猫，正品…….</p><p><img src="%E4%BA%A4%E6%98%93%E6%88%AA%E5%9B%BE.png" alt="交易截图"></p><p>我以后不会在淘宝买MCU了。我吃的堑还是太少了。</p><h1 id="成品图"><a href="#成品图" class="headerlink" title="成品图"></a>成品图</h1><p>下面是成品图–MCU坏的那种</p><p><img src="%E4%B8%BB%E6%8E%A7%E6%9D%BF-%E6%AD%A3%E9%9D%A2.jpg" alt="主控板-正面"></p><p><img src="%E4%B8%BB%E6%8E%A7%E6%9D%BF-%E8%83%8C%E9%9D%A2.jpg" alt="主控板-背面"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot; title=&quot;起因&quot;&gt;&lt;/a&gt;起因&lt;/h1&gt;&lt;p&gt;为锻炼个人技术，我自费准备了K60的板子，打算作为小组的替换用品。&lt;/p&gt;
+&lt;h1 id=&quot;准备&quot;&gt;&lt;a href=&quot;#准备&quot; class=
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+      <category term="智能车" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
+    
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>元祖tuple</title>
+    <link href="https://john1175.cn/2020/06/27/%E5%85%83%E7%A5%96tuple-Python/"/>
+    <id>https://john1175.cn/2020/06/27/%E5%85%83%E7%A5%96tuple-Python/</id>
+    <published>2020-06-27T08:52:38.000Z</published>
+    <updated>2020-06-27T09:12:54.490Z</updated>
+    
+    <content type="html"><![CDATA[<p>与列表相同，元祖也是序列，但不可修改</p><p>只要将一些值用逗号分隔，可以加括号</p><p>使用小括号() 或tuple() 创建，元素间用逗号, 分隔</p><p>可以使用或不使用小括号</p><p>元组继承了序列类型的全部通用操作</p><p>元组因为创建后不能修改，因此没有特殊操作</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;与列表相同，元祖也是序列，但不可修改&lt;/p&gt;
+&lt;p&gt;只要将一些值用逗号分隔，可以加括号&lt;/p&gt;
+&lt;p&gt;使用小括号() 或tuple() 创建，元素间用逗号, 分隔&lt;/p&gt;
+&lt;p&gt;可以使用或不使用小括号&lt;/p&gt;
+&lt;p&gt;元组继承了序列类型的全部通用操作&lt;/p&gt;
+&lt;p&gt;元组因为创
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="https://john1175.cn/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Python" scheme="https://john1175.cn/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>列表list-Python</title>
+    <link href="https://john1175.cn/2020/06/27/%E5%88%97%E8%A1%A8list-Python/"/>
+    <id>https://john1175.cn/2020/06/27/%E5%88%97%E8%A1%A8list-Python/</id>
+    <published>2020-06-27T08:52:01.000Z</published>
+    <updated>2020-06-27T09:13:20.944Z</updated>
+    
+    <content type="html"><![CDATA[<p>列表是一种序列类型，创建后可以随意被修改</p><p>使用方括号[] 或list() 创建，元素间用逗号, 分隔</p><p>列表中各元素类型可以不同，无长度限制</p><p>将列表使用赋值，未创建列表，仅仅给列表一个新名称</p><table><thead><tr><th>函数或方法</th><th>描述</th></tr></thead><tbody><tr><td><code>ls[i]  = x</code></td><td>替换列表ls第i元素为x</td></tr><tr><td><code>ls[i:  j: k]= lt</code></td><td>用列表lt替换ls切片后所对应元素子列表</td></tr><tr><td><code>ls[i:  i]= lt</code></td><td>在ls内插入lt</td></tr><tr><td><code>del  ls[i]</code></td><td>删除列表ls中第i元素</td></tr><tr><td><code>del  ls[i: j: k]</code></td><td>删除列表ls中第i到第j以k为步长的元素</td></tr><tr><td><code>ls  += lt</code></td><td>更新列表ls，将列表lt元素增加到列表ls中</td></tr><tr><td><code>ls  *= n</code></td><td>更新列表ls，其元素重复n次</td></tr><tr><td><code>ls.append(x)</code></td><td>在列表ls最后增加一个元素x</td></tr><tr><td><code>ls.clear()=ls[:]=[]</code></td><td>删除列表ls中所有元素</td></tr><tr><td><code>ls.copy()=a[:]=list(a)</code></td><td>生成一个新列表，赋值ls中所有元素  （<em>注意：**b = a</em>  <em>只是将*</em>b<strong>关联到</strong>a*<em>，并不是独立的</em>）</td></tr><tr><td><code>ls.pop(i=None)</code></td><td>将列表ls中第i位置元素取出并删除该元素（默认是最后一个）</td></tr><tr><td><code>ls.remove(x)</code></td><td>将列表ls中出现的第一个元素x删除</td></tr><tr><td><code>ls.reverse()</code></td><td>将列表ls中的元素反转</td></tr><tr><td><code>ls.count(sub)</code></td><td>返回子串sub在列表ls中出现的次数</td></tr><tr><td><code>ls.index(a)</code></td><td>返回子串a在列表ls中第一次出现的索引</td></tr><tr><td><code>ls.insert(x,&#39;y&#39;)</code></td><td>更新列表ls，将列表y元素增加到列表x中</td></tr><tr><td><code>ls.extend(lt)</code></td><td>更新列表ls，将列表lt元素增加到列表ls末尾，返回的是新序列，ls与lt未改变</td></tr><tr><td><code>ls.sort()</code></td><td>更新列表ls，将列表ls元素排序。注意：sort不返回值，它改变ls</td></tr><tr><td><code>ls.sort(key  = x)</code></td><td>更新列表ls，将列表的x参数进行排序（如lrn）</td></tr><tr><td><code>ls.sort(reverse  = True/False)</code></td><td>更新列表ls，将列表ls进行正/反排序</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;列表是一种序列类型，创建后可以随意被修改&lt;/p&gt;
+&lt;p&gt;使用方括号[] 或list() 创建，元素间用逗号, 分隔&lt;/p&gt;
+&lt;p&gt;列表中各元素类型可以不同，无长度限制&lt;/p&gt;
+&lt;p&gt;将列表使用赋值，未创建列表，仅仅给列表一个新名称&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="笔记" scheme="https://john1175.cn/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Python" scheme="https://john1175.cn/tags/Python/"/>
+    
+  </entry>
+  
+</feed>

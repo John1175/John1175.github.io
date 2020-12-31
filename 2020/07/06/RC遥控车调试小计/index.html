@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!--Description-->
+
+    
+
+    
+        <meta name="description" content="life，学习，硬件，大学，孤独前行"/>
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John1175"/>
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="RC遥控车调试小计"/>
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="life，学习，硬件，大学，孤独前行"/>
+    
+
+    <!--Open Graph Site Name-->
+        <meta property="og:site_name" content="涵尘"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article"/>
+    
+
+    <!--Page Cover-->
+    
+    
+        <meta property="og:image" content="https://john1175.cnhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg"/>
+    
+
+        <meta name="twitter:card" content="summary_large_image"/>
+
+    
+
+    
+        <meta name="twitter:image" content="https://john1175.cnhttp://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg"/>
+    
+
+    <!-- Title -->
+    
+    <title>RC遥控车调试小计 - 涵尘</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet"/>
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="涵尘" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Configurable Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/tags">
+                            
+                                Tags
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories">
+                            
+                                Categories
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about">
+                            
+                                about
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank" rel="noopener">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('http://www.codeblocq.com/assets/projects/hexo-theme-clean-blog/img/home-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>RC遥控车调试小计</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                        
+                            2020-07-06
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
+                    
+                        
+
+
+<a href="/tags/硬件/">#硬件</a>
+
+
+                    
+                </div>
+                <div class="col-lg-4 col-md-5 post-categories">
+                    
+                        
+
+<a href="/categories/制作/">制作</a>/ <a href="/categories/制作/智能车/">智能车</a>
+
+                    
+                </div>
+            
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p>自制智能车的环节已经完成了第一步</p>
+<p>我购买了顽皮龙RC遥控车作为基底，选择了KIT版本，是一辆RC遥控车去除了电调与电池，需要自己组装的版本。</p>
+<p>这是目前的结果,我完全放弃了车模的外壳与涂装，以方便自己的改装。</p>
+<p><img src="%E8%BD%A6%E8%BE%86%E6%A1%86%E6%9E%B6.jpg" alt="车辆框架"></p>
+<h1 id="车架"><a href="#车架" class="headerlink" title="车架"></a>车架</h1><p>车架有两条钢梁作为主要框架，后在此基础上装上塑料配件。整体来说还是足够安全的。加上他的细节不错，四个独立弹簧作为减震。有些美中不足的是它的轮胎 ，显得有些不足，但是可以在后期添加填充物来修改。</p>
+<p><img src="%E8%BD%A6%E8%BD%AE%E9%85%8D%E4%BB%B6.jpg" alt="车轮配件"></p>
+<p><img src="%E8%BD%A6%E8%BD%AE.jpg" alt="车轮"></p>
+<p>车架总体不错，也对得起它的价格。当然这个价格不高，加上是越野车车模与自己组装其车辆的精度不高，这需要我后期在控制方法上进行补偿。比如使用陀螺仪，从而得知车辆的目标偏移，控制舵机进行补偿。</p>
+<h1 id="电池"><a href="#电池" class="headerlink" title="电池"></a>电池</h1><p>电池我配了一个聚合物电池，可适配7.4V~8V电池。采用8.4V的充电器。</p>
+<p><img src="%E7%94%B5%E6%B1%A0.jpg" alt="电池"></p>
+<p>在进行测试时电池电压显示为7.8V。</p>
+<p><img src="%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8B.jpg" alt="电池电压"></p>
+<h1 id="电机"><a href="#电机" class="headerlink" title="电机"></a>电机</h1><p>这个车模自带了一个180波箱电机。但是180指的只是规格，而具体参数商家没有说，也没有在网上查到。仅可以确定是有刷直流电机，可以使用电池直接供电。</p>
+<p><img src="180%E6%B3%A2%E7%AE%B1%E9%A9%AC%E8%BE%BE.jpg" alt="180波箱马达"></p>
+<p>后来，我经过了解，发现其黄色的部分是一个变速箱，虽然直接了当的限制了车速但也将电机堵转的可能性降到了最低。</p>
+<h1 id="舵机"><a href="#舵机" class="headerlink" title="舵机"></a>舵机</h1><p>舵机使用的是车模自带的17克舵机，和电机一样没有具体参数。而通过客服得知可以在电池直接供电下工作，与我之前所知的舵机不同，电池直接供电可能会使得舵机无法工作在最佳状态下。</p>
+<p><img src="17%E5%85%8B%E8%88%B5%E6%9C%BA.jpg" alt="17克舵机"></p>
+<p>舵机的排线与一般的排线不同。舵机的排线为3根，分别为橙色信号线、红色正极线、棕褐色负极线。</p>
+<p>据网上资料可知舵机一般工作电压为4.8V或6V。控制信号一般为50Hz的PWM波，其占空比一般在5%到10%之间。</p>
+<h3 id="接下来就是实际测试了"><a href="#接下来就是实际测试了" class="headerlink" title="接下来就是实际测试了"></a>接下来就是实际测试了</h3><p>我一开始使用STM32开发板输出PWM波，然而不论如何都无法控制舵机。因为在家手头没有测试期间，所以得知出现问题的是PWM波还是舵机。</p>
+<p>因为开始做项目，我下单了ADI的ADALM2000高级主动学习模块，也就是M2K口袋实验室。我的家中实验室开始了。</p>
+<p><img src="M2K%E4%BB%AA%E5%99%A8.jpg" alt="M2K仪器"></p>
+<p>M2K十分适合我这种因为疫情困在家的人。要么搞软件，提升基础，要么就自己搭建一个环境。M2K有多种功能，虽然说有着精度不高等问题，但是目前也足够了。</p>
+<table>
+<thead>
+<tr>
+<th>M2K功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>双通道USB数字示波器</td>
+</tr>
+<tr>
+<td>双通道任意函数发生器</td>
+</tr>
+<tr>
+<td>16通道数字逻辑分析仪（兼容3.3V CMOS和1.8V或5V，100MS/s）</td>
+</tr>
+<tr>
+<td>16通道模式发生器（3.3V CMOS，100MS/s）</td>
+</tr>
+<tr>
+<td>16通道虚拟数字I/O</td>
+</tr>
+<tr>
+<td>用于链接多个仪器的两个输入/输出数字触发信号(3.3V CMOS)</td>
+</tr>
+<tr>
+<td>单通道电压表（AC、DC、±20V）</td>
+</tr>
+<tr>
+<td>网络分析仪 – 电路波特、奈奎斯特、尼克尔斯传输图。范围：1Hz至10MHz</td>
+</tr>
+<tr>
+<td>频谱分析仪 – 功率频谱和频谱测量（噪底、SFDR、SNR、THD等）</td>
+</tr>
+<tr>
+<td>数字总线分析仪（SPI、I²C、UART、并行）</td>
+</tr>
+<tr>
+<td>两个可编程电源（0…+5V、0…-5V）</td>
+</tr>
+</tbody></table>
+<p>M2K由Scopy作为上位机软件控制其功能。</p>
+<p><img src="Scopy.jpg" alt="Scopy"></p>
+<p>使用M2K测试STM32的PWM波，没有问题。有可能是舵机出了问题。</p>
+<p>后来干脆使用M2K来输出PWM波不断测试，当我将PWM的峰值输送到5V时成功的控制了舵机，终于成功了。以后要更多的注意数字1的电压了</p>
+<p><img src="Scopy-%E4%BB%BB%E6%84%8F%E5%87%BD%E6%95%B0%E5%8F%91%E7%94%9F%E5%99%A8-%E6%96%B9%E6%B3%A2.jpg" alt="Scopy-任意函数发生器-方波"></p>
+<p>接下来是正常的舵机调试：</p>
+<p>7.5%占空比</p>
+<p><img src="%E5%8D%A0%E7%A9%BA%E6%AF%947.5.jpg" alt="占空比7.5"></p>
+<p>5%占空比</p>
+<p><img src="%E5%8D%A0%E7%A9%BA%E6%AF%945.jpg" alt="占空比5"></p>
+<p>10%占空比</p>
+<p><img src="%E5%8D%A0%E7%A9%BA%E6%AF%9410.jpg" alt="占空比10"></p>
+<p>有一次测试，发现无法控制舵机，经检查M2K未与电池共地，这一点要注意。</p>
+<p>要将M2K的地与电源的电相连接。</p>
+<p><img src="%E5%85%B1%E5%9C%B0.jpg" alt="共地"></p>
+<h3 id="接下来是舵机的上个车测试"><a href="#接下来是舵机的上个车测试" class="headerlink" title="接下来是舵机的上个车测试"></a>接下来是舵机的上个车测试</h3><p><img src="%E8%88%B5%E6%9C%BA%E8%BF%9E%E6%8E%A51.jpg" alt="舵机连接1"></p>
+<p><img src="%E8%88%B5%E6%9C%BA%E8%BF%9E%E6%8E%A52.jpg" alt="舵机连接2"></p>
+<p>然而上了车模其舵机受到了限制。</p>
+<p>我在这里依旧使用7.5%占空比为中间值。</p>
+<p><img src="%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%947.5.jpg" alt="测试-占空比7.5"></p>
+<p>10%占空比也测试成功。</p>
+<p><img src="%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%9410.jpg" alt="测试-占空比10"></p>
+<p>然而在5%占空比测试的时候失败了，受到了模型的控制，舵机卡死。然后6%占空比测试成功。</p>
+<p><img src="%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%946.jpg" alt="测试-占空比6"></p>
+<p>接着我又测试了11%的占空比。</p>
+<p><img src="%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%9411.jpg" alt="测试-占空比11"></p>
+<p>因此，经过测试，舵机的PWM波控制范围在6%~11%之间。</p>
+<h1 id="遗憾"><a href="#遗憾" class="headerlink" title="遗憾"></a>遗憾</h1><p>这辆车在选择中有一点是颇为遗憾的，就是没有编码器，然而其车体又不适合进行编码器的安装，看来我将难以进行车速的控制。</p>
+
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/klugjo/hexo-theme-clean-blog" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2020 John1175<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
