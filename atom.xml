@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://john1175.cn/"/>
-  <updated>2020-12-31T15:21:38.617Z</updated>
+  <updated>2021-01-05T15:20:03.878Z</updated>
   <id>https://john1175.cn/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>21.1.5小计</title>
+    <link href="https://john1175.cn/2021/01/05/21-1-5%E5%B0%8F%E8%AE%A1/"/>
+    <id>https://john1175.cn/2021/01/05/21-1-5%E5%B0%8F%E8%AE%A1/</id>
+    <published>2021-01-05T14:57:11.000Z</published>
+    <updated>2021-01-05T15:20:03.878Z</updated>
+    
+    <content type="html"><![CDATA[<p>终于把雪花板的板子打了，37个LED灯珠实在是太难排版了，另在短时间内会放弃Cadance了。</p><p>另外是Funpack5出来了，看看价格，告辞告辞，对学生党太过于不友好，加上这个方向不打算涉猎，无线电，我那成本远低于10元的分立器件收不了台的收音机算不？另留板子才补贴200，不值。</p><p>目前两目标，驾照科目二，Funpack4，焊板子。。。。。</p><p>太累了，游戏都没时间玩了。</p><p>絮絮念念，就到这里吧。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;终于把雪花板的板子打了，37个LED灯珠实在是太难排版了，另在短时间内会放弃Cadance了。&lt;/p&gt;
+&lt;p&gt;另外是Funpack5出来了，看看价格，告辞告辞，对学生党太过于不友好，加上这个方向不打算涉猎，无线电，我那成本远低于10元的分立器件收不了台的收音机算不？另留板子
+      
+    
+    </summary>
+    
+    
+      <category term="制作" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/"/>
+    
+      <category term="Funpack" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/Funpack/"/>
+    
+      <category term="Snowflake" scheme="https://john1175.cn/categories/%E5%88%B6%E4%BD%9C/Funpack/Snowflake/"/>
+    
+    
+      <category term="生活" scheme="https://john1175.cn/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+      <category term="硬件" scheme="https://john1175.cn/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
   
   <entry>
     <title>Bye_2020</title>
@@ -551,38 +584,6 @@
 &lt;p&gt;可以使用或不使用小括号&lt;/p&gt;
 &lt;p&gt;元组继承了序列类型的全部通用操作&lt;/p&gt;
 &lt;p&gt;元组因为创
-      
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="https://john1175.cn/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="Python" scheme="https://john1175.cn/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>列表list-Python</title>
-    <link href="https://john1175.cn/2020/06/27/%E5%88%97%E8%A1%A8list-Python/"/>
-    <id>https://john1175.cn/2020/06/27/%E5%88%97%E8%A1%A8list-Python/</id>
-    <published>2020-06-27T08:52:01.000Z</published>
-    <updated>2020-06-27T09:13:20.944Z</updated>
-    
-    <content type="html"><![CDATA[<p>列表是一种序列类型，创建后可以随意被修改</p><p>使用方括号[] 或list() 创建，元素间用逗号, 分隔</p><p>列表中各元素类型可以不同，无长度限制</p><p>将列表使用赋值，未创建列表，仅仅给列表一个新名称</p><table><thead><tr><th>函数或方法</th><th>描述</th></tr></thead><tbody><tr><td><code>ls[i]  = x</code></td><td>替换列表ls第i元素为x</td></tr><tr><td><code>ls[i:  j: k]= lt</code></td><td>用列表lt替换ls切片后所对应元素子列表</td></tr><tr><td><code>ls[i:  i]= lt</code></td><td>在ls内插入lt</td></tr><tr><td><code>del  ls[i]</code></td><td>删除列表ls中第i元素</td></tr><tr><td><code>del  ls[i: j: k]</code></td><td>删除列表ls中第i到第j以k为步长的元素</td></tr><tr><td><code>ls  += lt</code></td><td>更新列表ls，将列表lt元素增加到列表ls中</td></tr><tr><td><code>ls  *= n</code></td><td>更新列表ls，其元素重复n次</td></tr><tr><td><code>ls.append(x)</code></td><td>在列表ls最后增加一个元素x</td></tr><tr><td><code>ls.clear()=ls[:]=[]</code></td><td>删除列表ls中所有元素</td></tr><tr><td><code>ls.copy()=a[:]=list(a)</code></td><td>生成一个新列表，赋值ls中所有元素  （<em>注意：**b = a</em>  <em>只是将*</em>b<strong>关联到</strong>a*<em>，并不是独立的</em>）</td></tr><tr><td><code>ls.pop(i=None)</code></td><td>将列表ls中第i位置元素取出并删除该元素（默认是最后一个）</td></tr><tr><td><code>ls.remove(x)</code></td><td>将列表ls中出现的第一个元素x删除</td></tr><tr><td><code>ls.reverse()</code></td><td>将列表ls中的元素反转</td></tr><tr><td><code>ls.count(sub)</code></td><td>返回子串sub在列表ls中出现的次数</td></tr><tr><td><code>ls.index(a)</code></td><td>返回子串a在列表ls中第一次出现的索引</td></tr><tr><td><code>ls.insert(x,&#39;y&#39;)</code></td><td>更新列表ls，将列表y元素增加到列表x中</td></tr><tr><td><code>ls.extend(lt)</code></td><td>更新列表ls，将列表lt元素增加到列表ls末尾，返回的是新序列，ls与lt未改变</td></tr><tr><td><code>ls.sort()</code></td><td>更新列表ls，将列表ls元素排序。注意：sort不返回值，它改变ls</td></tr><tr><td><code>ls.sort(key  = x)</code></td><td>更新列表ls，将列表的x参数进行排序（如lrn）</td></tr><tr><td><code>ls.sort(reverse  = True/False)</code></td><td>更新列表ls，将列表ls进行正/反排序</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;列表是一种序列类型，创建后可以随意被修改&lt;/p&gt;
-&lt;p&gt;使用方括号[] 或list() 创建，元素间用逗号, 分隔&lt;/p&gt;
-&lt;p&gt;列表中各元素类型可以不同，无长度限制&lt;/p&gt;
-&lt;p&gt;将列表使用赋值，未创建列表，仅仅给列表一个新名称&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;
       
     
     </summary>
