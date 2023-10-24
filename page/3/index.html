@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>涵尘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="life,学习,硬件,孤独前行">
+<meta property="og:type" content="website">
+<meta property="og:title" content="涵尘">
+<meta property="og:url" content="http://example.com/page/3/index.html">
+<meta property="og:site_name" content="涵尘">
+<meta property="og:description" content="life,学习,硬件,孤独前行">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="John1175">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="涵尘" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">涵尘</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一个人的思索与生活</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-RC遥控车调试小计" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/07/06/RC%E9%81%A5%E6%8E%A7%E8%BD%A6%E8%B0%83%E8%AF%95%E5%B0%8F%E8%AE%A1/" class="article-date">
+  <time class="dt-published" datetime="2020-07-06T08:52:21.000Z" itemprop="datePublished">2020-07-06</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%88%B6%E4%BD%9C/">制作</a>►<a class="article-category-link" href="/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/07/06/RC%E9%81%A5%E6%8E%A7%E8%BD%A6%E8%B0%83%E8%AF%95%E5%B0%8F%E8%AE%A1/">RC遥控车调试小计</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>自制智能车的环节已经完成了第一步</p>
+<p>我购买了顽皮龙RC遥控车作为基底，选择了KIT版本，是一辆RC遥控车去除了电调与电池，需要自己组装的版本。</p>
+<p>这是目前的结果,我完全放弃了车模的外壳与涂装，以方便自己的改装。</p>
+<p><img src="/%E8%BD%A6%E8%BE%86%E6%A1%86%E6%9E%B6.jpg" alt="车辆框架"></p>
+<h1 id="车架"><a href="#车架" class="headerlink" title="车架"></a>车架</h1><p>车架有两条钢梁作为主要框架，后在此基础上装上塑料配件。整体来说还是足够安全的。加上他的细节不错，四个独立弹簧作为减震。有些美中不足的是它的轮胎 ，显得有些不足，但是可以在后期添加填充物来修改。</p>
+<p><img src="/%E8%BD%A6%E8%BD%AE%E9%85%8D%E4%BB%B6.jpg" alt="车轮配件"></p>
+<p><img src="/%E8%BD%A6%E8%BD%AE.jpg" alt="车轮"></p>
+<p>车架总体不错，也对得起它的价格。当然这个价格不高，加上是越野车车模与自己组装其车辆的精度不高，这需要我后期在控制方法上进行补偿。比如使用陀螺仪，从而得知车辆的目标偏移，控制舵机进行补偿。</p>
+<h1 id="电池"><a href="#电池" class="headerlink" title="电池"></a>电池</h1><p>电池我配了一个聚合物电池，可适配7.4V~8V电池。采用8.4V的充电器。</p>
+<p><img src="/%E7%94%B5%E6%B1%A0.jpg" alt="电池"></p>
+<p>在进行测试时电池电压显示为7.8V。</p>
+<p><img src="/%E7%94%B5%E6%B1%A0%E7%94%B5%E5%8E%8B.jpg" alt="电池电压"></p>
+<h1 id="电机"><a href="#电机" class="headerlink" title="电机"></a>电机</h1><p>这个车模自带了一个180波箱电机。但是180指的只是规格，而具体参数商家没有说，也没有在网上查到。仅可以确定是有刷直流电机，可以使用电池直接供电。</p>
+<p><img src="/180%E6%B3%A2%E7%AE%B1%E9%A9%AC%E8%BE%BE.jpg" alt="180波箱马达"></p>
+<p>后来，我经过了解，发现其黄色的部分是一个变速箱，虽然直接了当的限制了车速但也将电机堵转的可能性降到了最低。</p>
+<h1 id="舵机"><a href="#舵机" class="headerlink" title="舵机"></a>舵机</h1><p>舵机使用的是车模自带的17克舵机，和电机一样没有具体参数。而通过客服得知可以在电池直接供电下工作，与我之前所知的舵机不同，电池直接供电可能会使得舵机无法工作在最佳状态下。</p>
+<p><img src="/17%E5%85%8B%E8%88%B5%E6%9C%BA.jpg" alt="17克舵机"></p>
+<p>舵机的排线与一般的排线不同。舵机的排线为3根，分别为橙色信号线、红色正极线、棕褐色负极线。</p>
+<p>据网上资料可知舵机一般工作电压为4.8V或6V。控制信号一般为50Hz的PWM波，其占空比一般在5%到10%之间。</p>
+<h3 id="接下来就是实际测试了"><a href="#接下来就是实际测试了" class="headerlink" title="接下来就是实际测试了"></a>接下来就是实际测试了</h3><p>我一开始使用STM32开发板输出PWM波，然而不论如何都无法控制舵机。因为在家手头没有测试期间，所以得知出现问题的是PWM波还是舵机。</p>
+<p>因为开始做项目，我下单了ADI的ADALM2000高级主动学习模块，也就是M2K口袋实验室。我的家中实验室开始了。</p>
+<p><img src="/M2K%E4%BB%AA%E5%99%A8.jpg" alt="M2K仪器"></p>
+<p>M2K十分适合我这种因为疫情困在家的人。要么搞软件，提升基础，要么就自己搭建一个环境。M2K有多种功能，虽然说有着精度不高等问题，但是目前也足够了。</p>
+<table>
+<thead>
+<tr>
+<th>M2K功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>双通道USB数字示波器</td>
+</tr>
+<tr>
+<td>双通道任意函数发生器</td>
+</tr>
+<tr>
+<td>16通道数字逻辑分析仪（兼容3.3V CMOS和1.8V或5V，100MS&#x2F;s）</td>
+</tr>
+<tr>
+<td>16通道模式发生器（3.3V CMOS，100MS&#x2F;s）</td>
+</tr>
+<tr>
+<td>16通道虚拟数字I&#x2F;O</td>
+</tr>
+<tr>
+<td>用于链接多个仪器的两个输入&#x2F;输出数字触发信号(3.3V CMOS)</td>
+</tr>
+<tr>
+<td>单通道电压表（AC、DC、±20V）</td>
+</tr>
+<tr>
+<td>网络分析仪 – 电路波特、奈奎斯特、尼克尔斯传输图。范围：1Hz至10MHz</td>
+</tr>
+<tr>
+<td>频谱分析仪 – 功率频谱和频谱测量（噪底、SFDR、SNR、THD等）</td>
+</tr>
+<tr>
+<td>数字总线分析仪（SPI、I²C、UART、并行）</td>
+</tr>
+<tr>
+<td>两个可编程电源（0…+5V、0…-5V）</td>
+</tr>
+</tbody></table>
+<p>M2K由Scopy作为上位机软件控制其功能。</p>
+<p><img src="/Scopy.jpg" alt="Scopy"></p>
+<p>使用M2K测试STM32的PWM波，没有问题。有可能是舵机出了问题。</p>
+<p>后来干脆使用M2K来输出PWM波不断测试，当我将PWM的峰值输送到5V时成功的控制了舵机，终于成功了。以后要更多的注意数字1的电压了</p>
+<p><img src="/Scopy-%E4%BB%BB%E6%84%8F%E5%87%BD%E6%95%B0%E5%8F%91%E7%94%9F%E5%99%A8-%E6%96%B9%E6%B3%A2.jpg" alt="Scopy-任意函数发生器-方波"></p>
+<p>接下来是正常的舵机调试：</p>
+<p>7.5%占空比</p>
+<p><img src="/%E5%8D%A0%E7%A9%BA%E6%AF%947.5.jpg" alt="占空比7.5"></p>
+<p>5%占空比</p>
+<p><img src="/%E5%8D%A0%E7%A9%BA%E6%AF%945.jpg" alt="占空比5"></p>
+<p>10%占空比</p>
+<p><img src="/%E5%8D%A0%E7%A9%BA%E6%AF%9410.jpg" alt="占空比10"></p>
+<p>有一次测试，发现无法控制舵机，经检查M2K未与电池共地，这一点要注意。</p>
+<p>要将M2K的地与电源的电相连接。</p>
+<p><img src="/%E5%85%B1%E5%9C%B0.jpg" alt="共地"></p>
+<h3 id="接下来是舵机的上个车测试"><a href="#接下来是舵机的上个车测试" class="headerlink" title="接下来是舵机的上个车测试"></a>接下来是舵机的上个车测试</h3><p><img src="/%E8%88%B5%E6%9C%BA%E8%BF%9E%E6%8E%A51.jpg" alt="舵机连接1"></p>
+<p><img src="/%E8%88%B5%E6%9C%BA%E8%BF%9E%E6%8E%A52.jpg" alt="舵机连接2"></p>
+<p>然而上了车模其舵机受到了限制。</p>
+<p>我在这里依旧使用7.5%占空比为中间值。</p>
+<p><img src="/%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%947.5.jpg" alt="测试-占空比7.5"></p>
+<p>10%占空比也测试成功。</p>
+<p><img src="/%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%9410.jpg" alt="测试-占空比10"></p>
+<p>然而在5%占空比测试的时候失败了，受到了模型的控制，舵机卡死。然后6%占空比测试成功。</p>
+<p><img src="/%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%946.jpg" alt="测试-占空比6"></p>
+<p>接着我又测试了11%的占空比。</p>
+<p><img src="/%E6%B5%8B%E8%AF%95-%E5%8D%A0%E7%A9%BA%E6%AF%9411.jpg" alt="测试-占空比11"></p>
+<p>因此，经过测试，舵机的PWM波控制范围在6%~11%之间。</p>
+<h1 id="遗憾"><a href="#遗憾" class="headerlink" title="遗憾"></a>遗憾</h1><p>这辆车在选择中有一点是颇为遗憾的，就是没有编码器，然而其车体又不适合进行编码器的安装，看来我将难以进行车速的控制。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/07/06/RC%E9%81%A5%E6%8E%A7%E8%BD%A6%E8%B0%83%E8%AF%95%E5%B0%8F%E8%AE%A1/" data-id="clo4egv0v000vxnny7agaajul" data-title="RC遥控车调试小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-字典dict-Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/06/29/%E5%AD%97%E5%85%B8dict-Python/" class="article-date">
+  <time class="dt-published" datetime="2020-06-29T08:26:35.000Z" itemprop="datePublished">2020-06-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/06/29/%E5%AD%97%E5%85%B8dict-Python/">字典dict-Python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h1><p>映射是一种键(索引)和值(数据)的对应</p>
+<p>由用户确定，非默认</p>
+<p>字典类型是“映射”的体现</p>
+<p>键值对：键是数据索引的扩展</p>
+<p>字典是键值对的集合，键值对之间无序</p>
+<p>采用大括号{}和dict()创建，键值对用冒号: 表示</p>
+<p>空字典 {}</p>
+<p>查找时字典效率高</p>
+<p>dict</p>
+<p>使用dict从映射或键-值对创建字典</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>items = [(<span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;Gumby&#x27;</span>), (<span class="string">&#x27;age&#x27;</span>, <span class="number">42</span>)]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = <span class="built_in">dict</span>(items)</span><br><span class="line">&gt;&gt;&gt;d</span><br><span class="line">&#123;<span class="string">&#x27;age&#x27;</span>:<span class="number">42</span>, <span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;Gumby&#x27;</span>&#125;</span><br><span class="line"> &gt;&gt;&gt; d = <span class="built_in">dict</span>(name = <span class="string">&#x27;Gumby&#x27;</span>, age = <span class="number">42</span>))</span><br><span class="line"> &gt;&gt;&gt; d</span><br><span class="line"> &#123;<span class="string">&#x27;age&#x27;</span>:<span class="number">42</span>, <span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;Gumby&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>函数或方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>del d[k]</td>
+<td>删除字典d中键k对应的数据值</td>
+</tr>
+<tr>
+<td>len(d)</td>
+<td>返回字典d中元素的个数</td>
+</tr>
+<tr>
+<td>d[k]</td>
+<td>返回k所对应的值</td>
+</tr>
+<tr>
+<td>d[k] &#x3D;  v</td>
+<td>将值v关联到k</td>
+</tr>
+<tr>
+<td>k in d</td>
+<td>判断键k是否在字典d中，如果在返回True，否则False</td>
+</tr>
+<tr>
+<td>d.keys()</td>
+<td>返回字典d中所有的键信息</td>
+</tr>
+<tr>
+<td>d.values()</td>
+<td>返回字典d中所有的值信息</td>
+</tr>
+<tr>
+<td>d.items()</td>
+<td>返回字典d中所有的键-值对信息</td>
+</tr>
+<tr>
+<td>d.update(c)</td>
+<td>将c字典的键-值对添加到d中，若相同键有不同值，就用c的替换d的</td>
+</tr>
+<tr>
+<td>d.get(k,  <default>)</td>
+<td>键k存在，则返回相应值，不在则返回<default>值，默认是None</td>
+</tr>
+<tr>
+<td>d.setdefault(k,  <default>)</td>
+<td>键k存在，则返回相应值，不在则在d中加入此键-值对</td>
+</tr>
+<tr>
+<td>d.pop(k,  <default>)</td>
+<td>键k存在，则取出相应值，并将该键-值对删除，不在则返回<default>值</td>
+</tr>
+<tr>
+<td>d.popitem()</td>
+<td>随机从字典d中取出一个键值对，以元组形式返回，并将该键-值对删除</td>
+</tr>
+<tr>
+<td>d.clear()</td>
+<td>删除所有的键值对</td>
+</tr>
+<tr>
+<td>d.copy</td>
+<td>返回一个新的字典，浅复制，副本与原件的值的指向相同。当替换副本中的值，正常。当修改副本中的值原件中的值也会改变。</td>
+</tr>
+<tr>
+<td>d.fromkeys([],  None)</td>
+<td>创建字典，包含指定的键。值默认是None，也可以是特定的。</td>
+</tr>
+</tbody></table>
+<p>字典快速使用，通过format_map来快速的映射</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;abab is &#123;C&#125;&quot;</span>.format_map(<span class="built_in">dict</span>)</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/06/29/%E5%AD%97%E5%85%B8dict-Python/" data-id="clo4egv0s000rxnny3vb03fo8" data-title="字典dict-Python" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-自制K60主控板--一次吃亏的记录" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/06/27/%E8%87%AA%E5%88%B6K60%E4%B8%BB%E6%8E%A7%E6%9D%BF--%E4%B8%80%E6%AC%A1%E5%90%83%E4%BA%8F%E7%9A%84%E8%AE%B0%E5%BD%95/" class="article-date">
+  <time class="dt-published" datetime="2020-06-27T09:19:22.000Z" itemprop="datePublished">2020-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%88%B6%E4%BD%9C/">制作</a>►<a class="article-category-link" href="/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/06/27/%E8%87%AA%E5%88%B6K60%E4%B8%BB%E6%8E%A7%E6%9D%BF--%E4%B8%80%E6%AC%A1%E5%90%83%E4%BA%8F%E7%9A%84%E8%AE%B0%E5%BD%95/">自制K60主控板--一次吃亏的记录</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>为锻炼个人技术，我自费准备了K60的板子，打算作为小组的替换用品。</p>
+<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>我画并制作了MK60直接焊接在PCB板上的智能车主控板。并准备了3份物料。</p>
+<h3 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h3><p>本次特意加强了芯片的散热，在芯片下使用散热铜皮并增加散热孔。</p>
+<p>本次使用了新的6V电源模块，利用SPX29302直接输出6V电压，而不是像以往使用LM2941S，利用电位器调节出6V电压。</p>
+<p>本次参考逐飞的K60核心板，并较之前增加更多的保险措施。如K60及其外围基本电路的单独供电与单独地，以及在专供芯片的3.3V电源模块后还使用了新的防反接&#x2F;限流电路。保险丝确保电流不会过大，而肖特二极管也确保了电压不会超过芯片的上限。</p>
+<p><img src="/%E9%98%B2%E5%8F%8D%E6%8E%A5-%E9%99%90%E6%B5%81%E7%94%B5%E8%B7%AF.png" alt="防反接/限流电路"></p>
+<p>这次为了防止舵机的卡死导致电流过大也在舵机的接口处设计了一个保险丝。</p>
+<h3 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h3><p>本次使用了逐飞的JTAG接口，出现了设计失误，未能看明白逐飞原理图，将接口设计成了反向。</p>
+<p>本次没有考虑到手工焊接，未标明阻值、容值，另，元件过密难以焊接。</p>
+<p>第一次焊接贴片晶振，所选焊盘相较手焊的较小。</p>
+<h1 id="失败"><a href="#失败" class="headerlink" title="失败"></a>失败</h1><p>4月第一块直接焊接，电源没有问题，当第一次LQFQ144脚一次成功，接电测试，成功。因为手头没有下载器直接寄给了我的组员，经过组员测试，JTAG连接失败。</p>
+<p>在期末之前我开始了第二块，只搭建了芯片的基础外围，电源测试成功，芯片焊接成功，测试，短路，芯片内部短路，测试电流1A，当短接保险丝时电流甚至高达2A。</p>
+<p>昨日，我焊接了最后一片，一样是最基础的外围，电源测试成功，芯片焊接成功，上电。电流完成了以此跳跃，芯片电源一闪而灭，电流在开启后跳到1A，然后很快降到0.1A并维持了下来。</p>
+<p>3片K60，至少有两片在焊接前就坏了，亏死。焊接时我是在标准的焊接台上，防静电措施完整，且湿度皆高于40%，加上K60本身就是汽车电子的芯片，本身就加强了防静电能力，所以芯片因为静电损坏的可能性较小。</p>
+<p>想一下，我拿到的芯片放在塑料盒子中，虽然垫有防静电的泡沫，但是不是在编带中。我怀疑我买了假货。</p>
+<p><img src="/%E5%A1%91%E6%96%99%E7%9B%92.jpg" alt="塑料盒"></p>
+<p><img src="/%E5%A1%91%E6%96%99%E7%9B%92-%E5%86%85%E9%83%A8.jpg" alt="塑料盒-内部"></p>
+<p>但是，天猫，正品…….</p>
+<p><img src="/%E4%BA%A4%E6%98%93%E6%88%AA%E5%9B%BE.png" alt="交易截图"></p>
+<p>我以后不会在淘宝买MCU了。我吃的堑还是太少了。</p>
+<h1 id="成品图"><a href="#成品图" class="headerlink" title="成品图"></a>成品图</h1><p>下面是成品图–MCU坏的那种</p>
+<p><img src="/%E4%B8%BB%E6%8E%A7%E6%9D%BF-%E6%AD%A3%E9%9D%A2.jpg" alt="主控板-正面"></p>
+<p><img src="/%E4%B8%BB%E6%8E%A7%E6%9D%BF-%E8%83%8C%E9%9D%A2.jpg" alt="主控板-背面"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/06/27/%E8%87%AA%E5%88%B6K60%E4%B8%BB%E6%8E%A7%E6%9D%BF--%E4%B8%80%E6%AC%A1%E5%90%83%E4%BA%8F%E7%9A%84%E8%AE%B0%E5%BD%95/" data-id="clo4egv0q000pxnny8esp8xhy" data-title="自制K60主控板--一次吃亏的记录" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-元祖tuple-Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/06/27/%E5%85%83%E7%A5%96tuple-Python/" class="article-date">
+  <time class="dt-published" datetime="2020-06-27T08:52:38.000Z" itemprop="datePublished">2020-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/06/27/%E5%85%83%E7%A5%96tuple-Python/">元祖tuple</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>与列表相同，元祖也是序列，但不可修改</p>
+<p>只要将一些值用逗号分隔，可以加括号</p>
+<p>使用小括号() 或tuple() 创建，元素间用逗号, 分隔</p>
+<p>可以使用或不使用小括号</p>
+<p>元组继承了序列类型的全部通用操作</p>
+<p>元组因为创建后不能修改，因此没有特殊操作</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/06/27/%E5%85%83%E7%A5%96tuple-Python/" data-id="clo4egv0m000jxnny40ysbr7w" data-title="元祖tuple" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-列表list-Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/06/27/%E5%88%97%E8%A1%A8list-Python/" class="article-date">
+  <time class="dt-published" datetime="2020-06-27T08:52:01.000Z" itemprop="datePublished">2020-06-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/06/27/%E5%88%97%E8%A1%A8list-Python/">列表list-Python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>列表是一种序列类型，创建后可以随意被修改</p>
+<p>使用方括号[] 或list() 创建，元素间用逗号, 分隔</p>
+<p>列表中各元素类型可以不同，无长度限制</p>
+<p>将列表使用赋值，未创建列表，仅仅给列表一个新名称</p>
+<table>
+<thead>
+<tr>
+<th>函数或方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ls[i]  = x</code></td>
+<td>替换列表ls第i元素为x</td>
+</tr>
+<tr>
+<td><code>ls[i:  j: k]= lt</code></td>
+<td>用列表lt替换ls切片后所对应元素子列表</td>
+</tr>
+<tr>
+<td><code>ls[i:  i]= lt</code></td>
+<td>在ls内插入lt</td>
+</tr>
+<tr>
+<td><code>del  ls[i]</code></td>
+<td>删除列表ls中第i元素</td>
+</tr>
+<tr>
+<td><code>del  ls[i: j: k]</code></td>
+<td>删除列表ls中第i到第j以k为步长的元素</td>
+</tr>
+<tr>
+<td><code>ls  += lt</code></td>
+<td>更新列表ls，将列表lt元素增加到列表ls中</td>
+</tr>
+<tr>
+<td><code>ls  *= n</code></td>
+<td>更新列表ls，其元素重复n次</td>
+</tr>
+<tr>
+<td><code>ls.append(x)</code></td>
+<td>在列表ls最后增加一个元素x</td>
+</tr>
+<tr>
+<td><code>ls.clear()=ls[:]=[]</code></td>
+<td>删除列表ls中所有元素</td>
+</tr>
+<tr>
+<td><code>ls.copy()=a[:]=list(a)</code></td>
+<td>生成一个新列表，赋值ls中所有元素  （<em>注意：**b &#x3D; a</em>  <em>只是将<strong>b</strong>关联到<strong>a</strong>，并不是独立的</em>）</td>
+</tr>
+<tr>
+<td><code>ls.pop(i=None)</code></td>
+<td>将列表ls中第i位置元素取出并删除该元素（默认是最后一个）</td>
+</tr>
+<tr>
+<td><code>ls.remove(x)</code></td>
+<td>将列表ls中出现的第一个元素x删除</td>
+</tr>
+<tr>
+<td><code>ls.reverse()</code></td>
+<td>将列表ls中的元素反转</td>
+</tr>
+<tr>
+<td><code>ls.count(sub)</code></td>
+<td>返回子串sub在列表ls中出现的次数</td>
+</tr>
+<tr>
+<td><code>ls.index(a)</code></td>
+<td>返回子串a在列表ls中第一次出现的索引</td>
+</tr>
+<tr>
+<td><code>ls.insert(x,&#39;y&#39;)  </code></td>
+<td>更新列表ls，将列表y元素增加到列表x中</td>
+</tr>
+<tr>
+<td><code>ls.extend(lt)</code></td>
+<td>更新列表ls，将列表lt元素增加到列表ls末尾，返回的是新序列，ls与lt未改变</td>
+</tr>
+<tr>
+<td><code>ls.sort()</code></td>
+<td>更新列表ls，将列表ls元素排序。注意：sort不返回值，它改变ls</td>
+</tr>
+<tr>
+<td><code>ls.sort(key  = x)</code></td>
+<td>更新列表ls，将列表的x参数进行排序（如lrn）</td>
+</tr>
+<tr>
+<td><code>ls.sort(reverse  = True/False)</code></td>
+<td>更新列表ls，将列表ls进行正&#x2F;反排序</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/06/27/%E5%88%97%E8%A1%A8list-Python/" data-id="clo4egv0o000lxnnyh8sxh54g" data-title="列表list-Python" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-字符串str-Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/03/04/%E5%AD%97%E7%AC%A6%E4%B8%B2str-Python/" class="article-date">
+  <time class="dt-published" datetime="2020-03-04T10:45:41.000Z" itemprop="datePublished">2020-03-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/03/04/%E5%AD%97%E7%AC%A6%E4%B8%B2str-Python/">字符串str-Python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="字符串-由0个或多个字符的集合"><a href="#字符串-由0个或多个字符的集合" class="headerlink" title="字符串:由0个或多个字符的集合"></a>字符串:由0个或多个字符的集合</h1><h2 id="字符串’’或””"><a href="#字符串’’或””" class="headerlink" title="字符串’’或””"></a>字符串’’或””</h2><p>常规字符串跨多行，只要在行尾上加上’&#39;反斜杠</p>
+<p>当字符串内有干扰时可用’&#39;反斜杠进行转义</p>
+<h2 id="长字符串"><a href="#长字符串" class="headerlink" title="长字符串"></a>长字符串</h2><p>用三个连续的双引号或单引号来包很长的字符串，可在中间换行</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ptint:（<span class="string">&#x27;&#x27;&#x27;To be, </span></span><br><span class="line"><span class="string">or not to be: </span></span><br><span class="line"><span class="string">that is the question:&#x27;&#x27;&#x27;</span>）</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="原始字符串"><a href="#原始字符串" class="headerlink" title="原始字符串"></a>原始字符串</h2><p>其内的字符串不会对反斜杠进行特殊处理</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>:（<span class="string">&#x27;C:\Program Files\nowhere&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>注意此处的r’，表示是原始字符串，不会显示，且其中的’可为”或者”‘</p>
+<p>原始字符串无法以单个反斜杠结尾。</p>
+<h1 id="字符串序号"><a href="#字符串序号" class="headerlink" title="字符串序号"></a>字符串序号</h1><p>其内部为正向递增序号：0,1,2,3…(x-1)</p>
+<p>或反向递减序号：-x,-(x-1),-(x-2)…-1</p>
+<h1 id="字符串的使用"><a href="#字符串的使用" class="headerlink" title="字符串的使用"></a>字符串的使用</h1><p>索引：返回字符串中的单个字符  &lt;字符串&gt;[M]</p>
+<p>切片：返回字符串中的一串字符串  &lt;字符串&gt;[M:N]</p>
+<p>M缺失表示至开头，N缺失表示至结尾</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;字符串&gt;[M:N:K]</span><br></pre></td></tr></table></figure>
+
+<p>  K表示根据步长K进行切片，K可为负数，进行反向符</p>
+<h1 id="操作符"><a href="#操作符" class="headerlink" title="操作符"></a>操作符</h1><p>x + y  连接x和y</p>
+<p>n * x 或 x * n  复制n次x</p>
+<p>x in s  如果x是s的子字符串，返回Ture，否则返回False</p>
+<h1 id="处理函数"><a href="#处理函数" class="headerlink" title="处理函数"></a>处理函数</h1><table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">len(x)</td>
+<td align="left">返回长度</td>
+</tr>
+<tr>
+<td align="center">str(x)</td>
+<td align="left">返回任意类型x所对应的字符串形式</td>
+</tr>
+<tr>
+<td align="center">hex(x)或oct(x)</td>
+<td align="left">返回整数x的十六进制或者八进制小写形式字符串</td>
+</tr>
+<tr>
+<td align="center">chr(u)</td>
+<td align="left">u为Unicode编码，返回其对应字符</td>
+</tr>
+<tr>
+<td align="center">ord(x)</td>
+<td align="left">x为字符，返回其对应Unicode编码</td>
+</tr>
+</tbody></table>
+<h1 id="处理方法"><a href="#处理方法" class="headerlink" title="处理方法"></a>处理方法</h1><table>
+<thead>
+<tr>
+<th align="center">函数</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">str.center(x,y&#x3D;None)</td>
+<td align="left">在str两边填充字符,默认为空格</td>
+</tr>
+<tr>
+<td align="center">str.find(x,y&#x3D;None,z&#x3D;None)</td>
+<td align="left">在str中寻找x,如果找到,返回子串第一个字符的索引,否则返回-1,还可以定义查找的起止点</td>
+</tr>
+<tr>
+<td align="center">str.lower()或str.upper()</td>
+<td align="left">返回字符串的副本，将字符串str的全部字符小写&#x2F;大写</td>
+</tr>
+<tr>
+<td align="center">str.split(sep)</td>
+<td align="left">返回一个列表，由str根据sep被分隔的部分组成</td>
+</tr>
+<tr>
+<td align="center">str.count(sub)</td>
+<td align="left">返回子串sub在str中出现的次数</td>
+</tr>
+<tr>
+<td align="center">str.replace(old,new)</td>
+<td align="left">返回字符串str副本，所有old子串被new子串替换</td>
+</tr>
+<tr>
+<td align="center">str.center(width[,fillchar])</td>
+<td align="left">字符串str在宽度为width的字符串中居中，空余量由fillchar填充</td>
+</tr>
+<tr>
+<td align="center">str.strip(chars)</td>
+<td align="left">去除字符串str的开头和结尾中所有的chars字符中的元素</td>
+</tr>
+<tr>
+<td align="center">str.join(iter)</td>
+<td align="left">在字符串iter所有元素的间隔中都加一个str，主要用于字符串的分隔</td>
+</tr>
+<tr>
+<td align="center">str.translate</td>
+<td align="left">预先建立转换表，根据转换表转换，但是只能进行单字符转换</td>
+</tr>
+</tbody></table>
+<p>translate说明:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;table = str.maketrans(&#x27;cs&#x27;, &#x27;kz&#x27;)</span><br><span class="line">&gt;&gt;&gt;&#x27;this is an incredible test&#x27;.translate(table)</span><br><span class="line">&#x27;thiz iz an inkredible tezt&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>还可以添加第三个参数选择相应的删除</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;table = <span class="built_in">str</span>.maketrans(<span class="string">&#x27;cs&#x27;</span>, <span class="string">&#x27;kz&#x27;</span>, <span class="string">&#x27; &#x27;</span>)</span><br><span class="line">&gt;&gt;&gt;<span class="string">&#x27;this is an incredible test&#x27;</span>.translate(table)</span><br><span class="line"><span class="string">&#x27;thizizaninkredibletezt&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="字符串格式化"><a href="#字符串格式化" class="headerlink" title="字符串格式化"></a>字符串格式化</h1><p>格式化是对字符串进行格式表达的方式</p>
+<p>&lt;模板字符串&gt;.format(&lt;逗号分隔的参数&gt;)</p>
+<p>槽{}：在模板字符串的槽{}中添加参数</p>
+<p><img src="/clip_image001.png" alt="计算机生成了可选文字: &quot;{1}：计算机{9}的（PU占用率为{2}％&quot; ·format（&quot;2918．10．19&quot;"></p>
+<p>槽内部对格式化的配置方式</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&lt;参数序号&gt;:&lt;格式控制标记&gt;&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="指定宽度："><a href="#指定宽度：" class="headerlink" title="指定宽度："></a>指定宽度：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&#123;num:10&#125;&quot;</span>.<span class="built_in">format</span>(num = <span class="number">3</span>)</span><br><span class="line"><span class="string">&#x27;     3&#x27;</span></span><br><span class="line"><span class="string">&quot;&#123;name:10&#125;&quot;</span>.<span class="built_in">format</span>(name = <span class="string">&quot;Bob&quot;</span>)</span><br><span class="line"><span class="string">&#x27;Bob    &#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="指定精度："><a href="#指定精度：" class="headerlink" title="指定精度："></a>指定精度：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&#123;pi:.2f&#125;&quot;</span>.<span class="built_in">format</span>(pi=pi)</span><br><span class="line"><span class="string">&#x27;3.14&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="添加千分隔符："><a href="#添加千分隔符：" class="headerlink" title="添加千分隔符："></a>添加千分隔符：</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;One googol is &#123;:,&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">10</span>**<span class="number">100</span>)</span><br><span class="line"><span class="string">&#x27;One googol is 10,000,000,000,000,000,…&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>同时指定其他格式的时候，逗号要放在宽度和表示精度的句号之间。</p>
+<h5 id="指定对齐："><a href="#指定对齐：" class="headerlink" title="指定对齐："></a>指定对齐：</h5><p>左对齐、右对齐、居中，分别使用&lt;、&gt;、^</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&#123;0:&lt;10.2f&#125;&quot;</span>.<span class="built_in">format</span>(pi)</span><br><span class="line"><span class="string">&#x27;3.14   &#x27;</span>Python</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="指定填充："><a href="#指定填充：" class="headerlink" title="指定填充："></a>指定填充：</h5><p>可以在指定宽度和精度的前面添加一个标志，可以是’0’、’+’、’-‘</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&#123;:010.2f&#125;&quot;</span>.<span class="built_in">format</span>(pi)</span><br><span class="line"><span class="string">&#x27;0000003.14&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>添加特定填充字符：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&#123;:$^15&#125;&quot;</span>.<span class="built_in">format</span>(WIN BIG)</span><br><span class="line"><span class="string">&#x27;$$$$WIN BIG$$$$&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>可用&#x3D;来表示字符是填充在符号与数字之间</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&#123;:=10.2f&#125;&quot;</span>.<span class="built_in">format</span>(-pi)</span><br><span class="line"><span class="string">&#x27;-   3.14&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>‘#’放在说明符与宽度之间，可以触发另一种转换方式。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">二进制、八进制、十六进制：</span><br><span class="line"><span class="string">&quot;&#123;:b&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">42</span>)</span><br><span class="line"><span class="string">&#x27;101010&#x27;</span></span><br><span class="line"><span class="string">&quot;&#123;:#b&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">42</span>)</span><br><span class="line"><span class="string">&#x27;0b101010&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>十进制会要求必须包含小数点</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&#123;:#g&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">42</span>)</span><br><span class="line"><span class="string">&#x27;42.0000&#x27;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="字符串设置中的类型说明符"><a href="#字符串设置中的类型说明符" class="headerlink" title="字符串设置中的类型说明符"></a>字符串设置中的类型说明符</h5><table>
+<thead>
+<tr>
+<th>说明符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>b</td>
+<td>用二进制数来表示</td>
+</tr>
+<tr>
+<td>c</td>
+<td>用Unicode码点来表示</td>
+</tr>
+<tr>
+<td>d</td>
+<td>将整数视为十进制来表示</td>
+</tr>
+<tr>
+<td>e</td>
+<td>用科学计数法表示（指数用e）</td>
+</tr>
+<tr>
+<td>E</td>
+<td>用科学计数法表示（指数用E）</td>
+</tr>
+<tr>
+<td>f</td>
+<td>将小数表示为定点数</td>
+</tr>
+<tr>
+<td>F</td>
+<td>与f相同，但对于特殊值(nan和inf)，用大写表示</td>
+</tr>
+<tr>
+<td>g</td>
+<td>自动在定点表示法和科学计数法之间做出选择，默认用于小数说明</td>
+</tr>
+<tr>
+<td>G</td>
+<td>与g相同，但使用大写来表示指数与特殊值</td>
+</tr>
+<tr>
+<td>n</td>
+<td>与g相同，但插入随区域而异的数字分隔符</td>
+</tr>
+<tr>
+<td>o</td>
+<td>用八进制来表示</td>
+</tr>
+<tr>
+<td>s</td>
+<td>保持字符串的格式不变</td>
+</tr>
+<tr>
+<td>x</td>
+<td>用十六进制表示</td>
+</tr>
+<tr>
+<td>X</td>
+<td>与x相同，但使用大写字母</td>
+</tr>
+<tr>
+<td>%</td>
+<td>将数表示为百分比值</td>
+</tr>
+</tbody></table>
+<h1 id="字符串的编码为Unicode"><a href="#字符串的编码为Unicode" class="headerlink" title="字符串的编码为Unicode"></a>字符串的编码为Unicode</h1><p>使用16位或者32的十六进制字面量（加前缀\u或\U）</p>
+<p>使用字符的Unicode名称（\N{name}）</p>
+<p>为了进行文件写入、C语言互传输等，可转换为类型：不可变的bytes和可变的bytearray</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/03/04/%E5%AD%97%E7%AC%A6%E4%B8%B2str-Python/" data-id="clo4egv0h000exnnyf3sv9bkw" data-title="字符串str-Python" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-数字类型与运算符-Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/03/04/%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6-Python/" class="article-date">
+  <time class="dt-published" datetime="2020-03-04T10:16:00.000Z" itemprop="datePublished">2020-03-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/03/04/%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6-Python/">数字类型与运算符-Python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="整数类型："><a href="#整数类型：" class="headerlink" title="整数类型："></a>整数类型：</h1><p>数制：</p>
+<p>​	十进制</p>
+<p>​	二进制：以0b或0B开头</p>
+<p>​	八进制：以0o或0O开头</p>
+<p>​	十六进制：以0x或0X开头</p>
+<h1 id="浮点类型："><a href="#浮点类型：" class="headerlink" title="浮点类型："></a>浮点类型：</h1><p>带小数点，范围-10^308^~10^308^，精度数量级10^-16^</p>
+<p>​	不确定尾数:</p>
+<p>​	浮点数运算存在不确定尾数，非BUG，一般发生在10^-16^附近</p>
+<p>​	计算机以二进制表示小数，可无限接近，但可能不相同</p>
+<p>​	科学计数法：&#x2F;<a/>e&#x2F;<b/>表示a*10^b^</p>
+<h1 id="计算函数"><a href="#计算函数" class="headerlink" title="计算函数"></a>计算函数</h1><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pow(x,y[,z])</td>
+<td>计算x^y%z 幂余 […]表示可省略</td>
+</tr>
+<tr>
+<td>abs(x)</td>
+<td>计算x的绝对值</td>
+</tr>
+<tr>
+<td>divmod(x,y)</td>
+<td>计算x&#x2F;&#x2F;y x%y 商余 输出商与余</td>
+</tr>
+<tr>
+<td>round(x,d)</td>
+<td>对x进行四舍五入，d是小数截取位</td>
+</tr>
+<tr>
+<td>max(a,b,c…)</td>
+<td></td>
+</tr>
+<tr>
+<td>min(a,b,c…)</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="计算符号"><a href="#计算符号" class="headerlink" title="计算符号"></a>计算符号</h1><ul>
+<li><p>**（乘方）</p>
+</li>
+<li><ul>
+<li>x**y  返回x的y次方(x^y)</li>
+</ul>
+</li>
+<li><p>&#x2F;&#x2F;（整除）</p>
+</li>
+<li><ul>
+<li>x&#x2F;&#x2F;y  x除以y并对结果向下取整数至最接近的整数</li>
+</ul>
+</li>
+<li><p>&amp; （按位与）</p>
+</li>
+<li><ul>
+<li>对数字进行按位与操作。5 &amp; 3 输出 1 。</li>
+</ul>
+</li>
+<li><p>| （按位或）</p>
+</li>
+<li><ul>
+<li>对数字进行按位或操作。5 | 3 输出 7 。</li>
+</ul>
+</li>
+<li><p>^ （按位异或）</p>
+</li>
+<li><ul>
+<li>对数字进行按位异或操作。5 ^ 3 输出 6 。</li>
+</ul>
+</li>
+<li><p>~ （按位取反）</p>
+</li>
+<li><ul>
+<li>x 的按位取反结果为 -(x+1)。~5 输出 -6 。</li>
+</ul>
+</li>
+<li><p>not （布尔“非”）</p>
+</li>
+<li><ul>
+<li>如果 x 是 True ，则返回 False 。如果 x 是      False ，则返回 True 。x &#x3D; True; not x 返回 False 。</li>
+</ul>
+</li>
+<li><p>and （布尔“与”）</p>
+</li>
+<li><ul>
+<li>如果 x 是 False ，则 x and y 返回 False      ，否则返回 y 的计算值。当 x 是 False 时， x &#x3D; False; y &#x3D; True; x and y 将返回 False      。在这一情境中，Python 将不会计算 y，因为它已经了解 and 表达式的左侧是 False ，这意味着整个表达式都将是 False      而不会是别的值。这种情况被称作短路计算（Short-circuitEvaluation）。</li>
+</ul>
+</li>
+<li><p>or （布尔“或”）</p>
+</li>
+<li><ul>
+<li>如果 x 是 True ，则返回 True ，否则它将返回 y      的计算值。x &#x3D; Ture; y &#x3D; False; x or y 将返回 Ture 。在这里短路计算同样适用。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/03/04/%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6-Python/" data-id="clo4egv0j000fxnnyh1a8a1ql" data-title="数字类型与运算符-Python" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-turtle库小结-Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/02/28/turtle%E5%BA%93%E5%B0%8F%E7%BB%93-Python/" class="article-date">
+  <time class="dt-published" datetime="2020-02-28T08:22:02.000Z" itemprop="datePublished">2020-02-28</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/02/28/turtle%E5%BA%93%E5%B0%8F%E7%BB%93-Python/">turtle库小结-Python</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="1-建立窗口"><a href="#1-建立窗口" class="headerlink" title="1.建立窗口"></a>1.建立窗口</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.setup (canvwidth/width=<span class="literal">None</span>, canvheight/height=<span class="literal">None</span>, color=<span class="literal">None</span>,startx=<span class="literal">None</span>, starty=<span class="literal">None</span>)</span><br></pre></td></tr></table></figure>
+
+<p>建立绘图窗体，输入窗体的高宽（整数时为像素，小数为占电脑屏幕的比例），(startx, starty)这一坐标表示窗口左上角位于绝对坐标轴的位置, 如果为空,则窗口位于屏幕中心</p>
+<h1 id="2-画笔设置"><a href="#2-画笔设置" class="headerlink" title="2.画笔设置"></a>2.画笔设置</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.pensize(width)=turtle.width(width)</span><br></pre></td></tr></table></figure>
+
+<p>选择画笔粗细</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.pencolor(color)</span><br></pre></td></tr></table></figure>
+
+<p>设置画笔颜色color为颜色字符串或rgb值 选择画笔的颜色</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.speed(speed)</span><br></pre></td></tr></table></figure>
+
+<p>设置画笔移动速度，画笔绘制的速度范围[0,10]整数</p>
+<h1 id="3-画图"><a href="#3-画图" class="headerlink" title="3.画图"></a>3.画图</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.penup()=turtle.pu()</span><br></pre></td></tr></table></figure>
+
+<p>将画笔提起</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.pendown()=turtle.pd()</span><br></pre></td></tr></table></figure>
+
+<p>将画笔放下</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.goto(x,y)</span><br></pre></td></tr></table></figure>
+
+<p>海龟移动到(x,y)</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.forward(distance)=turtle.fd(d)</span><br></pre></td></tr></table></figure>
+
+<p>海龟以单位像素向正方向移动 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.backward(distance)=turtle.bk(d) </span><br></pre></td></tr></table></figure>
+
+<p>海龟以单位像素向反方向移动</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.circle(r,angle)</span><br></pre></td></tr></table></figure>
+
+<p>以左侧距离r为圆心实现angle角度曲线运动</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.setheading(angle)=turtle.seth(angle)</span><br></pre></td></tr></table></figure>
+
+<p>改变角度成为绝对坐标轴(x-y坐标系)下的角度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.left(angle)</span><br></pre></td></tr></table></figure>
+
+<p>以左为正改变角度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.right(angle)</span><br></pre></td></tr></table></figure>
+
+<p>以右为正改变角度</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.home()</span><br></pre></td></tr></table></figure>
+
+<p>将当前位置设为原点</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.dot(r)</span><br></pre></td></tr></table></figure>
+
+<p> 以当前位置为圆心画半径为r的圆</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.fillcolor(color)</span><br></pre></td></tr></table></figure>
+
+<p>为绘制图形的填充颜色</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.color(color1, color2)</span><br></pre></td></tr></table></figure>
+
+<p>同时设置画笔颜色color1,填充颜色color2</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.filling()</span><br></pre></td></tr></table></figure>
+
+<p>返回当前是否在填充状态</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.begin_fill()</span><br></pre></td></tr></table></figure>
+
+<p>准备开始填充图形</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.end_fill()</span><br></pre></td></tr></table></figure>
+
+<p>填充完成</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.hideturtle()</span><br></pre></td></tr></table></figure>
+
+<p>隐藏画笔形状</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.showturtle()</span><br></pre></td></tr></table></figure>
+
+<p>显示画笔形状</p>
+<h1 id="4-全局控制"><a href="#4-全局控制" class="headerlink" title="4.全局控制"></a>4.全局控制</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.clear()</span><br></pre></td></tr></table></figure>
+
+<p>清空turtle窗口，但窗口的位置和状态不会改变</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.reset()</span><br></pre></td></tr></table></figure>
+
+<p>清空窗口，并重置turtle状态为起始状态</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.undo()</span><br></pre></td></tr></table></figure>
+
+<p>撤销上一个turtle动作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.isvisible()</span><br></pre></td></tr></table></figure>
+
+<p>返回当前turtle是否可见</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.stamp()</span><br></pre></td></tr></table></figure>
+
+<p>复制当前图形</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.write(s [,font=(<span class="string">&quot;font-name&quot;</span>,font_size,<span class="string">&quot;font_type&quot;</span>)])</span><br></pre></td></tr></table></figure>
+
+<p>写文本，s为文本内容，font是字体的参数，分别为字体名称，大小和类型；font为可选项，font参数也是可选项</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.mainloop()或turtle.done()</span><br></pre></td></tr></table></figure>
+
+<p>启动事件循环 -调用Tkinter的mainloop函数。必须是乌龟图形程序中的最后一个语句。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.delay(delay=<span class="literal">None</span>)</span><br></pre></td></tr></table></figure>
+
+<p>设置或返回以毫秒为单位的绘图延迟。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.begin_poly()</span><br></pre></td></tr></table></figure>
+
+<p>开始记录多边形的顶点。当前的乌龟位置是多边形的第一个顶点。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.end_poly()</span><br></pre></td></tr></table></figure>
+
+<p>停止记录多边形的顶点。当前的乌龟位置是多边形的最后一个顶点。将与第一个顶点相连。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">turtle.get_poly()</span><br></pre></td></tr></table></figure>
+
+<p>返回最后记录的多边形。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/02/28/turtle%E5%BA%93%E5%B0%8F%E7%BB%93-Python/" data-id="clo4egv0c000bxnny67wo3fg2" data-title="turtle库小结-Python" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/page/2/">&laquo; 上一页</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BF%A1%E4%BB%B0%E5%B0%BA/">信仰尺</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/">制作</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/%E5%AD%A6%E4%B9%A0/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%A2%E9%98%9F/">团队</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/">小记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AE%B0/">小记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AE%B0/%E5%88%B6%E4%BD%9C/">制作</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/">故障分析</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/%E7%AC%94%E8%AE%B0/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/%E5%B0%8F%E8%AE%B0/">小记</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Funpack/" rel="tag">Funpack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9E%E4%B9%A0/" rel="tag">实习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B1%82%E8%81%8C/" rel="tag">求职</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Funpack/" style="font-size: 15px;">Funpack</a> <a href="/tags/Python/" style="font-size: 17.5px;">Python</a> <a href="/tags/%E5%AE%9E%E4%B9%A0/" style="font-size: 12.5px;">实习</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 10px;">求职</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 12.5px;">生活</a> <a href="/tags/%E7%A1%AC%E4%BB%B6/" style="font-size: 20px;">硬件</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">十月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">九月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">七月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">一月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/25/%E5%AE%9E%E4%B9%A0%E5%B0%8F%E8%AE%B022-1-24-2022-1-25/">实习小记22-1-24-2022-1-25</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/22/%E5%AE%9E%E4%B9%A0%E5%B0%8F%E8%AE%B022-1-17-22-1-22/">实习小记22-1-17-22-1-22</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/16/%E5%AE%9E%E4%B9%A0%E5%B0%8F%E8%AE%B022-1-5-22-1-14/">实习小记22-1-5-22-1-14</a>
+          </li>
+        
+          <li>
+            <a href="/2022/01/12/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90%EF%BC%9ADSP%E4%B8%8B%E7%94%B5%E5%AF%BC%E8%87%B4PHY%E6%95%85%E9%9A%9C/">故障分析：DSP下电导致PHY故障</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John1175<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
