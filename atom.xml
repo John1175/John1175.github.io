@@ -6,7 +6,7 @@
   <link href="https://john1175.github.io/atom.xml" rel="self"/>
   
   <link href="https://john1175.github.io/"/>
-  <updated>2023-10-25T06:43:45.008Z</updated>
+  <updated>2023-10-25T06:43:43.021Z</updated>
   <id>https://john1175.github.io/</id>
   
   <author>
@@ -15,32 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>实验室硬件方向</title>
-    <link href="https://john1175.github.io/2023/10/25/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/"/>
-    <id>https://john1175.github.io/2023/10/25/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/</id>
-    <published>2023-10-25T06:43:44.552Z</published>
-    <updated>2023-10-25T06:43:45.008Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。"><a href="#本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。" class="headerlink" title="本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。"></a>本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。</h4><p>另：Joshua同志开始进行基地管理了，并开始操心，甚慰。</p><h1 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h1><p>我个人对于硬件方向的建议就是不建议，是的不建议学硬件。<br>是的，我个人不建议进行硬件方向的学习。<br>至于我为什么会选择硬件，是因为我不喜欢软件而对单板方面有兴趣，外加我大学期间只泡实验室以及舍得花钱在这个方面。是的我现在的选择是兴趣加钱堆出来的。</p><ol><li>硬件是花钱的，在跟Joshua同志说时他调侃到不全是江浙户，笑，这倒不是，这更多的是指你愿意花多少的百分比在学习上。</li><li>硬件的工资在与基地的另一个发展方向软件的对比上没有竞争性。且硬件的岗位也要比软件少，毕竟费钱。</li><li>硬件的学习难度与广度较高，真正的入门较难。不仅是硬件基础的大量方面，你软件也要会，软件要学的你也要，只是不那么的精通。</li><li>学校问题<ol><li>本校课程缩减，且讲解即为简单，只能自学。</li><li>基地参与的比赛向来重视PPT，其次外观，再次软件，最后硬件。即使是不用PPT的车赛也限制了硬件，下限极低，够用就行。</li><li>基地没啥硬件传承，路在达到车赛后就没有了，我是自己淌出来，且没啥参考性。</li></ol></li></ol><h1 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h1><p>硬件的路线我列一些我了解的单板的</p><ul><li>基础课程<ul><li>高等数学</li><li>线性代数</li><li>概率论</li><li>大物</li><li>电路</li><li>模电</li><li>数电</li><li>电力电子</li><li>PCB</li><li>C</li><li>数据结构</li><li>数据结构</li><li>HDL</li><li>Linux</li><li>自动控制原理</li><li>。。。。。。<br>  以上为基础课程，也就是必修加认真学的。<br>下面是一些所需的自学项目</li></ul></li><li>PCB绘制<ul><li>AD&#x2F;Kicad&#x2F;LCEDA</li></ul></li><li>51&#x2F;32的寄存器控制编程<ul><li>最好使用寄存器，从组成的基础开始学</li></ul></li><li>FPGA实践<ul><li>可以选不同的平台，但最好是实物，学习数电等</li></ul></li><li>器件选型</li><li>焊接</li><li>测试工具的使用<ul><li>这里要着重强调一下示波器的使用，十分重要。</li></ul></li></ul><h2 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h2><p>做硬件要的是成就感，特备是你还没法以此吃饭的时候，来吧，开源硬件在召唤着你。<br>我并没有什么奖状，能拿得出手的只有一个个开源硬件堆积起来的。<br>具体的可以看如下网址</p><ul><li><p><a href="https://github.com/">Github</a></p></li><li><p><a href="https://oshwhub.com/">硬件设计，嘉立创EDA开源硬件平台，硬件工程师的电路家园。</a></p></li><li><p><a href="https://hackaday.com/">HACKADAY</a></p></li><li><p><a href="https://www.eetree.cn/">电子森林 - 电子森林</a></p></li><li><p><a href="https://course.darwinlearns.com/">达尔闻在线课堂-初学者到大师的进化之路</a></p><p>  项目做起来，用项目来进行自己的锻炼，在项目中才能发现不足。</p><p>  另B站，MOOC要多用起来，有些课还是要买起来。</p></li></ul><h1 id="部分解答"><a href="#部分解答" class="headerlink" title="部分解答"></a>部分解答</h1><p>关于硬件的花钱。<br>能上我们这破烂学校的，家里都不是特别穷的，买鞋的，周周出去逛街看电影的不在少数。再说了基础的条件实验室都能提供，现在嘉立创免费打板加上电子元件的国产化和网购都降低了门槛。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h4 id=&quot;本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。&quot;&gt;&lt;a href=&quot;#本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。&quot; class=&quot;headerlink&quot; title=&quot;</summary>
-      
-    
-    
-    
-    <category term="学习" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="小记" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/"/>
-    
-    
-    <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
-    
-  </entry>
   
   <entry>
     <title>MD语言 代码块</title>
@@ -115,6 +89,32 @@
   </entry>
   
   <entry>
+    <title>实验室硬件方向</title>
+    <link href="https://john1175.github.io/2022/08/11/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/"/>
+    <id>https://john1175.github.io/2022/08/11/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/</id>
+    <published>2022-08-10T16:00:00.000Z</published>
+    <updated>2022-08-24T16:00:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。"><a href="#本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。" class="headerlink" title="本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。"></a>本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。</h4><p>另：Joshua同志开始进行基地管理了，并开始操心，甚慰。</p><h1 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h1><p>我个人对于硬件方向的建议就是不建议，是的不建议学硬件。<br>是的，我个人不建议进行硬件方向的学习。<br>至于我为什么会选择硬件，是因为我不喜欢软件而对单板方面有兴趣，外加我大学期间只泡实验室以及舍得花钱在这个方面。是的我现在的选择是兴趣加钱堆出来的。</p><ol><li>硬件是花钱的，在跟Joshua同志说时他调侃到不全是江浙户，笑，这倒不是，这更多的是指你愿意花多少的百分比在学习上。</li><li>硬件的工资在与基地的另一个发展方向软件的对比上没有竞争性。且硬件的岗位也要比软件少，毕竟费钱。</li><li>硬件的学习难度与广度较高，真正的入门较难。不仅是硬件基础的大量方面，你软件也要会，软件要学的你也要，只是不那么的精通。</li><li>学校问题<ol><li>本校课程缩减，且讲解即为简单，只能自学。</li><li>基地参与的比赛向来重视PPT，其次外观，再次软件，最后硬件。即使是不用PPT的车赛也限制了硬件，下限极低，够用就行。</li><li>基地没啥硬件传承，路在达到车赛后就没有了，我是自己淌出来，且没啥参考性。</li></ol></li></ol><h1 id="学习路线"><a href="#学习路线" class="headerlink" title="学习路线"></a>学习路线</h1><p>硬件的路线我列一些我了解的单板的</p><ul><li>基础课程<ul><li>高等数学</li><li>线性代数</li><li>概率论</li><li>大物</li><li>电路</li><li>模电</li><li>数电</li><li>电力电子</li><li>PCB</li><li>C</li><li>数据结构</li><li>数据结构</li><li>HDL</li><li>Linux</li><li>自动控制原理</li><li>。。。。。。<br>  以上为基础课程，也就是必修加认真学的。<br>  下面是一些所需的自学项目</li></ul></li><li>PCB绘制<ul><li>AD&#x2F;Kicad&#x2F;LCEDA</li></ul></li><li>51&#x2F;32的寄存器控制编程<ul><li>最好使用寄存器，从组成的基础开始学</li></ul></li><li>FPGA实践<ul><li>可以选不同的平台，但最好是实物，学习数电等</li></ul></li><li>器件选型</li><li>焊接</li><li>测试工具的使用<ul><li>这里要着重强调一下示波器的使用，十分重要。</li></ul></li></ul><h2 id="重点"><a href="#重点" class="headerlink" title="重点"></a>重点</h2><p>做硬件要的是成就感，特备是你还没法以此吃饭的时候，来吧，开源硬件在召唤着你。<br>我并没有什么奖状，能拿得出手的只有一个个开源硬件堆积起来的。<br>具体的可以看如下网址</p><ul><li><p><a href="https://github.com/">Github</a></p></li><li><p><a href="https://oshwhub.com/">硬件设计，嘉立创EDA开源硬件平台，硬件工程师的电路家园。</a></p></li><li><p><a href="https://hackaday.com/">HACKADAY</a></p></li><li><p><a href="https://www.eetree.cn/">电子森林 - 电子森林</a></p></li><li><p><a href="https://course.darwinlearns.com/">达尔闻在线课堂-初学者到大师的进化之路</a></p><p>  项目做起来，用项目来进行自己的锻炼，在项目中才能发现不足。</p><p>  另B站，MOOC要多用起来，有些课还是要买起来。</p></li></ul><h1 id="部分解答"><a href="#部分解答" class="headerlink" title="部分解答"></a>部分解答</h1><p>关于硬件的花钱。<br>能上我们这破烂学校的，家里都不是特别穷的，买鞋的，周周出去逛街看电影的不在少数。再说了基础的条件实验室都能提供，现在嘉立创免费打板加上电子元件的国产化和网购都降低了门槛。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h4 id=&quot;本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。&quot;&gt;&lt;a href=&quot;#本次受Joshua同志的邀请，写一下我有关实验室硬件的学习路线，方向，办法，建议之类的东西。&quot; class=&quot;headerlink&quot; title=&quot;</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="小记" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/"/>
+    
+    
+    <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>第十七届大学生智能车竞赛总结</title>
     <link href="https://john1175.github.io/2022/08/07/%E7%AC%AC%E5%8D%81%E4%B8%83%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/"/>
     <id>https://john1175.github.io/2022/08/07/%E7%AC%AC%E5%8D%81%E4%B8%83%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/</id>
@@ -136,9 +136,9 @@
     <category term="智能车" scheme="https://john1175.github.io/categories/%E5%9B%A2%E9%98%9F/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
     
     
-    <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
-    
     <category term="生活" scheme="https://john1175.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
     
   </entry>
   
@@ -330,9 +330,9 @@
     <category term="小记" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/"/>
     
     
-    <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
-    
     <category term="Funpack" scheme="https://john1175.github.io/tags/Funpack/"/>
+    
+    <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
     
   </entry>
   
@@ -519,9 +519,9 @@
     <category term="信仰尺" scheme="https://john1175.github.io/categories/%E4%BF%A1%E4%BB%B0%E5%B0%BA/"/>
     
     
-    <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
-    
     <category term="生活" scheme="https://john1175.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+    <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
     
   </entry>
   
