@@ -9,7 +9,7 @@
   <meta name="description" content="近日于VMawe上的ubuntu20上安装KiCad 安装是基于shell的 使用了shell安装，在命令行中敲出以下四行即可进行安装。 1234sudo add-apt-repository --yes ppa:kicad&#x2F;kicad-5.1-releasessudo apt updatesudo apt install --install-recommends kicadsudo apt in">
 <meta property="og:type" content="article">
 <meta property="og:title" content="KiCad安装小记">
-<meta property="og:url" content="http://example.com/2021/03/27/2021-03-27-KiCad%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%A1/index.html">
+<meta property="og:url" content="https://john1175.github.io/2021/03/27/2021-03-27-KiCad%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%A1/index.html">
 <meta property="og:site_name" content="涵尘">
 <meta property="og:description" content="近日于VMawe上的ubuntu20上安装KiCad 安装是基于shell的 使用了shell安装，在命令行中敲出以下四行即可进行安装。 1234sudo add-apt-repository --yes ppa:kicad&#x2F;kicad-5.1-releasessudo apt updatesudo apt install --install-recommends kicadsudo apt in">
 <meta property="og:locale" content="zh_CN">
@@ -73,7 +73,7 @@
         <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
       </nav>
       <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://john1175.github.io"></form>
       </div>
     </div>
   </div>
@@ -109,14 +109,14 @@
         <p>近日于VMawe上的ubuntu20上安装KiCad</p>
 <p>安装是基于shell的</p>
 <p>使用了shell安装，在命令行中敲出以下四行即可进行安装。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository --yes ppa:kicad/kicad-5.1-releases</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install --install-recommends kicad</span><br><span class="line">sudo apt install kicad-demos</span><br></pre></td></tr></table></figure>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo<span class="built_in"> add-apt-repository </span>--yes ppa:kicad/kicad-5.1-releases</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install --install-recommends kicad</span><br><span class="line">sudo apt install kicad-demos</span><br></pre></td></tr></table></figure>
 
 <p>这里安装的是稳定版本</p>
 <p>安装后语言选择中文时出了些小问题，将目录拖到最低才发现要安装语言包。。。。。。。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install kicad-locale-zh</span><br></pre></td></tr></table></figure>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install kicad-locale-<span class="built_in">zh</span></span><br></pre></td></tr></table></figure>
 
 <p>另如果你像我一样一开始直接安装了最新版本需要敲入以下代码进行卸载</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get remove kicad kicad-footprints kicad-libraries</span><br><span class="line">sudo apt-get remove kicad-symbols kicad-templates  kicad-packages3d</span><br><span class="line">sudo apt-get remove kicad-doc-* kicad-locale-*</span><br><span class="line">sudo add-apt-repository -r ppa:js-reynaud/ppa-kicad</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> <span class="built_in">remove</span> kicad kicad-footprints kicad-libraries</span><br><span class="line">sudo apt-<span class="built_in">get</span> <span class="built_in">remove</span> kicad-symbols kicad-templates  kicad-packages3d</span><br><span class="line">sudo apt-<span class="built_in">get</span> <span class="built_in">remove</span> kicad-doc-* kicad-locale-*</span><br><span class="line">sudo add-apt-repository -r ppa:js-reynaud/ppa-kicad</span><br></pre></td></tr></table></figure>
 
 <p>下面说一下它吸引我的地方，开源，开源，开源！！！！</p>
 <p>完全开源的库，模板，以及一大堆的插件。</p>
@@ -125,7 +125,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/27/2021-03-27-KiCad%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%A1/" data-id="clo5ef2zb001h1nny0zv515qm" data-title="KiCad安装小记" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://john1175.github.io/2021/03/27/2021-03-27-KiCad%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%A1/" data-id="clo5fsxgr001hgeny9tmhb705" data-title="KiCad安装小记" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
