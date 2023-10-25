@@ -6,7 +6,7 @@
   <link href="https://john1175.github.io/atom.xml" rel="self"/>
   
   <link href="https://john1175.github.io/"/>
-  <updated>2023-10-25T06:43:43.021Z</updated>
+  <updated>2023-10-25T10:41:14.465Z</updated>
   <id>https://john1175.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Screen命令</title>
+    <link href="https://john1175.github.io/2023/10/25/Screen%E5%91%BD%E4%BB%A4/"/>
+    <id>https://john1175.github.io/2023/10/25/Screen%E5%91%BD%E4%BB%A4/</id>
+    <published>2023-10-25T10:26:00.000Z</published>
+    <updated>2023-10-25T10:41:14.465Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>常用远程SSH进行个人服务器的连接。若有长时间操作的需求，断续的网络或主机的关机需求常常会使任务被杀掉。所以需要一个方便的长时间存在的远程终端窗口。</p><h2 id="Screen"><a href="#Screen" class="headerlink" title="Screen"></a>Screen</h2><p><strong>GNU Screen</strong>是一款由GNU计划开发的用于命令行终端切换的自由软件。用户可以通过该软件同时连接多个本地或远程的命令行会话，并在其间自由切换。<br>GNU Screen可以看作是窗口管理器的命令行界面版本。它提供了统一的管理多个会话的界面和相应的功能。</p><h3 id="会话恢复"><a href="#会话恢复" class="headerlink" title="会话恢复"></a>会话恢复</h3><p>只要Screen本身没有终止，在其内部运行的会话都可以恢复。这一点对于远程登录的用户特别有用——即使网络连接中断，用户也不会失去对已经打开的命令行会话的控制。只要再次登录到主机上执行screen -r就可以恢复会话的运行。同样在暂时离开的时候，也可以执行分离命令detach，在保证里面的程序正常运行的情况下让Screen挂起（切换到后台）。这一点和图形界面下的VNC很相似。</p><h3 id="多窗口"><a href="#多窗口" class="headerlink" title="多窗口"></a>多窗口</h3><p>在Screen环境下，所有的会话都独立的运行，并拥有各自的编号、输入、输出和窗口缓存。用户可以通过快捷键在不同的窗口下切换，并可以自由的重定向各个窗口的输入和输出。Screen实现了基本的文本操作，如复制粘贴等；还提供了类似滚动条的功能，可以查看窗口状况的历史记录。窗口还可以被分区和命名，还可以监视后台窗口的活动。</p><h3 id="会话共享"><a href="#会话共享" class="headerlink" title="会话共享"></a>会话共享</h3><p>Screen可以让一个或多个用户从不同终端多次登录一个会话，并共享会话的所有特性（比如可以看到完全相同的输出）。它同时提供了窗口访问权限的机制，可以对窗口进行密码保护。</p><h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><pre class="language-Shell" data-language="Shell"><code class="language-Shell">screen [-AmRvx -ls -wipe][-d &lt;作业名称&gt;][-h &lt;行数&gt;][-r &lt;作业名称&gt;][-s ][-S &lt;作业名称&gt;]</code></pre><h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><p>-A 将所有的视窗都调整为目前终端机的大小。<br>-d &lt;作业名称&gt; 　将指定的screen作业离线。<br>-h &lt;行数&gt; 　指定视窗的缓冲区行数。<br>-m 即使目前已在作业中的screen作业，仍强制建立新的screen作业。<br>-r &lt;作业名称&gt; 　恢复离线的screen作业。<br>-R 先试图恢复离线的作业。若找不到离线的作业，即建立新的screen作业。<br>-s 指定建立新视窗时，所要执行的shell。<br>-S &lt;作业名称&gt; 　指定screen作业的名称。<br>-v  显示版本信息。<br>-x  恢复之前离线的screen作业。<br>-ls或–list 显示目前所有的screen作业。<br>-wipe 检查目前所有的screen作业，并删除已经无法使用的screen作业。</p><h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><p>C-a ? -&gt; 显示所有键绑定信息<br>C-a c -&gt; 创建一个新的运行shell的窗口并切换到该窗口<br>C-a n -&gt; Next，切换到下一个 window <br>C-a p -&gt; Previous，切换到前一个 window <br>C-a 0..9 -&gt; 切换到第 0..9 个 window<br>Ctrl+a [Space] -&gt; 由视窗0循序切换到视窗9<br>C-a C-a -&gt; 在两个最近使用的 window 间切换 <br>C-a x -&gt; 锁住当前的 window，需用用户密码解锁<br>C-a d -&gt; detach，暂时离开当前session，将目前的 screen session (可能含有多个 windows) 丢到后台执行，并会回到还没进 screen 时的状态，此时在 screen session 里，每个 window 内运行的 process (无论是前台&#x2F;后台)都在继续执行，即使 logout 也不影响。 <br>C-a z -&gt; 把当前session放到后台执行，用 shell 的 fg 命令则可回去。<br>C-a w -&gt; 显示所有窗口列表<br>C-a t -&gt; Time，显示当前时间，和系统的 load <br>C-a k -&gt; kill window，强行关闭当前的 window<br>C-a [ -&gt; 进入 copy mode，在 copy mode 下可以回滚、搜索、复制就像用使用 vi 一样<br>    C-b Backward，PageUp <br>    C-f Forward，PageDown <br>    H(大写) High，将光标移至左上角 <br>    L Low，将光标移至左下角 <br>    0 移到行首 <br>    $ 行末 <br>    w forward one word，以字为单位往前移 <br>    b backward one word，以字为单位往后移 <br>    Space 第一次按为标记区起点，第二次按为终点 <br>    Esc 结束 copy mode <br>C-a ] -&gt; Paste，把刚刚在 copy mode 选定的内容贴上</p><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>创建新窗口 </p><pre class="language-Shell" data-language="Shell"><code class="language-Shell">screen -S yourname</code></pre><p>列出所有窗口</p><pre class="language-Shell" data-language="Shell"><code class="language-Shell">screen -ls</code></pre><p>回到窗口</p><pre class="language-Shell" data-language="Shell"><code class="language-Shell">screen -r yourname</code></pre><p>退出窗口</p><pre class="language-none"><code class="language-none">C-a d</code></pre><p>杀死窗口</p><pre class="language-Shell" data-language="Shell"><code class="language-Shell">exit</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h2&gt;&lt;p&gt;常用远程SSH进行个人服务器的连接。若有长时间操作的需求，断续的网络或主机的关机需求常常会使任务被杀掉。所以需要一个方便的长时间存在的远程终</summary>
+      
+    
+    
+    
+    <category term="笔记" scheme="https://john1175.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Linux" scheme="https://john1175.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MD语言 代码块</title>
     <link href="https://john1175.github.io/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
     <id>https://john1175.github.io/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/</id>
     <published>2023-10-24T16:00:00.000Z</published>
-    <updated>2023-10-25T06:43:43.021Z</updated>
+    <updated>2023-10-25T10:05:45.485Z</updated>
     
     <content type="html"><![CDATA[<h1 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h1><p>代码块靠<code>~</code>或<code>\`` \~\~\~ private String demo; \~\~\~ 或 \</code>``<br>private String demo;<br>```</p><pre class="language-none"><code class="language-none">private String demo;</code></pre><h1 id="代码块制定语言"><a href="#代码块制定语言" class="headerlink" title="代码块制定语言"></a>代码块制定语言</h1><p>指定语言使用方法 <code>关键字</code> 如 <code>java</code><br>~~~java<br> private String demo;<br>~~~</p><pre class="language-java" data-language="java"><code class="language-java"> <span class="token keyword">private</span> <span class="token class-name">String</span> demo<span class="token punctuation">;</span></code></pre><table><thead><tr><th>名称</th><th>关键字</th><th>调用的js</th></tr></thead><tbody><tr><td>AppleScript</td><td>applescript</td><td>shBrushAppleScript.js</td></tr><tr><td>ActionScript 3.0</td><td>actionscript3, as3</td><td>shBrushAS3.js</td></tr><tr><td>Shell</td><td>bash, shell</td><td>shBrushBash.js</td></tr><tr><td>ColdFusion</td><td>coldfusion, cf</td><td>shBrushColdFusion.js</td></tr><tr><td>C</td><td>cpp, c</td><td>shBrushCpp.js</td></tr><tr><td>C#</td><td>c#, c-sharp, csharp</td><td>shBrushCSharp.js</td></tr><tr><td>CSS</td><td>css</td><td>shBrushCss.js</td></tr><tr><td>Delphi</td><td>delphi, pascal, pas</td><td>shBrushDelphi.js</td></tr><tr><td>diff&amp;patch</td><td>diff patch</td><td>shBrushDiff.js</td></tr><tr><td>Erlang</td><td>erl, erlang</td><td>shBrushErlang.js</td></tr><tr><td>Groovy</td><td>groovy</td><td>shBrushGroovy.js</td></tr><tr><td>Java</td><td>java</td><td>shBrushJava.js</td></tr><tr><td>JavaFX</td><td>jfx, javafx</td><td>shBrushJavaFX.js</td></tr><tr><td>JavaScript</td><td>js, jscript, javascript</td><td>shBrushJScript.js</td></tr><tr><td>Perl</td><td>perl, pl, Perl</td><td>shBrushPerl.js</td></tr><tr><td>PHP</td><td>php</td><td>shBrushPhp.js</td></tr><tr><td>text</td><td>text, plain</td><td>shBrushPlain.js</td></tr><tr><td>Python</td><td>py, python</td><td>shBrushPython.js</td></tr><tr><td>Ruby</td><td>ruby, rails, ror, rb</td><td>shBrushRuby.js</td></tr><tr><td>SASS&amp;SCSS</td><td>sass, scss</td><td>shBrushSass.js</td></tr><tr><td>Scala</td><td>scala</td><td>shBrushScala.js</td></tr><tr><td>SQL</td><td>sql</td><td>shBrushSql.js</td></tr><tr><td>Visual Basic</td><td>vb, vbnet</td><td>shBrushVb.js</td></tr><tr><td>XML</td><td>xml, xhtml, xslt, html</td><td>shBrushXml.js</td></tr><tr><td>Objective C</td><td>objc, obj-c</td><td>shBrushObjectiveC.js</td></tr><tr><td>F#</td><td>f# f-sharp, fsharp</td><td>shBrushFSharp.js</td></tr><tr><td>xpp, dynamics-xpp</td><td></td><td>shBrushDynamics.js</td></tr><tr><td>R</td><td>r, s, splus</td><td>shBrushR.js</td></tr><tr><td>matlab</td><td>matlab</td><td>shBrushMatlab.js</td></tr><tr><td>swift</td><td>swift</td><td>shBrushSwift.js</td></tr><tr><td>GO</td><td>go, golang</td><td>shBrushGo.js</td></tr></tbody></table>]]></content>
     
@@ -33,9 +57,7 @@
     
     
     
-    <category term="学习" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="笔记" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/"/>
+    <category term="笔记" scheme="https://john1175.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="MD" scheme="https://john1175.github.io/tags/MD/"/>
@@ -147,7 +169,7 @@
     <link href="https://john1175.github.io/2022/01/25/2022-01-25-%E5%AE%9E%E4%B9%A0%E5%B0%8F%E8%AE%B022-1-24-2022-1-25/"/>
     <id>https://john1175.github.io/2022/01/25/2022-01-25-%E5%AE%9E%E4%B9%A0%E5%B0%8F%E8%AE%B022-1-24-2022-1-25/</id>
     <published>2022-01-24T16:00:00.000Z</published>
-    <updated>2023-10-24T13:44:06.715Z</updated>
+    <updated>2023-10-25T12:39:57.513Z</updated>
     
     <content type="html"><![CDATA[<h1 id="MII-SMI接口"><a href="#MII-SMI接口" class="headerlink" title="MII&#x2F;SMI接口"></a>MII&#x2F;SMI接口</h1><p>SMI：串行管理接口（Serial Management Interface），也被称作MII管理接口（MII Management Interface）</p><p> 连接MAC和PHY</p><p> MII 含两个接口：</p><ol><li>一个数据接口，用户 MAC     和 PHY 之间收发 Ethernet 数据</li><li>一个管理接口，这个管理接口通常称为 MDIO，MIIM 或者     SMI。这个接口用于 MAC 从 PHY 读取相关管理寄存器的值，或者往 PHY 管理寄存器上写入数据。</li></ol><p> MDIO是一个PHY的管理接口，用来读&#x2F;写PHY的寄存器，以控制PHY的行为或获取PHY的状态，MDC为MDIO提供时钟。</p><p> MDIO是双向的，只支持一个MAC连接最多32个PHY的连接方式，且MAC作为master，PHY作为slave。在写PHY寄存器的时候，由MAC驱动MDIO向PHY写入数据；在读PHY寄存器时，前半段由MAC驱动发送寄存器地址，后半段由PHY驱动回复寄存器的值。</p><p>MDC要求由MAC输出，是非周期性的，即不要求提供固定频率的时钟，对于PHY芯片则作为输入，以在上升沿触发MDIO的读写。MDC的时钟频率可以是DC-2.5MHz，即最小的时钟周期为400ns。</p><p> MDC为标准方波，MDIO随MDC改变</p>]]></content>
     
@@ -229,9 +251,9 @@
     <link href="https://john1175.github.io/2022/01/12/2022-01-12-%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90%EF%BC%9ADSP%E4%B8%8B%E7%94%B5%E5%AF%BC%E8%87%B4PHY%E6%95%85%E9%9A%9C/"/>
     <id>https://john1175.github.io/2022/01/12/2022-01-12-%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90%EF%BC%9ADSP%E4%B8%8B%E7%94%B5%E5%AF%BC%E8%87%B4PHY%E6%95%85%E9%9A%9C/</id>
     <published>2022-01-12T12:15:08.000Z</published>
-    <updated>2023-10-24T13:44:06.715Z</updated>
+    <updated>2023-10-25T12:39:29.109Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>板子上DSP下电时PHY芯片故障，直接不工作。</p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>初查，怀疑电源问题，用示波器测量3.3V与2.5V电压。</p><p> 发现DSP下电时3.3V掉到了2V以下时长100us，说明电源有问题。 </p><p>后测量3.3V电流，发现发现DSP下电时3.3V电流由直接掉到接近2V的程度，初步认定是使用的电源问题。</p><p>供电电源IMAX为16A，整版估计使用4A左右，处轻载工作状态，当负载变化时，电源负载响应不过来。</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>更换DCDC电源负载瞬态响应更好的电源，或提高开关频率。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>板子上DSP下电时PHY芯片故障，直接不工作。</p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>初查，怀疑电源问题，用示波器测量3.3V与2.5V电压。</p><p> 发现DSP下电时3.3V掉到了2V以下时长100us，说明电源有问题。</p><p>后测量3.3V电流，发现发现DSP下电时3.3V电流由直接掉到接近2V的程度，初步认定是使用的电源问题。</p><p>供电电源IMAX为16A，整版估计使用4A左右，处轻载工作状态，当负载变化时，电源负载响应不过来。</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>更换DCDC电源负载瞬态响应更好的电源，或提高开关频率。</p>]]></content>
     
     
       
@@ -244,8 +266,6 @@
     
     <category term="故障分析" scheme="https://john1175.github.io/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/"/>
     
-    <category term="笔记" scheme="https://john1175.github.io/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/%E7%AC%94%E8%AE%B0/"/>
-    
     
     <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
     
@@ -256,9 +276,9 @@
     <link href="https://john1175.github.io/2022/01/08/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/"/>
     <id>https://john1175.github.io/2022/01/08/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/</id>
     <published>2022-01-08T14:45:23.000Z</published>
-    <updated>2023-10-24T13:44:06.715Z</updated>
+    <updated>2023-10-25T12:39:18.397Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Wio-Terminal介绍"><a href="#Wio-Terminal介绍" class="headerlink" title="Wio Terminal介绍"></a>Wio Terminal介绍</h2><p>Wio Terminal 是基于SAMD51的微控制器，具有 Realtek RTL8720DN 支持的无线连接，与Arduino和MicroPython兼容。它的运行速度为 120MHz (最高可达200MHz), 4MB 外部闪存和 192KB RAM。它同时支持蓝牙和Wi-Fi，为物联网项目提供了骨架。Wio Terminal自身配有LCD屏幕, 板载IMU(LIS3DHTR)，麦克风，蜂鸣器，microSD卡槽，光传感器和红外发射器(IR 940nm)。 最重要的是它还有两个用于<a href="https://www.seeedstudio.com/grove.html">Grove生态系统</a> 的多功能Grove端口和40个Raspberry pi兼容的GPIO引脚，用于支持更多附加组件。</p><ul><li>MCU, LCD, WIFI, BT, IMU, 麦克风, 蜂鸣器, microSD Card, 光传感器, 五向开关, 光传感器和红外发射器 (IR 940nm), 加密验证</li><li>软件支持：Arduino、MicroPython、ArduPy、AT Firmware</li></ul><p>Wio Terminal还有大量应用与案例，对于我们的使用提供了极大的帮助。</p><h2 id="项目分析"><a href="#项目分析" class="headerlink" title="项目分析"></a>项目分析</h2><p>本次利用背部Raspberry pi兼容的GPIO引脚，通过杜邦线连3个传感器：热释电红外线传感器，MQ烟雾传感器，温度传感器。并将数据以折线图的形式展现在屏幕上</p><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/1E541CCD9C592ED6C65FB43399AB18C6.jpg" alt="1E541CCD9C592ED6C65FB43399AB18C6" loading="lazy"></p><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/5E4E0DB1014CFB090DB0A08BEE07E34C.jpg" alt="5E4E0DB1014CFB090DB0A08BEE07E34C" loading="lazy"></p><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/E2674AF54B89E546F199FF7F23181FCD.jpg" alt="E2674AF54B89E546F199FF7F23181FCD" loading="lazy"></p><h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>这里使用Arduino，使用了seeed的折线图</p><pre class="language-C++" data-language="C++"><code class="language-C++">#include&quot;seeed_line_chart.h&quot;&#x2F;&#x2F;折线图头文件TFT_eSPI tft;</code></pre><p>折线图的设置</p><pre class="language-C++" data-language="C++"><code class="language-C++">void setup()&#123;  tft.begin();    &#x2F;&#x2F;初始化  tft.setRotation(3);   &#x2F;&#x2F;选择一个角落为原点(能填0~3)  spr.createSprite(TFT_HEIGHT,TFT_WIDTH);   &#x2F;&#x2F;定折线图的长和宽  pinMode(A7,INPUT);  Serial.begin(9600);&#125;void loop()&#123;&#x2F;&#x2F;刷新屏幕  spr.fillSprite(TFT_WHITE);  if (data_1.size() &#x3D;&#x3D; max_size) &#123;  &#x2F;&#x2F;变量数目超过同屏最大值    data_1.pop(); &#x2F;&#x2F;删除第一个数据  &#125;  if (data_2.size() &#x3D;&#x3D; max_size) &#123;    data_2.pop(); &#x2F;&#x2F;删除第一个数据  &#125;  if (data_3.size() &#x3D;&#x3D; max_size) &#123;    data_3.pop(); &#x2F;&#x2F;删除第一个数据  &#125;</code></pre><p>LCD显示设置</p><pre class="language-C++" data-language="C++"><code class="language-C++">&#x2F;&#x2F;标题设置    &#x2F;&#x2F;标题1    auto header_1 &#x3D;text(50, 0)&#x2F;&#x2F;标题位置    .value(&quot;tem&quot;)  &#x2F;&#x2F;标题内容    .align(center)      &#x2F;&#x2F;标题水平？？？    .valign(vcenter)    &#x2F;&#x2F;标题垂直？？？    .width(6) &#x2F;&#x2F;标题宽度    .thickness(3);  &#x2F;&#x2F;字体的粗细    header_1.height(header_1.font_height() * 2); &#x2F;&#x2F;标题的高度是字体高度的两倍    header_1.draw();     &#x2F;&#x2F;标题2    auto header_2 &#x3D;text(200, 0)&#x2F;&#x2F;标题位置    .value(&quot;smoke&quot;)  &#x2F;&#x2F;标题内容    .align(center)      &#x2F;&#x2F;标题水平？？？    .valign(vcenter)    &#x2F;&#x2F;标题垂直？？？    .width(6) &#x2F;&#x2F;标题宽度    .thickness(3);  &#x2F;&#x2F;字体的粗细    header_2.height(header_2.font_height() * 2); &#x2F;&#x2F;标题的高度是字体高度的两倍    header_2.draw();     &#x2F;&#x2F;标题3    auto header_3 &#x3D;text(200, 150)&#x2F;&#x2F;标题位置    .value(&quot;infra-red&quot;)  &#x2F;&#x2F;标题内容    .align(center)      &#x2F;&#x2F;标题水平？？？    .valign(vcenter)    &#x2F;&#x2F;标题垂直？？？    .width(6) &#x2F;&#x2F;标题宽度    .thickness(3);  &#x2F;&#x2F;字体的粗细    header_3.height(header_3.font_height() * 2); &#x2F;&#x2F;标题的高度是字体高度的两倍    header_3.draw();   &#x2F;&#x2F;设置折线图  &#x2F;&#x2F;图1  auto content_1 &#x3D; line_chart(0, 0);&#x2F;&#x2F;折线图原点位置    content_1      .height(TFT_WIDTH&#x2F;2) &#x2F;&#x2F;折线图的实际高度      .width(TFT_HEIGHT&#x2F;2-10) &#x2F;&#x2F;折线图的实际宽度      .based_on(0.0)  &#x2F;&#x2F;不知道？？？      .show_circle(false)   &#x2F;&#x2F;在每个点绘制圆环时，默认设置为启用。      .value(data_1)  &#x2F;&#x2F;将数据传递到折线图      .color(TFT_PURPLE)  &#x2F;&#x2F;折线图线条的颜色      .draw();  &#x2F;&#x2F;图2  auto content_2&#x3D; line_chart(TFT_HEIGHT&#x2F;2-10, 0);&#x2F;&#x2F;折线图原点位置    content_2      .height(TFT_WIDTH&#x2F;2) &#x2F;&#x2F;折线图的实际高度      .width(TFT_HEIGHT&#x2F;2-10) &#x2F;&#x2F;折线图的实际宽度      .based_on(0.0)  &#x2F;&#x2F;不知道？？？      .show_circle(false)   &#x2F;&#x2F;在每个点绘制圆环时，默认设置为启用。      .value(data_2)  &#x2F;&#x2F;将数据传递到折线图      .color(TFT_PURPLE)  &#x2F;&#x2F;折线图线条的颜色      .draw();  &#x2F;&#x2F;图3  auto content_3&#x3D; line_chart(0,TFT_HEIGHT&#x2F;2-50);&#x2F;&#x2F;折线图原点位置    content_3      .height(TFT_WIDTH&#x2F;2) &#x2F;&#x2F;折线图的实际高度      .width(TFT_HEIGHT&#x2F;2-10) &#x2F;&#x2F;折线图的实际宽度      .based_on(0.0)  &#x2F;&#x2F;不知道？？？      .show_circle(false)   &#x2F;&#x2F;在每个点绘制圆环时，默认设置为启用。      .value(data_3)  &#x2F;&#x2F;将数据传递到折线图      .color(TFT_PURPLE)  &#x2F;&#x2F;折线图线条的颜色      .draw();</code></pre><p>Arduino永远的神！！！！！！！</p><h2 id="功能展示"><a href="#功能展示" class="headerlink" title="功能展示"></a>功能展示</h2><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/DC6158A1357A0C07ADC9A21FB2B96DB1.jpg" alt="DC6158A1357A0C07ADC9A21FB2B96DB1" loading="lazy"></p><p>这里我们可以看到目前的传感器数据：温度，烟雾，红外。</p><p>可以看到10C左右的室温，挺暖和的。</p><p>MQ的读数0.08以下，正常，这里没有人吸烟</p><p>热释电红外线传感器这里可以看到一个下降，手刚刚略过传感器，正常。</p><h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>这是第12期了从半路上来就一直坚持了下来，12月因为有事所以选择了项目一，Arduino永远的神，简单高效。</p><p>这应该是最后一期了，希望后面会有更多的类似活动。</p><p>硬禾学堂&amp;得捷电子yyds！！！</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Wio-Terminal介绍"><a href="#Wio-Terminal介绍" class="headerlink" title="Wio Terminal介绍"></a>Wio Terminal介绍</h2><p>Wio Terminal 是基于SAMD51的微控制器，具有 Realtek RTL8720DN 支持的无线连接，与Arduino和MicroPython兼容。它的运行速度为 120MHz (最高可达200MHz), 4MB 外部闪存和 192KB RAM。它同时支持蓝牙和Wi-Fi，为物联网项目提供了骨架。Wio Terminal自身配有LCD屏幕, 板载IMU(LIS3DHTR)，麦克风，蜂鸣器，microSD卡槽，光传感器和红外发射器(IR 940nm)。 最重要的是它还有两个用于<a href="https://www.seeedstudio.com/grove.html">Grove生态系统</a> 的多功能Grove端口和40个Raspberry pi兼容的GPIO引脚，用于支持更多附加组件。</p><ul><li>MCU, LCD, WIFI, BT, IMU, 麦克风, 蜂鸣器, microSD Card, 光传感器, 五向开关, 光传感器和红外发射器 (IR 940nm), 加密验证</li><li>软件支持：Arduino、MicroPython、ArduPy、AT Firmware</li></ul><p>Wio Terminal还有大量应用与案例，对于我们的使用提供了极大的帮助。</p><h2 id="项目分析"><a href="#项目分析" class="headerlink" title="项目分析"></a>项目分析</h2><p>本次利用背部Raspberry pi兼容的GPIO引脚，通过杜邦线连3个传感器：热释电红外线传感器，MQ烟雾传感器，温度传感器。并将数据以折线图的形式展现在屏幕上</p><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/1E541CCD9C592ED6C65FB43399AB18C6.jpg" alt="1E541CCD9C592ED6C65FB43399AB18C6" loading="lazy"></p><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/5E4E0DB1014CFB090DB0A08BEE07E34C.jpg" alt="5E4E0DB1014CFB090DB0A08BEE07E34C" loading="lazy"></p><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/E2674AF54B89E546F199FF7F23181FCD.jpg" alt="E2674AF54B89E546F199FF7F23181FCD" loading="lazy"></p><h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>这里使用Arduino，使用了seeed的折线图</p><pre class="language-C++" data-language="C++"><code class="language-C++">#include&quot;seeed_line_chart.h&quot;&#x2F;&#x2F;折线图头文件TFT_eSPI tft;</code></pre><p>折线图的设置</p><pre class="language-C++" data-language="C++"><code class="language-C++">void setup()&#123;  tft.begin();    &#x2F;&#x2F;初始化  tft.setRotation(3);   &#x2F;&#x2F;选择一个角落为原点(能填0~3)  spr.createSprite(TFT_HEIGHT,TFT_WIDTH);   &#x2F;&#x2F;定折线图的长和宽  pinMode(A7,INPUT);  Serial.begin(9600);&#125;void loop()&#123;&#x2F;&#x2F;刷新屏幕  spr.fillSprite(TFT_WHITE);  if (data_1.size() &#x3D;&#x3D; max_size) &#123;  &#x2F;&#x2F;变量数目超过同屏最大值    data_1.pop(); &#x2F;&#x2F;删除第一个数据  &#125;  if (data_2.size() &#x3D;&#x3D; max_size) &#123;    data_2.pop(); &#x2F;&#x2F;删除第一个数据  &#125;  if (data_3.size() &#x3D;&#x3D; max_size) &#123;    data_3.pop(); &#x2F;&#x2F;删除第一个数据  &#125;</code></pre><p>LCD显示设置</p><pre class="language-C++" data-language="C++"><code class="language-C++">&#x2F;&#x2F;标题设置    &#x2F;&#x2F;标题1    auto header_1 &#x3D;text(50, 0)&#x2F;&#x2F;标题位置    .value(&quot;tem&quot;)  &#x2F;&#x2F;标题内容    .align(center)      &#x2F;&#x2F;标题水平？？？    .valign(vcenter)    &#x2F;&#x2F;标题垂直？？？    .width(6) &#x2F;&#x2F;标题宽度    .thickness(3);  &#x2F;&#x2F;字体的粗细    header_1.height(header_1.font_height() * 2); &#x2F;&#x2F;标题的高度是字体高度的两倍    header_1.draw();    &#x2F;&#x2F;标题2    auto header_2 &#x3D;text(200, 0)&#x2F;&#x2F;标题位置    .value(&quot;smoke&quot;)  &#x2F;&#x2F;标题内容    .align(center)      &#x2F;&#x2F;标题水平？？？    .valign(vcenter)    &#x2F;&#x2F;标题垂直？？？    .width(6) &#x2F;&#x2F;标题宽度    .thickness(3);  &#x2F;&#x2F;字体的粗细    header_2.height(header_2.font_height() * 2); &#x2F;&#x2F;标题的高度是字体高度的两倍    header_2.draw();    &#x2F;&#x2F;标题3    auto header_3 &#x3D;text(200, 150)&#x2F;&#x2F;标题位置    .value(&quot;infra-red&quot;)  &#x2F;&#x2F;标题内容    .align(center)      &#x2F;&#x2F;标题水平？？？    .valign(vcenter)    &#x2F;&#x2F;标题垂直？？？    .width(6) &#x2F;&#x2F;标题宽度    .thickness(3);  &#x2F;&#x2F;字体的粗细    header_3.height(header_3.font_height() * 2); &#x2F;&#x2F;标题的高度是字体高度的两倍    header_3.draw();&#x2F;&#x2F;设置折线图  &#x2F;&#x2F;图1  auto content_1 &#x3D; line_chart(0, 0);&#x2F;&#x2F;折线图原点位置    content_1      .height(TFT_WIDTH&#x2F;2) &#x2F;&#x2F;折线图的实际高度      .width(TFT_HEIGHT&#x2F;2-10) &#x2F;&#x2F;折线图的实际宽度      .based_on(0.0)  &#x2F;&#x2F;不知道？？？      .show_circle(false)   &#x2F;&#x2F;在每个点绘制圆环时，默认设置为启用。      .value(data_1)  &#x2F;&#x2F;将数据传递到折线图      .color(TFT_PURPLE)  &#x2F;&#x2F;折线图线条的颜色      .draw();  &#x2F;&#x2F;图2  auto content_2&#x3D; line_chart(TFT_HEIGHT&#x2F;2-10, 0);&#x2F;&#x2F;折线图原点位置    content_2      .height(TFT_WIDTH&#x2F;2) &#x2F;&#x2F;折线图的实际高度      .width(TFT_HEIGHT&#x2F;2-10) &#x2F;&#x2F;折线图的实际宽度      .based_on(0.0)  &#x2F;&#x2F;不知道？？？      .show_circle(false)   &#x2F;&#x2F;在每个点绘制圆环时，默认设置为启用。      .value(data_2)  &#x2F;&#x2F;将数据传递到折线图      .color(TFT_PURPLE)  &#x2F;&#x2F;折线图线条的颜色      .draw();  &#x2F;&#x2F;图3  auto content_3&#x3D; line_chart(0,TFT_HEIGHT&#x2F;2-50);&#x2F;&#x2F;折线图原点位置    content_3      .height(TFT_WIDTH&#x2F;2) &#x2F;&#x2F;折线图的实际高度      .width(TFT_HEIGHT&#x2F;2-10) &#x2F;&#x2F;折线图的实际宽度      .based_on(0.0)  &#x2F;&#x2F;不知道？？？      .show_circle(false)   &#x2F;&#x2F;在每个点绘制圆环时，默认设置为启用。      .value(data_3)  &#x2F;&#x2F;将数据传递到折线图      .color(TFT_PURPLE)  &#x2F;&#x2F;折线图线条的颜色      .draw();</code></pre><p>Arduino永远的神！！！！！！！</p><h2 id="功能展示"><a href="#功能展示" class="headerlink" title="功能展示"></a>功能展示</h2><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/DC6158A1357A0C07ADC9A21FB2B96DB1.jpg" alt="DC6158A1357A0C07ADC9A21FB2B96DB1" loading="lazy"></p><p>这里我们可以看到目前的传感器数据：温度，烟雾，红外。</p><p>可以看到10C左右的室温，挺暖和的。</p><p>MQ的读数0.08以下，正常，这里没有人吸烟</p><p>热释电红外线传感器这里可以看到一个下降，手刚刚略过传感器，正常。</p><h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>这是第12期了从半路上来就一直坚持了下来，12月因为有事所以选择了项目一，Arduino永远的神，简单高效。</p><p>这应该是最后一期了，希望后面会有更多的类似活动。</p><p>硬禾学堂&amp;得捷电子yyds！！！</p>]]></content>
     
     
       
@@ -270,8 +290,6 @@
     
     <category term="制作" scheme="https://john1175.github.io/categories/%E5%88%B6%E4%BD%9C/"/>
     
-    <category term="学习" scheme="https://john1175.github.io/categories/%E5%88%B6%E4%BD%9C/%E5%AD%A6%E4%B9%A0/"/>
-    
     
     <category term="Funpack" scheme="https://john1175.github.io/tags/Funpack/"/>
     
@@ -282,7 +300,7 @@
     <link href="https://john1175.github.io/2022/01/08/2022-01-08-arduino%E9%85%8D%E7%BD%AE%E5%B0%8F%E8%AE%A1/"/>
     <id>https://john1175.github.io/2022/01/08/2022-01-08-arduino%E9%85%8D%E7%BD%AE%E5%B0%8F%E8%AE%A1/</id>
     <published>2022-01-07T16:00:00.000Z</published>
-    <updated>2023-10-24T13:44:06.715Z</updated>
+    <updated>2023-10-25T12:39:03.827Z</updated>
     
     <content type="html"><![CDATA[<p>首先我在win10上完成了</p><p>后打算在Linux上安装arduino</p><p>首先接sudo apt-get arduino</p><p>但是直接打开一看不行，很多功能都没有，后来一查是早期版本，ubuntu的太久没有更新。</p><p>然而在官网上找标准的方法，下载安装包安装，终于看到了最新的版本。</p><p>开始win10上的vscode arduino环境安装</p><p>首先是设置中将Arduino:Command Path填上了Arduino的地址，而这导致了错误</p><p>设置完成，端口选择成功，在板子的选择上我又遇到了问题，点击板子选择，出现</p><p>加载 Web 视图时出错: Error: Could not register service workers: InvalidStateError: Failed to register a ServiceWorker: The document is in an invalid state..</p><p>后上网，将Arduino扩展插件回滚到0.45，可以正常选择。</p>]]></content>
     
@@ -298,9 +316,7 @@
     
     
     
-    <category term="笔记" scheme="https://john1175.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
-    
-    <category term="小记" scheme="https://john1175.github.io/categories/%E7%AC%94%E8%AE%B0/%E5%B0%8F%E8%AE%B0/"/>
+    <category term="小记" scheme="https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/"/>
     
     
     <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
@@ -325,9 +341,7 @@
     
     
     
-    <category term="学习" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="小记" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/"/>
+    <category term="小记" scheme="https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/"/>
     
     
     <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
@@ -341,7 +355,7 @@
     <link href="https://john1175.github.io/2021/07/12/2021-07-12-16%E5%B1%8A%E6%99%BA%E8%83%BD%E8%BD%A6%E7%A1%AC%E4%BB%B6%E5%B0%8F%E8%AE%A1/"/>
     <id>https://john1175.github.io/2021/07/12/2021-07-12-16%E5%B1%8A%E6%99%BA%E8%83%BD%E8%BD%A6%E7%A1%AC%E4%BB%B6%E5%B0%8F%E8%AE%A1/</id>
     <published>2021-07-12T13:43:01.000Z</published>
-    <updated>2023-10-24T13:44:06.715Z</updated>
+    <updated>2023-10-25T12:38:37.861Z</updated>
     
     <content type="html"><![CDATA[<p>下面来聊一下本次第十六届全国大学智能汽车竞赛全向行进组的硬件设计部分的一些小计。</p><h3 id="控制器"><a href="#控制器" class="headerlink" title="控制器"></a>控制器</h3><p>车模微控制器使用<strong>WCH</strong>系列单片机。而本届比赛WCH限定使用RISC-V架构的芯片:CH32V103,其芯片性能堪忧，索性价低且不限制数量。</p><p>CH32V103的资源紧缺，这在我所知的智能车竞赛中纯属第一次，以往的比赛中芯片的资源都是溢出的，更别说紧缺了。</p><p>下面我说两种个人比较认可的方案：</p><p>首先是我们组在用的，较为常规的一种纯电磁方法：采用单核控制，四个编码器分时复用，四个电机采用单PWM控制方案，这样可以为我省出12个ADC通道，也就是采用7前5测的电磁布局，认为可以算亮眼的就是使用了74HC153来做编码器的分时复用。</p><p>另一组是我们去交流的组选用的方案，三核控制，一个单核作为主控制，剩下两个核心用于分别控制两个电机，一核双电机双编码器，主控供给驱动速度要求，或者仅仅是方向的要求，PID等的速度闭环就交给位于驱动板上的核心。主控只要专心于摄像头等传感元件，是个令人眼前一亮的设计。</p><h3 id="电机驱动"><a href="#电机驱动" class="headerlink" title="电机驱动"></a>电机驱动</h3><p>本次比赛中逐飞推出了TI的DRV8701E控制方案，我试了试，芯片的焊接反而难住了我，两片都未成功，后再老师的要求下使用成熟方案HIP4082。。。。。。</p><p>但是HIP4082会遇到芯片资源不足的问题，CH32V103一个定时器四个通道，四个电机标准要求是八个通道需求，加上麦克姆轮正反转的需求所以不能使用一边置地的取巧方法。后来采用的74HC153作为取巧方法,将PWM通于I0,I1的不同位置，从而用普通IO进行通道的选择，进行正反转的控制。</p><p>下面说两个过程中的错误，首先是我换了AD的封装而原理图没变，导致MOS的D与S互换。。。。。另一个是位于HIP4082DIS脚的下拉电阻失效。。。。。</p><p>两个没意义的失误，警醒自己。</p>]]></content>
     
@@ -356,10 +370,10 @@
     
     <category term="制作" scheme="https://john1175.github.io/categories/%E5%88%B6%E4%BD%9C/"/>
     
-    <category term="智能车" scheme="https://john1175.github.io/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
-    
     
     <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+    <category term="智能车" scheme="https://john1175.github.io/tags/%E6%99%BA%E8%83%BD%E8%BD%A6/"/>
     
   </entry>
   
@@ -368,7 +382,7 @@
     <link href="https://john1175.github.io/2021/06/17/2021-06-17-%E7%84%8A%E6%8E%A5%E5%B0%8F%E8%AE%A1/"/>
     <id>https://john1175.github.io/2021/06/17/2021-06-17-%E7%84%8A%E6%8E%A5%E5%B0%8F%E8%AE%A1/</id>
     <published>2021-06-17T15:50:34.000Z</published>
-    <updated>2023-10-24T13:44:06.715Z</updated>
+    <updated>2023-10-25T12:37:17.181Z</updated>
     
     <content type="html"><![CDATA[<p>今日观看焊接视频，有所得，加强了对于助焊剂与吸锡带的认识。以及对于硬件费钱的认知。</p><h3 id="PowerPAD"><a href="#PowerPAD" class="headerlink" title="PowerPAD"></a>PowerPAD</h3><p>终于找到了困扰我的PowerPAD封装的焊接方法。</p><p>的5分60秒处。</p><p>视频中，他先是加锡，加助焊剂给焊盘上锡，后用吸锡带平整焊盘，最后上助焊剂风枪。</p><p>让我印象深刻的是助焊剂的大量使用与高频使用，还有洗板水的高频使用，每完成一个步骤就进行一次洗板。</p><p>焊接PowerPAD此类封装要注意的是在热风枪下要轻轻拨动器件来看其是否自动归位来看焊接效果。</p><p>另外的就是隔热胶带的使用了，帮助我们不会误伤无辜。</p><p>我要加强自己马蹄头的练习了，他似乎更加适合焊接。</p><p>感觉自己又要进一批工具了。新的酒精瓶，更细的锡浆，更宽的隔热胶带…….我的钱在离我而去。</p><h3 id="小技巧：铜丝"><a href="#小技巧：铜丝" class="headerlink" title="小技巧：铜丝"></a>小技巧：铜丝</h3><p>在视频中展现了用铜丝辅助拆焊的技巧，利用其易弯折与导热的特性进行热的传递。</p><p>将铜丝弯折，成为包围封装的形状，加锡，利用铜丝传导热量，达到同时传导多处焊盘的效果。</p>]]></content>
     
@@ -382,8 +396,6 @@
     
     
     <category term="小记" scheme="https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/"/>
-    
-    <category term="制作" scheme="https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/%E5%88%B6%E4%BD%9C/"/>
     
     
     <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
@@ -470,7 +482,7 @@
     <link href="https://john1175.github.io/2021/03/27/2021-03-27-KiCad%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%A1/"/>
     <id>https://john1175.github.io/2021/03/27/2021-03-27-KiCad%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%A1/</id>
     <published>2021-03-27T12:44:26.000Z</published>
-    <updated>2023-10-24T13:44:06.715Z</updated>
+    <updated>2023-10-25T12:36:56.262Z</updated>
     
     <content type="html"><![CDATA[<p>近日于VMawe上的ubuntu20上安装KiCad</p><p>安装是基于shell的</p><p>使用了shell安装，在命令行中敲出以下四行即可进行安装。</p><pre class="language-none"><code class="language-none">sudo add-apt-repository --yes ppa:kicad&#x2F;kicad-5.1-releasessudo apt updatesudo apt install --install-recommends kicadsudo apt install kicad-demos</code></pre><p>这里安装的是稳定版本</p><p>安装后语言选择中文时出了些小问题，将目录拖到最低才发现要安装语言包。。。。。。。</p><pre class="language-none"><code class="language-none">sudo apt install kicad-locale-zh</code></pre><p>另如果你像我一样一开始直接安装了最新版本需要敲入以下代码进行卸载</p><pre class="language-none"><code class="language-none">sudo apt-get remove kicad kicad-footprints kicad-librariessudo apt-get remove kicad-symbols kicad-templates  kicad-packages3dsudo apt-get remove kicad-doc-* kicad-locale-*sudo add-apt-repository -r ppa:js-reynaud&#x2F;ppa-kicad</code></pre><p>下面说一下它吸引我的地方，开源，开源，开源！！！！</p><p>完全开源的库，模板，以及一大堆的插件。</p><p>个人感觉操作手感不同于AD，反而和Cadance有点相似。</p>]]></content>
     
@@ -485,12 +497,12 @@
     
     
     
-    <category term="学习" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="小记" scheme="https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/"/>
+    <category term="小记" scheme="https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/"/>
     
     
     <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+    <category term="Linux" scheme="https://john1175.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -519,35 +531,6 @@
     
     
     <category term="硬件" scheme="https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/"/>
-    
-    <category term="生活" scheme="https://john1175.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bye_2020</title>
-    <link href="https://john1175.github.io/2020/12/31/2020-12-31-Bye-2020/"/>
-    <id>https://john1175.github.io/2020/12/31/2020-12-31-Bye-2020/</id>
-    <published>2020-12-31T13:10:10.000Z</published>
-    <updated>2023-10-24T13:44:06.715Z</updated>
-    
-    <content type="html"><![CDATA[<p>Bye_2020</p><p>这是一个自己的小结</p><p>应为疫情，我们23号就考完了所有，没有体验过的人可能难以理解，实验与考试堆在了一起，实验，实验报告，备考三选二。那是一段黑暗。</p><p>目前在参见硬禾学堂的Funpack与雪花板，马上还有考研复习，FPGA学习，小熊派，Allegro。忙的有复习，学习与游戏，忘不负韶华。</p><p>目前是Funpack4，目前打算使用Thunderboard™ BG22与ESP32或者Wio-Terminal或者Arduino+HC-06，没办法没有APP基础，也不太愿意去学习，还有15天。</p><p>LED雪花灯板打算用用Allegro，这也有时间限制在17号之前。</p><p>望有足够的时间与能力吧。絮絮念念就到这里吧。</p><p>望有一个美好的2021，上岸成功。</p><p>20.12.31</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Bye_2020&lt;/p&gt;
-&lt;p&gt;这是一个自己的小结&lt;/p&gt;
-&lt;p&gt;应为疫情，我们23号就考完了所有，没有体验过的人可能难以理解，实验与考试堆在了一起，实验，实验报告，备考三选二。那是一段黑暗。&lt;/p&gt;
-&lt;p&gt;目前在参见硬禾学堂的Funpack与雪花板，马上还有考研复习，FP</summary>
-      
-    
-    
-    
-    <category term="小记" scheme="https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/"/>
-    
-    
-    <category term="Funpack" scheme="https://john1175.github.io/tags/Funpack/"/>
     
     <category term="生活" scheme="https://john1175.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
     
