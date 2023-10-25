@@ -1,8 +1,8 @@
+https://john1175.github.io/data/sentences.json
 https://john1175.github.io/404.html
 https://john1175.github.io/about/index.html
 https://john1175.github.io/categories/index.html
 https://john1175.github.io/tags/index.html
-https://john1175.github.io/data/sentences.json
 https://john1175.github.io/2022/08/07/%E7%AC%AC%E5%8D%81%E4%B8%83%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/
 https://john1175.github.io/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/
 https://john1175.github.io/2023/10/24/hexo_d%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99_ERROR_Deployer_not_found_git/
@@ -56,7 +56,7 @@ https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/
 https://john1175.github.io/categories/%E7%AC%94%E8%AE%B0/%E5%B0%8F%E8%AE%B0/
 https://john1175.github.io/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/
 https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/
+https://john1175.github.io/categories/%E6%97%A5%E5%BF%97/
 https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/%E5%88%B6%E4%BD%9C/
 https://john1175.github.io/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/%E7%AC%94%E8%AE%B0/
-https://john1175.github.io/categories/%E6%97%A5%E5%BF%97/
 https://john1175.github.io/categories/%E5%9B%A2%E9%98%9F/%E6%99%BA%E8%83%BD%E8%BD%A6/

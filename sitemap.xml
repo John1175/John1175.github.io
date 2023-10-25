@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://john1175.github.io/data/sentences.json</loc>
+    
+    <lastmod>2023-10-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://john1175.github.io/404.html</loc>
     
     <lastmod>2023-10-25</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>https://john1175.github.io/tags/index.html</loc>
-    
-    <lastmod>2023-10-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://john1175.github.io/data/sentences.json</loc>
     
     <lastmod>2023-10-25</lastmod>
     
@@ -486,6 +486,13 @@
   </url>
   
   <url>
+    <loc>https://john1175.github.io/categories/%E6%97%A5%E5%BF%97/</loc>
+    <lastmod>2023-10-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/%E5%88%B6%E4%BD%9C/</loc>
     <lastmod>2023-10-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -494,13 +501,6 @@
   
   <url>
     <loc>https://john1175.github.io/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-10-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://john1175.github.io/categories/%E6%97%A5%E5%BF%97/</loc>
     <lastmod>2023-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
