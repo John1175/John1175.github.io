@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>第十七届大学生智能车竞赛总结 | 涵尘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="前言本次受Joshua同志的邀请，对于智能车竞赛的硬件部分进行总结说来惭愧，本人虽然参与本次比赛，但更多的是挂名人员，仅进行了第一版主板的设计与绘制，后面一切的硬件事宜都由学弟进行接力完成，惭愧。 总结硬件方面项目总体的确立 项目的功能与之的发散 1. 这个你要实现什么功能?(行走？转向？显示？) 2. 为了实现想要的功能你需要准备什么？(电机？屏幕？蓝牙？) 3. 各个组件的确定与选型。(MCU">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第十七届大学生智能车竞赛总结">
+<meta property="og:url" content="http://example.com/2022/08/07/%E7%AC%AC%E5%8D%81%E4%B8%83%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="涵尘">
+<meta property="og:description" content="前言本次受Joshua同志的邀请，对于智能车竞赛的硬件部分进行总结说来惭愧，本人虽然参与本次比赛，但更多的是挂名人员，仅进行了第一版主板的设计与绘制，后面一切的硬件事宜都由学弟进行接力完成，惭愧。 总结硬件方面项目总体的确立 项目的功能与之的发散 1. 这个你要实现什么功能?(行走？转向？显示？) 2. 为了实现想要的功能你需要准备什么？(电机？屏幕？蓝牙？) 3. 各个组件的确定与选型。(MCU">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-08-06T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-10-25T06:43:44.185Z">
+<meta property="article:author" content="John1175">
+<meta property="article:tag" content="硬件">
+<meta property="article:tag" content="生活">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="涵尘" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">涵尘</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一个人的思索与生活</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-第十七届大学生智能车竞赛总结" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/08/07/%E7%AC%AC%E5%8D%81%E4%B8%83%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/" class="article-date">
+  <time class="dt-published" datetime="2022-08-06T16:00:00.000Z" itemprop="datePublished">2022-08-07</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%9B%A2%E9%98%9F/">团队</a>►<a class="article-category-link" href="/categories/%E5%9B%A2%E9%98%9F/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      第十七届大学生智能车竞赛总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>本次受Joshua同志的邀请，对于智能车竞赛的硬件部分进行总结<br>说来惭愧，本人虽然参与本次比赛，但更多的是挂名人员，仅进行了第一版主板的设计与绘制，后面一切的硬件事宜都由学弟进行接力完成，惭愧。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="硬件方面"><a href="#硬件方面" class="headerlink" title="硬件方面"></a>硬件方面</h2><h3 id="项目总体的确立"><a href="#项目总体的确立" class="headerlink" title="项目总体的确立"></a>项目总体的确立</h3><ol>
+<li>项目的功能与之的发散<br> 1. 这个你要实现什么功能?(行走？转向？显示？)<br> 2. 为了实现想要的功能你需要准备什么？(电机？屏幕？蓝牙？)<br> 3. 各个组件的确定与选型。(MCU型号、BLE接口与选型)</li>
+<li>电源与电源树(电源树相关自行查询)<br> 1.  上班时老大，也就是孙工，你们的另一位学长，跟我说了硬件单板测试的三要素：时钟、电源、复位。若在项目中采用了核心板，那么我们所要考虑的也就只有电源了。<br> 2. 首先推荐使用电源树，先列出所有终端器件的电平与功耗，以及电池参数，目标电平转换芯片的参数，进行电源树进行绘制，注意转换效率等。<br> 3. 电源树可有效、直观的令人注意到各个线路的电流大小，以及电平转换芯片的参数是否合理。比如常见的错误是使用一颗Imax&#x3D;200mA的LDO来给最高负载1A的器件进行供电。这回导致后端电路的工作失常。 </li>
+<li>电路框图<ol>
+<li>电路框图常用于展现不同器件&#x2F;模块之间的链接关系，如所采用的接口是什么，I2C是采用的硬件还是软件模拟等。</li>
+<li>电路框图可有效帮助自己电路设计的理清思路，并有助于软件的设计。</li>
+</ol>
+</li>
+</ol>
+<h3 id="细节规划部分。"><a href="#细节规划部分。" class="headerlink" title="细节规划部分。"></a>细节规划部分。</h3><ol>
+<li>器件要尽量减少不同型号的使用，并以及注意资金。</li>
+<li>原理图设计要注意分块设计，多尝试分页设计，这会使设计更有调理，注意信号，电源等的方向顺序；以及标号的设计，要简介易懂。</li>
+<li>PCB规范<ol>
+<li>注意安装孔的位置。</li>
+<li>注意接口，模块安装后的朝向。</li>
+<li>注意电流大小与线的粗细。</li>
+<li>加丝印对接口进行说明，以方便软件配置。</li>
+</ol>
+</li>
+<li>注意为软件提供芯片的引脚使用列表。</li>
+<li>尽可能的使用开关电源，其通过电流大，又可节省空间，且智能车除运放部分，对于电源波形要求不高，可降低设计难度。</li>
+<li>注意电源在放电时的电压波动，因LDO的电压跟随性，在电机转动时，电源电压可能会有较大的电压波动，若第一级电源就是LDO可能导致LDO的输出电源波动，导致系统故障；且，电机的性能也会随电平的变化而变化。故，推荐电源入板就进行一次开关电源的电平变换，给后端以及电机以稳定的电平电源。</li>
+</ol>
+<h3 id="技能方面"><a href="#技能方面" class="headerlink" title="技能方面"></a>技能方面</h3><ol>
+<li>器件选型<br>要学会读datasheet，并学会在立创等平台上进行器件的选型。</li>
+<li>示波器的使用<br>要学会示波器的使用，尤其是单次触发，要学会去抓I2C或SPI的波型。</li>
+</ol>
+<h2 id="管理方面"><a href="#管理方面" class="headerlink" title="管理方面"></a>管理方面</h2><p>这是我私自加的算得上是对后面的警示吧<br>不要与大四的组队，是的，我就是反例，我以一人之力拖垮了本组的进度。到了大四考研、找工作、毕设等等关乎生计的事情会出乎你想象的压过来，调车反而不再重要，加上基地的培养系统落后。当项目开始经凑时已到赛前的几个月，而这时大四已经开始最后的忙碌，这时忙碌的是关乎毕业证，而后面则是关乎生存，已经不可能有精力放在比赛上了。所以务必不要重蹈本队的覆辙。 </p>
+<h3 id="附件：波驱动心得"><a href="#附件：波驱动心得" class="headerlink" title="附件：波驱动心得"></a>附件：波驱动心得</h3><p>这是我的陈学长的一份硬件心得，作于大二，猛人，真正的从头开始智能车硬件的人，所用的电路都是一个一个在洞洞板上搭建后对比，调试，修改所得。<br>惜，硬件无路可走，后转为程序猿，小米打工人。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/08/07/%E7%AC%AC%E5%8D%81%E4%B8%83%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/" data-id="clo5e4kqu007clsny2cdl975f" data-title="第十七届大学生智能车竞赛总结" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/10/24/hexo_d%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99_ERROR_Deployer_not_found_git/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          hexo d命令报错 ERROR Deployer not found: git
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/01/25/2022-01-25-%E5%AE%9E%E4%B9%A0%E5%B0%8F%E8%AE%B022-1-24-2022-1-25/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">实习小记22-1-24-2022-1-25</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BF%A1%E4%BB%B0%E5%B0%BA/">信仰尺</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/">制作</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/%E5%AD%A6%E4%B9%A0/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%A2%E9%98%9F/">团队</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%A2%E9%98%9F/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/">小记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AE%B0/">小记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AE%B0/%E5%88%B6%E4%BD%9C/">制作</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/">故障分析</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/%E7%AC%94%E8%AE%B0/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%BF%97/">日志</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/%E5%B0%8F%E8%AE%B0/">小记</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Funpack/" rel="tag">Funpack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MD/" rel="tag">MD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9E%E4%B9%A0/" rel="tag">实习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B1%82%E8%81%8C/" rel="tag">求职</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Funpack/" style="font-size: 16px;">Funpack</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/MD/" style="font-size: 10px;">MD</a> <a href="/tags/Python/" style="font-size: 18px;">Python</a> <a href="/tags/%E5%AE%9E%E4%B9%A0/" style="font-size: 12px;">实习</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 10px;">求职</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px;">生活</a> <a href="/tags/%E7%A1%AC%E4%BB%B6/" style="font-size: 20px;">硬件</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">十月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">九月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">七月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">一月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/25/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/">实验室硬件方向</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/25/2023-10-25-%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/">实验室硬件方向</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/">MD语言 代码块</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/24/hexo_d%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99_ERROR_Deployer_not_found_git/">hexo d命令报错 ERROR Deployer not found: git</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John1175<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

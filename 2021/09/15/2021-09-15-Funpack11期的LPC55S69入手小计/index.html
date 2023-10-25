@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Funpack11期的LPC55S69入手小计 | 涵尘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="LPCXpresso55S69 为NXP家的官方版，板载了一颗 LPC55S69MCU，这是我所接触的第二块NXP家的MCU，上一块是车赛中的K60 开箱首先看包装，挺大的一个盒子：  打开是一份说明书？  背面是元件说明：  盒子中除了板子与说明书还有一根数据线与一些跳线帽：  LPCXpresso55S69：LPCXpresso55S69 作为NXP的官方评估和开发板自然有着MCUXpress">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Funpack11期的LPC55S69入手小计">
+<meta property="og:url" content="http://example.com/2021/09/15/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/index.html">
+<meta property="og:site_name" content="涵尘">
+<meta property="og:description" content="LPCXpresso55S69 为NXP家的官方版，板载了一颗 LPC55S69MCU，这是我所接触的第二块NXP家的MCU，上一块是车赛中的K60 开箱首先看包装，挺大的一个盒子：  打开是一份说明书？  背面是元件说明：  盒子中除了板子与说明书还有一根数据线与一些跳线帽：  LPCXpresso55S69：LPCXpresso55S69 作为NXP的官方评估和开发板自然有着MCUXpress">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E5%BC%80%E7%AE%B1%E6%AD%A3%E9%9D%A2-16412994811001.jpg">
+<meta property="og:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E8%AF%B4%E6%98%8E%E4%B9%A6%E6%AD%A3%E9%9D%A2-16413000243481.jpg">
+<meta property="og:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E8%AF%B4%E6%98%8E%E4%B9%A6%E8%83%8C%E9%9D%A2-16413000522452.jpg">
+<meta property="og:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E7%89%A9%E5%93%81-16413000652963.jpg">
+<meta property="og:image" content="https://qn.eetree.cn/FjhwNi0yfkLcWWW1cxn0zzPqH2I0">
+<meta property="og:image" content="https://qn.eetree.cn/FoDsQZqcpIwBVEfFx71s3V_iqC7G">
+<meta property="og:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/PMOD%E7%9A%84%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-16413000772224.png">
+<meta property="og:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E6%9D%BF%E8%BD%BD%E8%B0%83%E8%AF%95%E5%99%A8-16413000893595.jpg">
+<meta property="og:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E5%BC%80%E5%85%B3%E7%94%B5%E8%B7%AF-16413000998556.png">
+<meta property="og:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3-16413001113437.jpg">
+<meta property="article:published_time" content="2021-09-15T14:35:32.000Z">
+<meta property="article:modified_time" content="2021-12-12T01:37:52.000Z">
+<meta property="article:author" content="John1175">
+<meta property="article:tag" content="硬件">
+<meta property="article:tag" content="Funpack">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E5%BC%80%E7%AE%B1%E6%AD%A3%E9%9D%A2-16412994811001.jpg">
+  
+    <link rel="alternate" href="/atom.xml" title="涵尘" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">涵尘</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一个人的思索与生活</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2021-09-15-Funpack11期的LPC55S69入手小计" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/15/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/" class="article-date">
+  <time class="dt-published" datetime="2021-09-15T14:35:32.000Z" itemprop="datePublished">2021-09-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a>►<a class="article-category-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/">小记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Funpack11期的LPC55S69入手小计
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>LPCXpresso55S69 为NXP家的官方版，板载了一颗 LPC55S69MCU，这是我所接触的第二块NXP家的MCU，上一块是车赛中的K60</p>
+<h3 id="开箱"><a href="#开箱" class="headerlink" title="开箱"></a>开箱</h3><p>首先看包装，挺大的一个盒子：</p>
+<p><img src="/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E5%BC%80%E7%AE%B1%E6%AD%A3%E9%9D%A2-16412994811001.jpg"></p>
+<p>打开是一份说明书？</p>
+<p><img src="/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E8%AF%B4%E6%98%8E%E4%B9%A6%E6%AD%A3%E9%9D%A2-16413000243481.jpg"></p>
+<p>背面是元件说明：</p>
+<p><img src="/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E8%AF%B4%E6%98%8E%E4%B9%A6%E8%83%8C%E9%9D%A2-16413000522452.jpg"></p>
+<p>盒子中除了板子与说明书还有一根数据线与一些跳线帽：</p>
+<p><img src="/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E7%89%A9%E5%93%81-16413000652963.jpg"></p>
+<h3 id="LPCXpresso55S69："><a href="#LPCXpresso55S69：" class="headerlink" title="LPCXpresso55S69："></a>LPCXpresso55S69：</h3><p>LPCXpresso55S69 作为NXP的官方评估和开发板自然有着MCUXpresso 工具套件的完全支持。开发工具可选MCUXpressoIDE，或使用MCUXpresso_Config_Tools来生成Keil与IAR的工程来进行开发。LPCXpresso55S69 还可以使用FreeRTOS与RT-Thread等RTOS来进行开发。</p>
+<p>板载的LPC55S69 MCU基于Cortex-M33内核，有着更强的性能与更低的功耗，且有着强安全功能。</p>
+<p><img src="https://qn.eetree.cn/FjhwNi0yfkLcWWW1cxn0zzPqH2I0"></p>
+<p>LPCXpresso55S69 该板包括高性能板载调试探针、音频子系统和加速度计，并提供多种选项，用于添加用于网络、传感器、显示器和其他接口的现成附加板。</p>
+<p>本版为四层板，标准的两层电源，两层走线。</p>
+<p><img src="https://qn.eetree.cn/FoDsQZqcpIwBVEfFx71s3V_iqC7G"></p>
+<h3 id="板卡扩展接口："><a href="#板卡扩展接口：" class="headerlink" title="板卡扩展接口："></a>板卡扩展接口：</h3><p>Arduino UNO接口</p>
+<p>Mikroe Click接口</p>
+<p>PMod接口</p>
+<p>高速和全速USB端口，</p>
+<p>板载硬件调试器</p>
+<p>有多个板载跳线与接口</p>
+<p>其中：Pmod接口是Digilent公司在Digilent Pmod接口规范中定义的开放标准</p>
+<p><img src="/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/PMOD%E7%9A%84%E6%8E%A5%E5%8F%A3%E8%A7%84%E8%8C%83-16413000772224.png"></p>
+<h3 id="板载调试器"><a href="#板载调试器" class="headerlink" title="板载调试器"></a>板载调试器</h3><p>板载调试器为CMSIS-DAP，在使用前要注意将对应的跳线帽装上。</p>
+<p>调试器采用LPC4322JET100E作为核心，LBGA256封装。这算在开发板上一个常见的现象，板载的一个LQFP封装，在调试器使用BGA封装。</p>
+<p>调试器有多个接口采用74LVC1T45GW等双电源电平转换收发器来进行保护。该器件完全指定用于使用IOFF的部分掉电应用。IOFF电路可禁用输出，从而防止掉电时电流回流对器件造成的损坏。挂起模式下，如果VCC(A)或VCC(B)位于GND电平，则端口A和端口B都处于高阻抗关断状态。</p>
+<p><img src="/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E6%9D%BF%E8%BD%BD%E8%B0%83%E8%AF%95%E5%99%A8-16413000893595.jpg"></p>
+<h3 id="电源"><a href="#电源" class="headerlink" title="电源"></a>电源</h3><p>本板主要采用一个专门的Micro-USB进行供电。</p>
+<p>XC6223H251MR-G +5V_LINK→+2.5V_LINK</p>
+<p>XC6214P182PR-G +5V→VDD_TARGET_1.8</p>
+<p>XC6214P182PR-G +5V→VDD_TARGET_3.3</p>
+<h3 id="SD卡"><a href="#SD卡" class="headerlink" title="SD卡"></a>SD卡</h3><p>使用IP4252CZ16-8-TTLEMI 滤波器。</p>
+<p>开关电路：</p>
+<p><img src="/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E5%BC%80%E5%85%B3%E7%94%B5%E8%B7%AF-16413000998556.png"></p>
+<h3 id="USB"><a href="#USB" class="headerlink" title="USB"></a>USB</h3><p>采用PMEG4010CPA来进行电压保护，之前使用几乎不会进行这方面的考虑，实验室初级产品的现状。</p>
+<p>采用PRTR5V0U2X进行USB信号线保护。</p>
+<p>USB电源用磁珠处理。</p>
+<h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><p>采用WM8904CGEFL&#x2F;V作为耳放，超小4mm x 4mm的QFN。</p>
+<p>WM8904 是一款高性能、超低功耗立体声编解码器，采用立体声接地参考耳机放大器，且这种放大器采用双模式电荷泵架构，以优化回放过程中的效率和功耗。</p>
+<p><img src="/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/%E9%9F%B3%E9%A2%91%E6%8E%A5%E5%8F%A3-16413001113437.jpg"></p>
+<h3 id="加速度计"><a href="#加速度计" class="headerlink" title="加速度计"></a>加速度计</h3><p>NXP的MMA8652FCR1，3轴12位数字加速度计。</p>
+<h2 id="总结感想："><a href="#总结感想：" class="headerlink" title="总结感想："></a>总结感想：</h2><p>强大的一块板子，接口众多，其中用到了很多常见但我接触不到的保护措施，值得学习。</p>
+<p>另：千万别信NXP中文网站，连资料都是残缺的；哪怕翻译的英文网站都要好不少。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/15/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/" data-id="clo5e4koa0023lsny1b1l74ux" data-title="Funpack11期的LPC55S69入手小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Funpack/" rel="tag">Funpack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/01/08/2022-01-08-arduino%E9%85%8D%E7%BD%AE%E5%B0%8F%E8%AE%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          arduino配置小计
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/07/12/2021-07-12-16%E5%B1%8A%E6%99%BA%E8%83%BD%E8%BD%A6%E7%A1%AC%E4%BB%B6%E5%B0%8F%E8%AE%A1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">16届智能车硬件小计</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BF%A1%E4%BB%B0%E5%B0%BA/">信仰尺</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/">制作</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/%E5%AD%A6%E4%B9%A0/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%A2%E9%98%9F/">团队</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%A2%E9%98%9F/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/">小记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AE%B0/">小记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AE%B0/%E5%88%B6%E4%BD%9C/">制作</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/">故障分析</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/%E7%AC%94%E8%AE%B0/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%BF%97/">日志</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/%E5%B0%8F%E8%AE%B0/">小记</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Funpack/" rel="tag">Funpack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MD/" rel="tag">MD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9E%E4%B9%A0/" rel="tag">实习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B1%82%E8%81%8C/" rel="tag">求职</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Funpack/" style="font-size: 16px;">Funpack</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/MD/" style="font-size: 10px;">MD</a> <a href="/tags/Python/" style="font-size: 18px;">Python</a> <a href="/tags/%E5%AE%9E%E4%B9%A0/" style="font-size: 12px;">实习</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 10px;">求职</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px;">生活</a> <a href="/tags/%E7%A1%AC%E4%BB%B6/" style="font-size: 20px;">硬件</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">十月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">九月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">七月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">一月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/25/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/">实验室硬件方向</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/25/2023-10-25-%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/">实验室硬件方向</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/">MD语言 代码块</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/24/hexo_d%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99_ERROR_Deployer_not_found_git/">hexo d命令报错 ERROR Deployer not found: git</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John1175<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

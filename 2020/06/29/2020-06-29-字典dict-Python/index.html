@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>字典dict-Python | 涵尘</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="映射映射是一种键(索引)和值(数据)的对应 由用户确定，非默认 字典类型是“映射”的体现 键值对：键是数据索引的扩展 字典是键值对的集合，键值对之间无序 采用大括号{}和dict()创建，键值对用冒号: 表示 空字典 {} 查找时字典效率高 dict 使用dict从映射或键-值对创建字典 1234567&gt;&gt;&gt; items &#x3D; [(&amp;#x27;name&amp;#x27;, &amp;#x27;G">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字典dict-Python">
+<meta property="og:url" content="http://example.com/2020/06/29/2020-06-29-%E5%AD%97%E5%85%B8dict-Python/index.html">
+<meta property="og:site_name" content="涵尘">
+<meta property="og:description" content="映射映射是一种键(索引)和值(数据)的对应 由用户确定，非默认 字典类型是“映射”的体现 键值对：键是数据索引的扩展 字典是键值对的集合，键值对之间无序 采用大括号{}和dict()创建，键值对用冒号: 表示 空字典 {} 查找时字典效率高 dict 使用dict从映射或键-值对创建字典 1234567&gt;&gt;&gt; items &#x3D; [(&amp;#x27;name&amp;#x27;, &amp;#x27;G">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-06-29T08:26:35.000Z">
+<meta property="article:modified_time" content="2023-10-24T13:44:06.715Z">
+<meta property="article:author" content="John1175">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="涵尘" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">涵尘</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一个人的思索与生活</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-2020-06-29-字典dict-Python" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/06/29/2020-06-29-%E5%AD%97%E5%85%B8dict-Python/" class="article-date">
+  <time class="dt-published" datetime="2020-06-29T08:26:35.000Z" itemprop="datePublished">2020-06-29</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      字典dict-Python
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h1><p>映射是一种键(索引)和值(数据)的对应</p>
+<p>由用户确定，非默认</p>
+<p>字典类型是“映射”的体现</p>
+<p>键值对：键是数据索引的扩展</p>
+<p>字典是键值对的集合，键值对之间无序</p>
+<p>采用大括号{}和dict()创建，键值对用冒号: 表示</p>
+<p>空字典 {}</p>
+<p>查找时字典效率高</p>
+<p>dict</p>
+<p>使用dict从映射或键-值对创建字典</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>items = [(<span class="string">&#x27;name&#x27;</span>, <span class="string">&#x27;Gumby&#x27;</span>), (<span class="string">&#x27;age&#x27;</span>, <span class="number">42</span>)]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d = <span class="built_in">dict</span>(items)</span><br><span class="line">&gt;&gt;&gt;d</span><br><span class="line">&#123;<span class="string">&#x27;age&#x27;</span>:<span class="number">42</span>, <span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;Gumby&#x27;</span>&#125;</span><br><span class="line"> &gt;&gt;&gt; d = <span class="built_in">dict</span>(name = <span class="string">&#x27;Gumby&#x27;</span>, age = <span class="number">42</span>))</span><br><span class="line"> &gt;&gt;&gt; d</span><br><span class="line"> &#123;<span class="string">&#x27;age&#x27;</span>:<span class="number">42</span>, <span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;Gumby&#x27;</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>函数或方法</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>del d[k]</td>
+<td>删除字典d中键k对应的数据值</td>
+</tr>
+<tr>
+<td>len(d)</td>
+<td>返回字典d中元素的个数</td>
+</tr>
+<tr>
+<td>d[k]</td>
+<td>返回k所对应的值</td>
+</tr>
+<tr>
+<td>d[k] &#x3D;  v</td>
+<td>将值v关联到k</td>
+</tr>
+<tr>
+<td>k in d</td>
+<td>判断键k是否在字典d中，如果在返回True，否则False</td>
+</tr>
+<tr>
+<td>d.keys()</td>
+<td>返回字典d中所有的键信息</td>
+</tr>
+<tr>
+<td>d.values()</td>
+<td>返回字典d中所有的值信息</td>
+</tr>
+<tr>
+<td>d.items()</td>
+<td>返回字典d中所有的键-值对信息</td>
+</tr>
+<tr>
+<td>d.update(c)</td>
+<td>将c字典的键-值对添加到d中，若相同键有不同值，就用c的替换d的</td>
+</tr>
+<tr>
+<td>d.get(k,  <default>)</td>
+<td>键k存在，则返回相应值，不在则返回<default>值，默认是None</td>
+</tr>
+<tr>
+<td>d.setdefault(k,  <default>)</td>
+<td>键k存在，则返回相应值，不在则在d中加入此键-值对</td>
+</tr>
+<tr>
+<td>d.pop(k,  <default>)</td>
+<td>键k存在，则取出相应值，并将该键-值对删除，不在则返回<default>值</td>
+</tr>
+<tr>
+<td>d.popitem()</td>
+<td>随机从字典d中取出一个键值对，以元组形式返回，并将该键-值对删除</td>
+</tr>
+<tr>
+<td>d.clear()</td>
+<td>删除所有的键值对</td>
+</tr>
+<tr>
+<td>d.copy</td>
+<td>返回一个新的字典，浅复制，副本与原件的值的指向相同。当替换副本中的值，正常。当修改副本中的值原件中的值也会改变。</td>
+</tr>
+<tr>
+<td>d.fromkeys([],  None)</td>
+<td>创建字典，包含指定的键。值默认是None，也可以是特定的。</td>
+</tr>
+</tbody></table>
+<p>字典快速使用，通过format_map来快速的映射</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;abab is &#123;C&#125;&quot;</span>.format_map(<span class="built_in">dict</span>)</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/06/29/2020-06-29-%E5%AD%97%E5%85%B8dict-Python/" data-id="clo5e4kni000rlsnyc84r2kfn" data-title="字典dict-Python" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Python/" rel="tag">Python</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2020/07/06/2020-07-06-RC%E9%81%A5%E6%8E%A7%E8%BD%A6%E8%B0%83%E8%AF%95%E5%B0%8F%E8%AE%A1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          RC遥控车调试小计
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/06/27/2020-06-27-%E8%87%AA%E5%88%B6K60%E4%B8%BB%E6%8E%A7%E6%9D%BF--%E4%B8%80%E6%AC%A1%E5%90%83%E4%BA%8F%E7%9A%84%E8%AE%B0%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">自制K60主控板--一次吃亏的记录</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E4%BF%A1%E4%BB%B0%E5%B0%BA/">信仰尺</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/">制作</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/%E5%AD%A6%E4%B9%A0/">学习</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%A2%E9%98%9F/">团队</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%9B%A2%E9%98%9F/%E6%99%BA%E8%83%BD%E8%BD%A6/">智能车</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/">小记</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AE%B0/">小记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B0%8F%E8%AE%B0/%E5%88%B6%E4%BD%9C/">制作</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/">故障分析</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/%E7%AC%94%E8%AE%B0/">笔记</a></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E5%BF%97/">日志</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/">笔记</a><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AC%94%E8%AE%B0/%E5%B0%8F%E8%AE%B0/">小记</a></li></ul></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Funpack/" rel="tag">Funpack</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MD/" rel="tag">MD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Python/" rel="tag">Python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%9E%E4%B9%A0/" rel="tag">实习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B1%82%E8%81%8C/" rel="tag">求职</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Funpack/" style="font-size: 16px;">Funpack</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/MD/" style="font-size: 10px;">MD</a> <a href="/tags/Python/" style="font-size: 18px;">Python</a> <a href="/tags/%E5%AE%9E%E4%B9%A0/" style="font-size: 12px;">实习</a> <a href="/tags/%E6%B1%82%E8%81%8C/" style="font-size: 10px;">求职</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px;">生活</a> <a href="/tags/%E7%A1%AC%E4%BB%B6/" style="font-size: 20px;">硬件</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/10/">十月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/08/">八月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">一月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/09/">九月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">七月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/06/">六月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/05/">五月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">三月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/01/">一月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/12/">十二月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/10/">十月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">九月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">八月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">七月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/06/">六月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">二月 2020</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/10/25/%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/">实验室硬件方向</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/25/2023-10-25-%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/">实验室硬件方向</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/">MD语言 代码块</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/24/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2023/10/24/hexo_d%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99_ERROR_Deployer_not_found_git/">hexo d命令报错 ERROR Deployer not found: git</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John1175<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
