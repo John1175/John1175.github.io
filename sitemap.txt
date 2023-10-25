@@ -31,16 +31,16 @@ https://john1175.github.io/2020/03/04/2020-03-04-%E5%AD%97%E7%AC%A6%E4%B8%B2str-
 https://john1175.github.io/2020/03/04/2020-03-04-%E6%95%B0%E5%AD%97%E7%B1%BB%E5%9E%8B%E4%B8%8E%E8%BF%90%E7%AE%97%E7%AC%A6-Python/
 https://john1175.github.io/2020/02/28/2020-02-28-turtle%E5%BA%93%E5%B0%8F%E7%BB%93-Python/
 https://john1175.github.io/
+https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/
 https://john1175.github.io/tags/Funpack/
 https://john1175.github.io/tags/Python/
 https://john1175.github.io/tags/%E7%94%9F%E6%B4%BB/
-https://john1175.github.io/tags/%E7%A1%AC%E4%BB%B6/
 https://john1175.github.io/tags/%E6%B1%82%E8%81%8C/
 https://john1175.github.io/tags/%E5%AE%9E%E4%B9%A0/
 https://john1175.github.io/tags/MD/
 https://john1175.github.io/tags/Hexo/
-https://john1175.github.io/categories/%E5%88%B6%E4%BD%9C/
 https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/
+https://john1175.github.io/categories/%E5%88%B6%E4%BD%9C/
 https://john1175.github.io/categories/%E5%88%B6%E4%BD%9C/%E5%AD%A6%E4%B9%A0/
 https://john1175.github.io/categories/%E7%AC%94%E8%AE%B0/
 https://john1175.github.io/categories/%E5%88%B6%E4%BD%9C/%E6%99%BA%E8%83%BD%E8%BD%A6/
@@ -51,7 +51,7 @@ https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E5%B0%8F%E8%AE%B0/
 https://john1175.github.io/categories/%E7%AC%94%E8%AE%B0/%E5%B0%8F%E8%AE%B0/
 https://john1175.github.io/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/
 https://john1175.github.io/categories/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/
+https://john1175.github.io/categories/%E6%97%A5%E5%BF%97/
 https://john1175.github.io/categories/%E5%B0%8F%E8%AE%B0/%E5%88%B6%E4%BD%9C/
 https://john1175.github.io/categories/%E6%95%85%E9%9A%9C%E5%88%86%E6%9E%90/%E7%AC%94%E8%AE%B0/
-https://john1175.github.io/categories/%E6%97%A5%E5%BF%97/
 https://john1175.github.io/categories/%E5%9B%A2%E9%98%9F/%E6%99%BA%E8%83%BD%E8%BD%A6/
