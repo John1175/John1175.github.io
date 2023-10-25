@@ -79,78 +79,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-2022-01-08-Funpack12WioTerminal数据采集与显示" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/08/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/" class="article-date">
-  <time class="dt-published" datetime="2022-01-08T14:45:23.000Z" itemprop="datePublished">2022-01-08</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E5%88%B6%E4%BD%9C/">制作</a>►<a class="article-category-link" href="/categories/%E5%88%B6%E4%BD%9C/%E5%AD%A6%E4%B9%A0/">学习</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/08/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/">Funpack12WioTerminal数据采集与显示</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="Wio-Terminal介绍"><a href="#Wio-Terminal介绍" class="headerlink" title="Wio Terminal介绍"></a>Wio Terminal介绍</h2><p>Wio Terminal 是基于SAMD51的微控制器，具有 Realtek RTL8720DN 支持的无线连接，与Arduino和MicroPython兼容。它的运行速度为 120MHz (最高可达200MHz), 4MB 外部闪存和 192KB RAM。它同时支持蓝牙和Wi-Fi，为物联网项目提供了骨架。Wio Terminal自身配有LCD屏幕, 板载IMU(LIS3DHTR)，麦克风，蜂鸣器，microSD卡槽，光传感器和红外发射器(IR 940nm)。 最重要的是它还有两个用于<a target="_blank" rel="noopener" href="https://www.seeedstudio.com/grove.html">Grove生态系统</a> 的多功能Grove端口和40个Raspberry pi兼容的GPIO引脚，用于支持更多附加组件。</p>
-<ul>
-<li>MCU, LCD, WIFI, BT, IMU, 麦克风, 蜂鸣器, microSD Card, 光传感器, 五向开关, 光传感器和红外发射器 (IR 940nm), 加密验证</li>
-<li>软件支持：Arduino、MicroPython、ArduPy、AT Firmware</li>
-</ul>
-<p>Wio Terminal还有大量应用与案例，对于我们的使用提供了极大的帮助。</p>
-<h2 id="项目分析"><a href="#项目分析" class="headerlink" title="项目分析"></a>项目分析</h2><p>本次利用背部Raspberry pi兼容的GPIO引脚，通过杜邦线连3个传感器：热释电红外线传感器，MQ烟雾传感器，温度传感器。并将数据以折线图的形式展现在屏幕上</p>
-<p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/1E541CCD9C592ED6C65FB43399AB18C6.jpg" alt="1E541CCD9C592ED6C65FB43399AB18C6"></p>
-<p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/5E4E0DB1014CFB090DB0A08BEE07E34C.jpg" alt="5E4E0DB1014CFB090DB0A08BEE07E34C"></p>
-<p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/E2674AF54B89E546F199FF7F23181FCD.jpg" alt="E2674AF54B89E546F199FF7F23181FCD"></p>
-<h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>这里使用Arduino，使用了seeed的折线图</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&quot;seeed_line_chart.h&quot;</span><span class="comment">//折线图头文件</span></span></span><br><span class="line">TFT_eSPI tft;</span><br></pre></td></tr></table></figure>
-
-<p>折线图的设置</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">setup</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  tft.<span class="built_in">begin</span>();    <span class="comment">//初始化</span></span><br><span class="line">  tft.<span class="built_in">setRotation</span>(<span class="number">3</span>);   <span class="comment">//选择一个角落为原点(能填0~3)</span></span><br><span class="line">  spr.<span class="built_in">createSprite</span>(TFT_HEIGHT,TFT_WIDTH);   <span class="comment">//定折线图的长和宽</span></span><br><span class="line">  <span class="built_in">pinMode</span>(A7,INPUT);</span><br><span class="line">  Serial.<span class="built_in">begin</span>(<span class="number">9600</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">loop</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="comment">//刷新屏幕</span></span><br><span class="line">  spr.<span class="built_in">fillSprite</span>(TFT_WHITE);</span><br><span class="line">  <span class="keyword">if</span> (data_1.<span class="built_in">size</span>() == max_size) &#123;  <span class="comment">//变量数目超过同屏最大值</span></span><br><span class="line">    data_1.<span class="built_in">pop</span>(); <span class="comment">//删除第一个数据</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (data_2.<span class="built_in">size</span>() == max_size) &#123;</span><br><span class="line">    data_2.<span class="built_in">pop</span>(); <span class="comment">//删除第一个数据</span></span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">if</span> (data_3.<span class="built_in">size</span>() == max_size) &#123;</span><br><span class="line">    data_3.<span class="built_in">pop</span>(); <span class="comment">//删除第一个数据</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-
-<p>LCD显示设置</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//标题设置</span></span><br><span class="line">    <span class="comment">//标题1</span></span><br><span class="line">    <span class="keyword">auto</span> header_1 =<span class="built_in">text</span>(<span class="number">50</span>, <span class="number">0</span>)<span class="comment">//标题位置</span></span><br><span class="line">    .<span class="built_in">value</span>(<span class="string">&quot;tem&quot;</span>)  <span class="comment">//标题内容</span></span><br><span class="line">    .<span class="built_in">align</span>(center)      <span class="comment">//标题水平？？？</span></span><br><span class="line">    .<span class="built_in">valign</span>(vcenter)    <span class="comment">//标题垂直？？？</span></span><br><span class="line">    .<span class="built_in">width</span>(<span class="number">6</span>) <span class="comment">//标题宽度</span></span><br><span class="line">    .<span class="built_in">thickness</span>(<span class="number">3</span>);  <span class="comment">//字体的粗细</span></span><br><span class="line">    header_1.<span class="built_in">height</span>(header_1.<span class="built_in">font_height</span>() * <span class="number">2</span>); <span class="comment">//标题的高度是字体高度的两倍</span></span><br><span class="line">    header_1.<span class="built_in">draw</span>(); </span><br><span class="line"></span><br><span class="line">    <span class="comment">//标题2</span></span><br><span class="line">    <span class="keyword">auto</span> header_2 =<span class="built_in">text</span>(<span class="number">200</span>, <span class="number">0</span>)<span class="comment">//标题位置</span></span><br><span class="line">    .<span class="built_in">value</span>(<span class="string">&quot;smoke&quot;</span>)  <span class="comment">//标题内容</span></span><br><span class="line">    .<span class="built_in">align</span>(center)      <span class="comment">//标题水平？？？</span></span><br><span class="line">    .<span class="built_in">valign</span>(vcenter)    <span class="comment">//标题垂直？？？</span></span><br><span class="line">    .<span class="built_in">width</span>(<span class="number">6</span>) <span class="comment">//标题宽度</span></span><br><span class="line">    .<span class="built_in">thickness</span>(<span class="number">3</span>);  <span class="comment">//字体的粗细</span></span><br><span class="line">    header_2.<span class="built_in">height</span>(header_2.<span class="built_in">font_height</span>() * <span class="number">2</span>); <span class="comment">//标题的高度是字体高度的两倍</span></span><br><span class="line">    header_2.<span class="built_in">draw</span>(); </span><br><span class="line"></span><br><span class="line">    <span class="comment">//标题3</span></span><br><span class="line">    <span class="keyword">auto</span> header_3 =<span class="built_in">text</span>(<span class="number">200</span>, <span class="number">150</span>)<span class="comment">//标题位置</span></span><br><span class="line">    .<span class="built_in">value</span>(<span class="string">&quot;infra-red&quot;</span>)  <span class="comment">//标题内容</span></span><br><span class="line">    .<span class="built_in">align</span>(center)      <span class="comment">//标题水平？？？</span></span><br><span class="line">    .<span class="built_in">valign</span>(vcenter)    <span class="comment">//标题垂直？？？</span></span><br><span class="line">    .<span class="built_in">width</span>(<span class="number">6</span>) <span class="comment">//标题宽度</span></span><br><span class="line">    .<span class="built_in">thickness</span>(<span class="number">3</span>);  <span class="comment">//字体的粗细</span></span><br><span class="line">    header_3.<span class="built_in">height</span>(header_3.<span class="built_in">font_height</span>() * <span class="number">2</span>); <span class="comment">//标题的高度是字体高度的两倍</span></span><br><span class="line">    header_3.<span class="built_in">draw</span>(); </span><br><span class="line">  </span><br><span class="line"><span class="comment">//设置折线图</span></span><br><span class="line">  <span class="comment">//图1</span></span><br><span class="line">  <span class="keyword">auto</span> content_1 = <span class="built_in">line_chart</span>(<span class="number">0</span>, <span class="number">0</span>);<span class="comment">//折线图原点位置</span></span><br><span class="line">    content_1</span><br><span class="line">      .<span class="built_in">height</span>(TFT_WIDTH/<span class="number">2</span>) <span class="comment">//折线图的实际高度</span></span><br><span class="line">      .<span class="built_in">width</span>(TFT_HEIGHT/<span class="number">2</span><span class="number">-10</span>) <span class="comment">//折线图的实际宽度</span></span><br><span class="line">      .<span class="built_in">based_on</span>(<span class="number">0.0</span>)  <span class="comment">//不知道？？？</span></span><br><span class="line">      .<span class="built_in">show_circle</span>(<span class="literal">false</span>)   <span class="comment">//在每个点绘制圆环时，默认设置为启用。</span></span><br><span class="line">      .<span class="built_in">value</span>(data_1)  <span class="comment">//将数据传递到折线图</span></span><br><span class="line">      .<span class="built_in">color</span>(TFT_PURPLE)  <span class="comment">//折线图线条的颜色</span></span><br><span class="line">      .<span class="built_in">draw</span>();</span><br><span class="line"></span><br><span class="line">  <span class="comment">//图2</span></span><br><span class="line">  <span class="keyword">auto</span> content_2= <span class="built_in">line_chart</span>(TFT_HEIGHT/<span class="number">2</span><span class="number">-10</span>, <span class="number">0</span>);<span class="comment">//折线图原点位置</span></span><br><span class="line">    content_2</span><br><span class="line">      .<span class="built_in">height</span>(TFT_WIDTH/<span class="number">2</span>) <span class="comment">//折线图的实际高度</span></span><br><span class="line">      .<span class="built_in">width</span>(TFT_HEIGHT/<span class="number">2</span><span class="number">-10</span>) <span class="comment">//折线图的实际宽度</span></span><br><span class="line">      .<span class="built_in">based_on</span>(<span class="number">0.0</span>)  <span class="comment">//不知道？？？</span></span><br><span class="line">      .<span class="built_in">show_circle</span>(<span class="literal">false</span>)   <span class="comment">//在每个点绘制圆环时，默认设置为启用。</span></span><br><span class="line">      .<span class="built_in">value</span>(data_2)  <span class="comment">//将数据传递到折线图</span></span><br><span class="line">      .<span class="built_in">color</span>(TFT_PURPLE)  <span class="comment">//折线图线条的颜色</span></span><br><span class="line">      .<span class="built_in">draw</span>();</span><br><span class="line"></span><br><span class="line">  <span class="comment">//图3</span></span><br><span class="line">  <span class="keyword">auto</span> content_3= <span class="built_in">line_chart</span>(<span class="number">0</span>,TFT_HEIGHT/<span class="number">2</span><span class="number">-50</span>);<span class="comment">//折线图原点位置</span></span><br><span class="line">    content_3</span><br><span class="line">      .<span class="built_in">height</span>(TFT_WIDTH/<span class="number">2</span>) <span class="comment">//折线图的实际高度</span></span><br><span class="line">      .<span class="built_in">width</span>(TFT_HEIGHT/<span class="number">2</span><span class="number">-10</span>) <span class="comment">//折线图的实际宽度</span></span><br><span class="line">      .<span class="built_in">based_on</span>(<span class="number">0.0</span>)  <span class="comment">//不知道？？？</span></span><br><span class="line">      .<span class="built_in">show_circle</span>(<span class="literal">false</span>)   <span class="comment">//在每个点绘制圆环时，默认设置为启用。</span></span><br><span class="line">      .<span class="built_in">value</span>(data_3)  <span class="comment">//将数据传递到折线图</span></span><br><span class="line">      .<span class="built_in">color</span>(TFT_PURPLE)  <span class="comment">//折线图线条的颜色</span></span><br><span class="line">      .<span class="built_in">draw</span>();</span><br></pre></td></tr></table></figure>
-
-<p>Arduino永远的神！！！！！！！</p>
-<h2 id="功能展示"><a href="#功能展示" class="headerlink" title="功能展示"></a>功能展示</h2><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/DC6158A1357A0C07ADC9A21FB2B96DB1.jpg" alt="DC6158A1357A0C07ADC9A21FB2B96DB1"></p>
-<p>这里我们可以看到目前的传感器数据：温度，烟雾，红外。</p>
-<p>可以看到10C左右的室温，挺暖和的。</p>
-<p>MQ的读数0.08以下，正常，这里没有人吸烟</p>
-<p>热释电红外线传感器这里可以看到一个下降，手刚刚略过传感器，正常。</p>
-<h2 id="心得体会"><a href="#心得体会" class="headerlink" title="心得体会"></a>心得体会</h2><p>这是第12期了从半路上来就一直坚持了下来，12月因为有事所以选择了项目一，Arduino永远的神，简单高效。</p>
-<p>这应该是最后一期了，希望后面会有更多的类似活动。</p>
-<p>硬禾学堂&amp;得捷电子yyds！！！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/08/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/" data-id="clo5e4kob0026lsny1dx453ab" data-title="Funpack12WioTerminal数据采集与显示" class="article-share-link"><span class="fa fa-share">分享</span></a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Funpack/" rel="tag">Funpack</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-2022-01-08-arduino配置小计" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/08/2022-01-08-arduino%E9%85%8D%E7%BD%AE%E5%B0%8F%E8%AE%A1/" class="article-date">
@@ -191,7 +119,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/01/08/2022-01-08-arduino%E9%85%8D%E7%BD%AE%E5%B0%8F%E8%AE%A1/" data-id="clo5e4koe002blsnybw0zgxt0" data-title="arduino配置小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2022/01/08/2022-01-08-arduino%E9%85%8D%E7%BD%AE%E5%B0%8F%E8%AE%A1/" data-id="clo5ef2zr002b1nny19a1dpae" data-title="arduino配置小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -278,7 +206,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/15/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/" data-id="clo5e4koa0023lsny1b1l74ux" data-title="Funpack11期的LPC55S69入手小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2021/09/15/2021-09-15-Funpack11%E6%9C%9F%E7%9A%84LPC55S69%E5%85%A5%E6%89%8B%E5%B0%8F%E8%AE%A1/" data-id="clo5ef2zn00231nny1rsw9rib" data-title="Funpack11期的LPC55S69入手小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -332,7 +260,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/12/2021-07-12-16%E5%B1%8A%E6%99%BA%E8%83%BD%E8%BD%A6%E7%A1%AC%E4%BB%B6%E5%B0%8F%E8%AE%A1/" data-id="clo5e4ko7001ylsny5ij0fbpx" data-title="16届智能车硬件小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2021/07/12/2021-07-12-16%E5%B1%8A%E6%99%BA%E8%83%BD%E8%BD%A6%E7%A1%AC%E4%BB%B6%E5%B0%8F%E8%AE%A1/" data-id="clo5ef2zk001y1nny7igncdqr" data-title="16届智能车硬件小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -387,7 +315,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/17/2021-06-17-%E7%84%8A%E6%8E%A5%E5%B0%8F%E8%AE%A1/" data-id="clo5e4ko6001vlsny8lsod8j2" data-title="焊接小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2021/06/17/2021-06-17-%E7%84%8A%E6%8E%A5%E5%B0%8F%E8%AE%A1/" data-id="clo5ef2zj001v1nnyg2g2635b" data-title="焊接小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -442,7 +370,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/17/2021-06-17-%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C%E5%B0%8F%E8%AE%A1/" data-id="clo5e4ko3001qlsnyfncw96z0" data-title="求职经验小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2021/06/17/2021-06-17-%E6%B1%82%E8%81%8C%E7%BB%8F%E9%AA%8C%E5%B0%8F%E8%AE%A1/" data-id="clo5ef2zg001q1nny2fomefqi" data-title="求职经验小计" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -532,7 +460,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/06/17/2021-06-17-Funpack%E6%B4%BB%E5%8A%A8%E7%AC%AC9%E6%9C%9F%EF%BC%8C%E5%9F%BA%E4%BA%8ESensorTile.box%E7%9A%84%E5%9B%9B%E9%9D%A2%E5%8A%9F%E8%83%BD%E6%98%BE%E7%A4%BA/" data-id="clo5e4ko2001olsnyfe8g6ci7" data-title="Funpack活动第9期，基于SensorTile.box的四面功能显示" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2021/06/17/2021-06-17-Funpack%E6%B4%BB%E5%8A%A8%E7%AC%AC9%E6%9C%9F%EF%BC%8C%E5%9F%BA%E4%BA%8ESensorTile.box%E7%9A%84%E5%9B%9B%E9%9D%A2%E5%8A%9F%E8%83%BD%E6%98%BE%E7%A4%BA/" data-id="clo5ef2zf001o1nny1jabgz7v" data-title="Funpack活动第9期，基于SensorTile.box的四面功能显示" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -707,7 +635,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/05/15/2021-05-15-Funpack%E6%B4%BB%E5%8A%A8%E7%AC%AC8%E6%9C%9F%EF%BC%8C%E5%9F%BA%E4%BA%8EArduino%20Nano%2033%20BLE%20Sense%E7%9A%84%E7%8E%AF%E5%A2%83%E7%9B%91%E6%B5%8B%E7%AB%99/" data-id="clo5e4knz001klsny4alxe843" data-title="Funpack活动第8期，基于Arduino Nano 33 BLE Sense的环境监测站" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2021/05/15/2021-05-15-Funpack%E6%B4%BB%E5%8A%A8%E7%AC%AC8%E6%9C%9F%EF%BC%8C%E5%9F%BA%E4%BA%8EArduino%20Nano%2033%20BLE%20Sense%E7%9A%84%E7%8E%AF%E5%A2%83%E7%9B%91%E6%B5%8B%E7%AB%99/" data-id="clo5ef2zc001k1nnye3wo4pni" data-title="Funpack活动第8期，基于Arduino Nano 33 BLE Sense的环境监测站" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -766,7 +694,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/03/27/2021-03-27-KiCad%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%A1/" data-id="clo5e4kny001hlsny2h3919xs" data-title="KiCad安装小记" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2021/03/27/2021-03-27-KiCad%E5%AE%89%E8%A3%85%E5%B0%8F%E8%AE%A1/" data-id="clo5ef2zb001h1nny0zv515qm" data-title="KiCad安装小记" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
@@ -817,11 +745,64 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/01/06/2021-01-06-%E8%80%81%E5%90%B4%E7%9A%84PCB%E4%BF%A1%E4%BB%B0%E5%B7%A5%E8%89%BA%E5%B0%BA/" data-id="clo5e4knw001elsny9fxm5ua3" data-title="老吴的PCB信仰工艺尺" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="http://example.com/2021/01/06/2021-01-06-%E8%80%81%E5%90%B4%E7%9A%84PCB%E4%BF%A1%E4%BB%B0%E5%B7%A5%E8%89%BA%E5%B0%BA/" data-id="clo5ef2z9001e1nny4wpzdn51" data-title="老吴的PCB信仰工艺尺" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A1%AC%E4%BB%B6/" rel="tag">硬件</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-2020-12-31-Bye-2020" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2020/12/31/2020-12-31-Bye-2020/" class="article-date">
+  <time class="dt-published" datetime="2020-12-31T13:10:10.000Z" itemprop="datePublished">2020-12-31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%B0%8F%E8%AE%B0/">小记</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2020/12/31/2020-12-31-Bye-2020/">Bye_2020</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Bye_2020</p>
+<p>这是一个自己的小结</p>
+<p>应为疫情，我们23号就考完了所有，没有体验过的人可能难以理解，实验与考试堆在了一起，实验，实验报告，备考三选二。那是一段黑暗。</p>
+<p>目前在参见硬禾学堂的Funpack与雪花板，马上还有考研复习，FPGA学习，小熊派，Allegro。忙的有复习，学习与游戏，忘不负韶华。</p>
+<p>目前是Funpack4，目前打算使用Thunderboard™ BG22与ESP32或者Wio-Terminal或者Arduino+HC-06，没办法没有APP基础，也不太愿意去学习，还有15天。</p>
+<p>LED雪花灯板打算用用Allegro，这也有时间限制在17号之前。</p>
+<p>望有足够的时间与能力吧。絮絮念念就到这里吧。</p>
+<p>望有一个美好的2021，上岸成功。</p>
+<p>20.12.31</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2020/12/31/2020-12-31-Bye-2020/" data-id="clo5ef2z7001b1nny4k58f84h" data-title="Bye_2020" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Funpack/" rel="tag">Funpack</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a></li></ul>
 
     </footer>
   </div>
@@ -892,10 +873,6 @@
           </li>
         
           <li>
-            <a href="/2023/10/25/2023-10-25-%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/">实验室硬件方向</a>
-          </li>
-        
-          <li>
             <a href="/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/">MD语言 代码块</a>
           </li>
         
@@ -905,6 +882,10 @@
         
           <li>
             <a href="/2023/10/24/hexo_d%E5%91%BD%E4%BB%A4%E6%8A%A5%E9%94%99_ERROR_Deployer_not_found_git/">hexo d命令报错 ERROR Deployer not found: git</a>
+          </li>
+        
+          <li>
+            <a href="/2022/08/07/%E7%AC%AC%E5%8D%81%E4%B8%83%E5%B1%8A%E5%A4%A7%E5%AD%A6%E7%94%9F%E6%99%BA%E8%83%BD%E8%BD%A6%E7%AB%9E%E8%B5%9B%E6%80%BB%E7%BB%93/">第十七届大学生智能车竞赛总结</a>
           </li>
         
       </ul>

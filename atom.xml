@@ -43,19 +43,6 @@
   </entry>
   
   <entry>
-    <title>实验室硬件方向</title>
-    <link href="http://example.com/2023/10/25/2023-10-25-%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/"/>
-    <id>http://example.com/2023/10/25/2023-10-25-%E5%AE%9E%E9%AA%8C%E5%AE%A4%E7%A1%AC%E4%BB%B6%E6%96%B9%E5%90%91/</id>
-    <published>2023-10-25T06:34:07.000Z</published>
-    <updated>2023-10-25T06:34:07.026Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>MD语言 代码块</title>
     <link href="http://example.com/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/"/>
     <id>http://example.com/2023/10/25/MD%E8%AF%AD%E8%A8%80_%E4%BB%A3%E7%A0%81%E5%9D%97/</id>
@@ -533,6 +520,35 @@
     
     
     <category term="硬件" scheme="http://example.com/tags/%E7%A1%AC%E4%BB%B6/"/>
+    
+    <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Bye_2020</title>
+    <link href="http://example.com/2020/12/31/2020-12-31-Bye-2020/"/>
+    <id>http://example.com/2020/12/31/2020-12-31-Bye-2020/</id>
+    <published>2020-12-31T13:10:10.000Z</published>
+    <updated>2023-10-24T13:44:06.715Z</updated>
+    
+    <content type="html"><![CDATA[<p>Bye_2020</p><p>这是一个自己的小结</p><p>应为疫情，我们23号就考完了所有，没有体验过的人可能难以理解，实验与考试堆在了一起，实验，实验报告，备考三选二。那是一段黑暗。</p><p>目前在参见硬禾学堂的Funpack与雪花板，马上还有考研复习，FPGA学习，小熊派，Allegro。忙的有复习，学习与游戏，忘不负韶华。</p><p>目前是Funpack4，目前打算使用Thunderboard™ BG22与ESP32或者Wio-Terminal或者Arduino+HC-06，没办法没有APP基础，也不太愿意去学习，还有15天。</p><p>LED雪花灯板打算用用Allegro，这也有时间限制在17号之前。</p><p>望有足够的时间与能力吧。絮絮念念就到这里吧。</p><p>望有一个美好的2021，上岸成功。</p><p>20.12.31</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Bye_2020&lt;/p&gt;
+&lt;p&gt;这是一个自己的小结&lt;/p&gt;
+&lt;p&gt;应为疫情，我们23号就考完了所有，没有体验过的人可能难以理解，实验与考试堆在了一起，实验，实验报告，备考三选二。那是一段黑暗。&lt;/p&gt;
+&lt;p&gt;目前在参见硬禾学堂的Funpack与雪花板，马上还有考研复习，FP</summary>
+      
+    
+    
+    
+    <category term="小记" scheme="http://example.com/categories/%E5%B0%8F%E8%AE%B0/"/>
+    
+    
+    <category term="Funpack" scheme="http://example.com/tags/Funpack/"/>
     
     <category term="生活" scheme="http://example.com/tags/%E7%94%9F%E6%B4%BB/"/>
     
