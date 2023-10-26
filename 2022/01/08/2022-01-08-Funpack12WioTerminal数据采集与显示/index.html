@@ -15,16 +15,16 @@ document.addEventListener("pjax:success", initScrollReveal);
 <meta property="og:site_name" content="涵尘">
 <meta property="og:description" content="Wio Terminal介绍Wio Terminal 是基于SAMD51的微控制器，具有 Realtek RTL8720DN 支持的无线连接，与Arduino和MicroPython兼容。它的运行速度为 120MHz (最高可达200MHz), 4MB 外部闪存和 192KB RAM。它同时支持蓝牙和Wi-Fi，为物联网项目提供了骨架。Wio Terminal自身配有LCD屏幕, 板载IMU(LI">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://john1175.github.io/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/1E541CCD9C592ED6C65FB43399AB18C6.jpg">
-<meta property="og:image" content="https://john1175.github.io/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/5E4E0DB1014CFB090DB0A08BEE07E34C.jpg">
-<meta property="og:image" content="https://john1175.github.io/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/E2674AF54B89E546F199FF7F23181FCD.jpg">
-<meta property="og:image" content="https://john1175.github.io/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/DC6158A1357A0C07ADC9A21FB2B96DB1.jpg">
+<meta property="og:image" content="https://john1175.github.io/.io//1E541CCD9C592ED6C65FB43399AB18C6.jpg">
+<meta property="og:image" content="https://john1175.github.io/.io//5E4E0DB1014CFB090DB0A08BEE07E34C.jpg">
+<meta property="og:image" content="https://john1175.github.io/.io//E2674AF54B89E546F199FF7F23181FCD.jpg">
+<meta property="og:image" content="https://john1175.github.io/.io//DC6158A1357A0C07ADC9A21FB2B96DB1.jpg">
 <meta property="article:published_time" content="2022-01-08T14:45:23.000Z">
 <meta property="article:modified_time" content="2023-10-25T12:39:18.397Z">
 <meta property="article:author" content="John1175">
 <meta property="article:tag" content="Funpack">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://john1175.github.io/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/1E541CCD9C592ED6C65FB43399AB18C6.jpg"><script>(function() {
+<meta name="twitter:image" content="https://john1175.github.io/.io//1E541CCD9C592ED6C65FB43399AB18C6.jpg"><script>(function() {
   if (CONFIG.mode !== 'auto') return
   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   const setting = localStorage.getItem('darken-mode') || 'auto'
@@ -52,9 +52,9 @@ IconifyProviders = {
 </ul>
 <p>Wio Terminal还有大量应用与案例，对于我们的使用提供了极大的帮助。</p>
 <h2 id="项目分析"><a href="#项目分析" class="headerlink" title="项目分析"></a>项目分析</h2><p>本次利用背部Raspberry pi兼容的GPIO引脚，通过杜邦线连3个传感器：热释电红外线传感器，MQ烟雾传感器，温度传感器。并将数据以折线图的形式展现在屏幕上</p>
-<p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/1E541CCD9C592ED6C65FB43399AB18C6.jpg" alt="1E541CCD9C592ED6C65FB43399AB18C6" loading="lazy"></p>
-<p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/5E4E0DB1014CFB090DB0A08BEE07E34C.jpg" alt="5E4E0DB1014CFB090DB0A08BEE07E34C" loading="lazy"></p>
-<p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/E2674AF54B89E546F199FF7F23181FCD.jpg" alt="E2674AF54B89E546F199FF7F23181FCD" loading="lazy"></p>
+<p><img src="/.io//1E541CCD9C592ED6C65FB43399AB18C6.jpg" alt="1E541CCD9C592ED6C65FB43399AB18C6" loading="lazy"></p>
+<p><img src="/.io//5E4E0DB1014CFB090DB0A08BEE07E34C.jpg" alt="5E4E0DB1014CFB090DB0A08BEE07E34C" loading="lazy"></p>
+<p><img src="/.io//E2674AF54B89E546F199FF7F23181FCD.jpg" alt="E2674AF54B89E546F199FF7F23181FCD" loading="lazy"></p>
 <h2 id="代码分析"><a href="#代码分析" class="headerlink" title="代码分析"></a>代码分析</h2><p>这里使用Arduino，使用了seeed的折线图</p>
 <pre class="language-C++" data-language="C++"><code class="language-C++">#include&quot;seeed_line_chart.h&quot;&#x2F;&#x2F;折线图头文件
 TFT_eSPI tft;</code></pre>
@@ -150,7 +150,7 @@ void loop()
       .draw();</code></pre>
 
 <p>Arduino永远的神！！！！！！！</p>
-<h2 id="功能展示"><a href="#功能展示" class="headerlink" title="功能展示"></a>功能展示</h2><p><img src="/2022-01-08-Funpack12WioTerminal%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E4%B8%8E%E6%98%BE%E7%A4%BA/DC6158A1357A0C07ADC9A21FB2B96DB1.jpg" alt="DC6158A1357A0C07ADC9A21FB2B96DB1" loading="lazy"></p>
+<h2 id="功能展示"><a href="#功能展示" class="headerlink" title="功能展示"></a>功能展示</h2><p><img src="/.io//DC6158A1357A0C07ADC9A21FB2B96DB1.jpg" alt="DC6158A1357A0C07ADC9A21FB2B96DB1" loading="lazy"></p>
 <p>这里我们可以看到目前的传感器数据：温度，烟雾，红外。</p>
 <p>可以看到10C左右的室温，挺暖和的。</p>
 <p>MQ的读数0.08以下，正常，这里没有人吸烟</p>
